@@ -1,78 +1,50 @@
 ####################### Banner ##########################################
 banner:
   enable: true
-  bgImage : "images/bg/main-banner1.jpg"
-  subtitle : "The most powerful Solution"
-  title : "Digital experience with Orbitor"
-  content : "Veritatis earum aliquid doloribus molestias, eveniet molestiae aperiam ratione. Facilis
-            velit voluptatibus impedit eligendi delectus illo earum voluptatum, laudantium molestiae!"
+  bgImage : "images/bg/background.png"
+  subtitle : "250 Hackers. 24 Hours. 1 Spirit."
+  title : "Hack Kosice 2020"
+  content : "Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food."
   button:
     enable : true
-    label : "Learn more about Digicon"
-    link : "about"
-
+    label : "Apply"
+    link : "https://apply.hackkosice.com/"
 
 ########################### Banner feature ################################
 bannerFeature:
   enable : true
+  title : "More than a hackathon!"
   featureItem:
     # feature item loop
     - icon : "ti-light-bulb" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Custom Effective Software development"
-      content : "Saepe nulla praesentium eaque omnis perferendis a doloremque."
+      title : "Lectures in Schools"
+      content : "We teach tech-related topics in high-schools. Learn more."
       
     # feature item loop
     - icon : "ti-panel" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Analyse Your Expensees On Every Device"
-      content : "Saepe nulla praesentium eaque omnis perferendis a doloremque."
+      title : "Local Events"
+      content : "We host seasonal MLH Localhost hackathons and workshops."
       
     # feature item loop
     - icon : "ti-headphone-alt" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Creating a dedicated IT business growth"
-      content : "Saepe nulla praesentium eaque omnis perferendis a doloremque."
-
-########################## features #######################################
-feature:
-  enable : true
-  subtitle : "Why choose us"
-  title : "We help you to make work easy"
-  content : "We understand what your business means to you,your requirements considering trends.Smet nemo excepturi voluptas eligendi ."
-  featureItem:
-    # feature item loop
-    - icon : "ti-light-bulb" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Data analysis"
-      content : "A complete web app solution for business"
-      
-    # feature item loop
-    - icon : "ti-panel" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Web Development"
-      content : "A complete web app solution for business"
-      
-    # feature item loop
-    - icon : "ti-search" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Content Mangement"
-      content : "A complete web app solution for business"
-      
-    # feature item loop
-    - icon : "ti-rocket" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Mobility"
-      content : "A complete web app solution for business"
+      title : "Podcast"
+      content : "Listen to the Hack Kosice podcast on Spotify. We discuss tech and interview motivating entrepreneurs."
 
 ########################### Call to action #####################################
 cta:
   enable: true
-  title : "Assurance Service In Software Testing"
-  content : "An Independent Validation and Testing services from SISAR. Helps to reduce software development efforts"
+  title : "What is a hackathon?"
+  content : "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly!"
   button:
     enable: true
-    label : "Portfolio"
-    link : "portfolio"
+    label : "Read more"
+    link : "about"
 
 ################################### portfolio ####################################
 project:
   enable: true
-  title : "We’ve Done Lot’s of Work, Let’s Check Some From Here"
-  content : "We have the best experts to elevate your business to the next level, try is and you will see! We have the best experts to elevate your"
+  title : "More than a hackathon!"
+  content : "Events, podcasts, lectures, startups..."
 
   # project item comes from "content/project" folder
 
@@ -81,28 +53,28 @@ counter:
   enable : true
   counterItem :
     # counter item loop
-    - title : "Project Done"
-      count : "1730"
+    - title : "Sponsors"
+      count : "37"
       unit : "+"
       
     # counter item loop
-    - title : "User Worldwide"
-      count : "125"
-      unit : "M"
+    - title : "Events"
+      count : "15"
+      unit : ""
       
     # counter item loop
-    - title : "Availble Country"
+    - title : "Countries"
       count : "39"
       unit : ""
       
     # counter item loop
-    - title : "Award Winner"
-      count : "14"
+    - title : "Students"
+      count : "1350"
       unit : ""
 
 ########################## Testimonial #############################################
 testimonial:
-  enable: true
+  enable: false
   title : "What they say about us"
   content : "They are truely amazing in the industry ,molestiae expedita aspernatur officia, similique minima
             laudantium. Corrupti ipsa perspiciatis commodi nesciunt rerum mollitia enim voluptate!"

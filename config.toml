@@ -150,12 +150,12 @@ paginate = 4
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
-logoAlt = "images/logo-w.png"
+logo = "images/logo.svg"
+logoAlt = "images/logo.svg"
 home = "Home"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "250 Hackers. 24 Hours. 1 Spirit."
+author = "Hack Kosice"
 # Cookie
 cookie = true
 expireDay = 2
@@ -167,7 +167,7 @@ mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 # copyright
-copyright = "&copy; Copyright Reserved to <span class=\"text-color\">Orbitor</span> by <a href=\"https://themefisher.com/\" target=\"_blank\">Themefisher"
+copyright = "&copy; Copyright Hack Kosice 2020"
 
   # Preloader
   [params.preloader]
@@ -176,44 +176,44 @@ copyright = "&copy; Copyright Reserved to <span class=\"text-color\">Orbitor</sp
   # Navigation button
   [params.navBtn]
   enable = true
-  label = "Get an estimate"
+  label = "Contact"
   link = "contact"
 
 ############################# Footer ##############################
 
   # footer about
   [params.footer.about]
-  title = "Orbitor"
-  content = "Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus."
+  title = "Hack Kosice"
+  content = "Our motivation is to bring the great international experience, that hackathon is, closer to our home – Slovakia and as a result, create something extraordinary & new."
 
   # contact info
   [params.contact]
   mobile = "+23-345-67890"
-  email = "support@gmail.com"
-  location = "North Main Street,Brooklyn Australia"
+  email = "contact@hackkosice.com"
+  location = "Kosice, Slovakia"
 
 ################################# Social icon #######################
 [[params.social]]
 icon = "ti-facebook"
-link = "#"
+link = "https://www.facebook.com/hackkosice/"
 
 [[params.social]]
 icon = "ti-twitter-alt"
-link = "#"
+link = "https://twitter.com/HackKosice"
 
 [[params.social]]
-icon = "ti-github"
-link = "#"
+icon = "ti-instagram"
+link = "https://www.instagram.com/hackkosice/"
 
 ############################# post share links ######################
 [[params.postShare]]
 icon = "ti-facebook"
-link = "#"
+link = "https://www.facebook.com/hackkosice/"
 
 [[params.postShare]]
 icon = "ti-twitter-alt"
-link = "#"
+link = "https://twitter.com/HackKosice"
 
 [[params.postShare]]
-icon = "ti-linkedin"
-link = "#"
+icon = "ti-instagram"
+link = "https://www.facebook.com/hackkosice/"
