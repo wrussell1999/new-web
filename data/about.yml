@@ -4,16 +4,16 @@ counter:
   title : "We help entreprenuers <br>starts up and turn <span class=\"text-color\">their ideas into</span> produtcs"
   counterItem:
     # counter item loop
-    - icon : "ti-thumb-up" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "Project Done"
-      count : "1730"
+    - icon : "ti-crown" # here we use themify icon pack : https://themify.me/themify-icons
+      title : "Weed Smoked"
+      count : "420"
       unit : "+"
       
     # counter item loop
-    - icon : "ti-face-smile" # here we use themify icon pack : https://themify.me/themify-icons
-      title : "User Worldwide"
-      count : "125"
-      unit : "M"
+    - icon : "ti-spray" # here we use themify icon pack : https://themify.me/themify-icons
+      title : "Hands disinfected"
+      count : "32"
+      unit : ""
       
     # counter item loop
     - icon : "ti-thumb-up" # here we use themify icon pack : https://themify.me/themify-icons
@@ -26,55 +26,112 @@ video:
   enable: true
   title : "Growing Software Company Since 2008"
   videoThumb: "images/about/img-34.png"
-  videoId: "sXoKSD8QJEA"
+  videoId: "dQw4w9WgXcQ"
   content : "
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint earum, eos esse non error facilis ad, maiores eum quae vero libero voluptas! Reprehenderit sunt similique, quae quidem voluptatem odit natus.
+  We organise events for computer enthusiasts REPLACE THIS TEXT MARKETING
 
+  * YAAA.
 
-  * Create and manage any process for your business needs.
-
-  * Create and manage any process for your business needs.
+  * whooo.
 
   * Create and manage any process for your business needs.
   "
   button:
     enable : true
-    label : "All Services"
+    label : "Our projects"
     link : "service"
 
 ################################## Team #####################################
 team:
   enable : true
   title : "Our Team"
-  content : "Today’s users expect effortless experiences. Don’t let essential people and processes stay stuck in the
-            past. Speed it up, skip the hassles"
+  content : "Something something text"
   teamMember:
     # team member loop
-    - name : "John Marshal"
+    - name : "Andrea Komová"
       image : "images/team/03-1.jpg"
-      designation : "Founder"
+      designation : "Project Lead, HR"
       
     # team member loop
-    - name : "Marshal Root"
+    - name : "Juraj Mičko"
       image : "images/team/01-3.jpg"
-      designation : "Marketing Head"
+      designation : " Co-Founder, Hacker Service"
       
     # team member loop
-    - name : "Siamon john"
+    - name : "Pavol Drotár"
       image : "images/team/03-1.jpg"
-      designation : "Co-ordinator"
+      designation : "Co-Founder, Marketing"
       
     # team member loop
-    - name : "John Marshal"
+    - name : "Ádám Urbán"
       image : "images/team/01-3.jpg"
-      designation : "Developer"
+      designation : "Co-founder"
+
+    # team member loop
+    - name : "Peter Ridilla"
+      image : "images/team/01-3.jpg"
+      designation : "Lead - Sponsors"
+    
+    # team member loop
+    - name : "Peter Onduš"
+      image : "images/team/01-3.jpg"
+      designation : "Lead - Hacker Service"
+
+    # team member loop
+    - name : "Filip Fabian"
+      image : "images/team/01-3.jpg"
+      designation : "Lead - Marketing"
+
+    # team member loop
+    - name : "Jakub Žoldák"
+      image : "images/team/01-3.jpg"
+      designation : "Sponsors"
+
+    # team member loop
+    - name : "Samuel Vandak"
+      image : "images/team/01-3.jpg"
+      designation : "Sponsors"
+
+    # team member loop
+    - name : "Dominik Matis"
+      image : "images/team/01-3.jpg"
+      designation : "Hacker Service"
+
+    # team member loop
+    - name : "Rajmund Hruška"
+      image : "images/team/01-3.jpg"
+      designation : "Hacker Service"
+
+    # team member loop
+    - name : "Zoltán Hanesz"
+      image : "images/team/01-3.jpg"
+      designation : "Hacker Service"
+
+    # team member loop
+    - name : "Adam Pásztor"
+      image : "images/team/01-3.jpg"
+      designation : "Marketing"
+
+    # team member loop
+    - name : "Matej Tarča"
+      image : "images/team/01-3.jpg"
+      designation : "Marketing"
+
+    # team member loop
+    - name : "Zoltán Szitás"
+      image : "images/team/01-3.jpg"
+      designation : "Marketing"
+
+    # team member loop
+    - name : "Martin Piala"
+      image : "images/team/01-3.jpg"
+      designation : "Member"
 
 ################################ Clients #######################################
 clients:
   enable : true
-  title : "Honors and awards"
-  content : "Dicta cupiditate, incidunt quia obcaecati itaque cumque, nostrum ipsum est voluptatibus, porro
-            provident a quam quibusdam. Ducimus possimus, nesciunt minima magni aspernatur."
+  title : "Our Sponsors"
+  content : "A hackathon can't happen without sponsors. Currently, these companies Sponsor us."
   logos:
     - logo : "images/about/02.png"
     - logo : "images/about/03.png"
