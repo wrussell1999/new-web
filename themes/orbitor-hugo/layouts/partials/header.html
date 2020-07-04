@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ .Site.BaseURL }}">
       {{ if .IsHome }}
-      <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid">
+      <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid" width="200px">
       {{ else }}
       <img src="{{ .Site.Params.logoAlt | absURL }}" alt="{{ .Site.Title }}" class="img-fluid hidden-logo">
       <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" class="img-fluid mobile-logo">
