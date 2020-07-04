@@ -184,7 +184,7 @@ copyright = "&copy; Copyright Hack Kosice 2020"
   # footer about
   [params.footer.about]
   title = "Hack Kosice"
-  content = "Our motivation is to bring the great international experience, that hackathon is, closer to our home – Slovakia and as a result, create something extraordinary & new."
+  content = "Our motivation is to bring the great international experience, that hackathon is, closer to our home – Slovakia and as a result, create something extraordinary."
 
   # contact info
   [params.contact]

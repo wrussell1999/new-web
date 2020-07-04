@@ -167,6 +167,37 @@
 {{ end }}
 <!-- section Counter End  -->
 
+<!-- section Clients Slider Start -->
+{{ if .Site.Data.homepage.clients.enable }}
+{{ with .Site.Data.homepage.clients }}
+<section class="section awards bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="why-content">
+          <h2 class="mb-4">{{ .title | markdownify }}</h2>
+          <p class="mb-5">{{ .content | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ range .logos }}
+      <div class="col-lg-2 col-md-3 col-sm-4">
+        <div class="award-img-block mb-4 mb-lg-0">
+          <div class="award-img">
+            <img src="{{ .logo | absURL }}" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- section Clients Slider End -->
+
 <!-- testimonial -->
 {{ if .Site.Data.homepage.testimonial.enable }}
 {{ partial "testimonial.html" . }}

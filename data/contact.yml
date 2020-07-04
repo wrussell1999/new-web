@@ -19,7 +19,7 @@ map:
 
 ############################ branch ###############################
 branch:
-  enable : true
+  enable : false
   branchOffice:
     # branch office loop
     - title : "Corporate Office"
