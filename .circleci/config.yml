@@ -5,4 +5,4 @@ jobs:
       - image: cibuilds/hugo:0.60
     steps:
       - checkout
-      - run: hugo serve
+      - run: hugo serve -D
