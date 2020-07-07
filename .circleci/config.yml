@@ -8,7 +8,12 @@ jobs:
     steps:
       #- attach_workspace:
       #    at: workspace
-      - run: ssh -v hackkosice@hackkosice.com "~/dev.hackkosice.com/deploy.sh"
+      - add_ssh_keys
+      - run:
+          name: Deploy at server
+          command: |
+            echo 'hackkosice.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCHgOExXpEGEvZ1Usofy87wMdTgOwKtEwoHft6q2MTuup25f4bmgj3SyB5/sjpySSs0ti7Vg60EtzRMMvRSXbv4=' >> ~/.ssh/known_hosts
+            ssh -v hackkosice@hackkosice.com "~/dev.hackkosice.com/deploy.sh"
 workflows:
   main:
     jobs:
