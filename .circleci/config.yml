@@ -1,8 +1,24 @@
 version: 2.1
+orbs:
+  hugo: circleci/hugo@0.5.2
 jobs:
-  build:
+  deploy:
     docker:
-      - image: cibuilds/hugo:0.73
+      - image: cibuilds/base
     steps:
-      - checkout
-      - run: hugo -D
+      #- attach_workspace:
+      #    at: workspace
+      - run: ssh -v hackkosice@hackkosice.com "~/dev.hackkosice.com/deploy.sh"
+workflows:
+  main:
+    jobs:
+      - hugo/build:
+          version: '0.73'
+          html-proofer: false
+          hugo-extra-flags: -DF
+      - deploy:
+          filters:
+            branches:
+              only: production
+          requires:
+            - hugo/build
