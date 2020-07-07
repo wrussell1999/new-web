@@ -1,16 +1,35 @@
-{{ $type := .Get "type" }}
+
+{{ $config := dict "0" true }}
+{{ if reflect.IsMap $.Params }}
+{{ $config = $.Params }}
+{{ end }}
+{{ if (isset $config "config") }}
+{{ $config = merge (index $.Page.Params $.Params.config) $config }}
+{{ end }}
+
+{{ $type := "basic" }}
+{{ if isset $config "type" }}
+{{ $type = $config.type }}
+{{ end }}
+
+{{ with $config }}
 
 {{ if eq $type "basic" }}
-<div>
-    {{ .Inner }}
-</div>
+<section class="section"{{ with $.Get "style"}} style="{{ . | safeCSS }}"{{ end }}>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    {{ $.Inner | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Slider -->
 {{ else if eq $type "banner" }}
-{{ $bannerName := .Get "name" }}
-{{ range $key, $value := .Site.Data.banners }}
-{{ if eq $key $bannerName }}
-{{ with $value }}
-<section class="banner d-flex align-items-center" style="background-image: url('{{ .bgImage | absURL}}');">
+<section class="banner d-flex align-items-center" style="background-image: url('{{ .bgimage | absURL }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-12 col-xl-8">
@@ -28,8 +47,201 @@
         </div>
     </div>
 </section>
-{{ end }}
-{{ end }}
-{{ end }}
+<!-- /Slider -->
 
+<!-- banner feature -->
+{{ else if eq $type "bannerFeature" }}
+<section class="section about"{{ with $.Get "style"}} style="{{ . | safeCSS }}"{{ end }}>
+    <div class="container">
+        <div class="row">
+            {{ range .featureitem }}
+            <div class="col-lg-4 col-md-6 ">
+                <div class="about-item mb-5 mb-lg-5">
+                    <div class="icon">
+                        <i class="{{ .icon }}"></i>
+                    </div>
+                    <div class="content">
+                        <h4 class="mt-3 mb-3">{{ .title | markdownify }}</h4>
+                        <p class="mb-4">{{ .content | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /banner feature -->
+
+<!-- feature -->
+{{ else if eq $type "feature" }}
+<section class="section process">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="process-block pl-4">
+                    <span class="text-uppercase text-sm letter-spacing">{{ .subtitle | markdownify }}</span>
+                    <h2 class="mb-4 mt-3">{{ .title | markdownify }}</h2>
+                    <p class="mb-4">{{ .content | markdownify }}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-xs-12 col-md-12">
+                <div class="row">
+                    {{ range .featureitem }}
+                    <div class="col-sm-6 mb-4">
+                        <div class="icon-block text-center">
+                            <i class="{{ .icon }}"></i>
+                            <h5>{{ .title | markdownify }}</h5>
+                            <p>{{ .content | markdownify }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /feature -->
+
+<!-- call to action -->
+{{ else if eq $type "cta" }}
+<section class="section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="cta-content bg-white p-5 rounded">
+                    <h3 class="mb-4">{{ .title | markdownify }}</h3>
+                    <p class="mb-30">{{ .content | markdownify }}</p>
+                    {{ if .button.enable }}
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /call to action -->
+
+<!-- section portfolio -->
+{{ else if eq $type "project" }}
+<section class="section portfolio pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="heading">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row portfolio-gallery">
+            {{ range (where $.Site.RegularPages "Type" "portfolio" )}}
+            <div class="col-lg-4 col-md-6">
+                <div class="portflio-item position-relative mb-4">
+                    <a href="{{.Permalink}}">
+                        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" class="img-fluid w-100">
+                        <div class="overlay-item"><i class="ti-link"></i></div>
+                        <div class="portfolio-item-content">
+                            <h3 class="mb-0 text-white">{{ .Title | markdownify }}</h3>
+                            <p class="text-white-50">{{ .Params.Category }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /section portfolio -->
+
+<!-- Counter -->
+{{ else if eq $type "counter" }}
+<section class="section counter">
+    <div class="container">
+        <div class="row">
+            {{ range .counteritem }}
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="counter-item text-center mb-5 mb-lg-0">
+                    <h2 class="mb-0"><span class="counter-stat font-weight-bold">{{ .count }}</span> +</h2>
+                    <p>{{ .title | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /Counter -->
+
+<!-- Clients Slider -->
+{{ else if eq $type "clients" }}
+<section class="section awards bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="why-content">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <p class="mb-5">{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {{ range .logos }}
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="award-img-block mb-4 mb-lg-0">
+                    <div class="award-img">
+                        <img src="{{ .logo | absURL }}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /Clients Slider -->
+
+<!-- testimonial -->
+{{ else if eq $type "testimonial" }}
+<section class="section testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="heading">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 testimonial-wrap">
+                {{ range .testimonialitem }}
+                <div class="testimonial-block">
+                    <p>{{ .content | markdownify }}</p>
+                    <div class="client-info d-flex align-items-center">
+                        <div class="client-img">
+                            <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid">
+                        </div>
+                        <div class="info">
+                            <h6>{{ .name }}</h6>
+                            <span>{{ .location }}</span>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /testimonial -->
+
+{{ else }}
+{{ errorf "Unknown row type %s" $type }}
+
+{{ end }}
 {{ end }}
