@@ -240,6 +240,398 @@
 </section>
 <!-- /testimonial -->
 
+<!-- bigcounter -->
+{{ else if eq $type "bigcounter" }}
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="heading text-center">
+                    <h2>{{ .title | markdownify }}</h2>
+                </div>
+                <div class="row">
+                    {{ range .counteritem }}
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="counter-item counter--style text-center mb-5 mb-lg-0">
+                            <i class="{{ .icon }}"></i>
+                            <h2 class="mb-0 mt-3"><span class="counter-stat font-weight-bold">{{ .count }}</span> {{ .unit }}</h2>
+                            <p>{{ .title }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /bigcounter -->
+
+<!-- promo video -->
+{{ else if eq $type "promovideo" }}
+<section class="video-block section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="heading feature-list">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <div class="content">{{ $.Inner | markdownify }}</div>
+                    {{ if .button.enable }}
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="video-img">
+                    <img src="{{ .videothumb | absURL }}" alt="" class="img-fluid">
+                    <a data-video-id="{{ .videoid }}" class="video-play"><i class="ti-control-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /promo video -->
+
+<!-- team -->
+{{ else if eq $type "team" }}
+<section class="section team">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="heading text-center mb-50">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .teammember }}
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-block mb-5 mb-lg-0">
+                    <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid w-100">
+                    <h4 class="mt-4 mb-0">{{ .name }}</h4>
+                    <p>{{ .designation }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /team -->
+
+<!-- pricing -->
+{{ else if eq $type "pricing" }}
+<section class="section pricing">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="heading text-center mb-50">
+                    <h2 class="mb-3">{{ .title | markdownify }}</h2>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .pricingtable }}
+            <div class="col-lg-4">
+                <div class="pricing-block card text-center">
+                    <div class="price-header">
+                        <span class="text-uppercase letter-spacing h5">{{ .name }}</span>
+                        <h2>{{ .price }}</h2>
+                        <h6 class="text-muted">{{ .duration }}</h6>
+                    </div>
+                    <div class="price-body">
+                        <ul class="list-unstyled mb-0">
+                            {{ range .serviceList }}
+                            <li>{{ .listItem | markdownify }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        {{ with .button }}
+                        <a href="{{ .link | safeURL }}" class="btn btn-main">{{ .label }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /pricing -->
+
+<!-- services -->
+{{ else if eq $type "services" }}
+<section class="section service-2">
+    <div class="container">
+        {{ $.Scratch.Set "counter" 0 }}
+        {{ range $index, $element := .serviceitem }}
+        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        {{ if (modBool $index 2) }}
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="service-img mb-5 mb-lg-0">
+                    <img src="{{ .image | absURL }}" alt="{{.title | markdownify }}" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-info ">
+                    <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>
+                    <h3 class="text-md mb-4 mt-2">{{.title | markdownify }}</h3>
+                    <div class="content">{{ .content | markdownify }}</div>
+                </div>
+            </div>
+        </div>
+        {{ else }}
+        <div class="content-padding position-relative">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="service-info mb-5 mb-lg-0">
+                        <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>
+                        <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
+                        <div class="content">{{ .content | markdownify }}</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-img">
+                        <img src="{{ .image | absURL }}" alt="{{.title | markdownify }}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+<!-- /services -->
+
+<!-- case study -->
+{{ else if eq $type "casestudy" }}
+<section class="section case-study">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="case-study-content text-center mb-5">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+        {{ range $index, $element := .case }}
+        {{if (modBool $index 2)}}
+        <div class="case-timeline">
+            <div class="case-timeline-divider"></div>
+            <div class="case-timeline-dot"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="case-img">
+                        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="case-content">
+                        <h4 class="mb-3">{{ .title | markdownify }}</h4>
+                        <p>{{ .content | markdownify }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ else }}
+        <div class="case-timeline">
+            <div class="case-timeline-divider"></div>
+            <div class="case-timeline-dot"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="case-content">
+                        <h4 class="mb-3">{{ .title | markdownify }}</h4>
+                        <p>{{ .content | markdownify }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-6  order-1 order-lg-2">
+                    <div class="case-img">
+                        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+<!-- /case study -->
+
+<!-- solutions -->
+{{ else if eq $type "solutions" }}
+<section class="section service">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="heading">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            {{ range .serviceitem }}
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item-list">
+                    <i class="{{ .icon }}"></i>
+                    <p>{{ .title | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /solutions -->
+
+<!-- small cta -->
+{{ else if eq $type "smallcta" }}
+<section class="cta-2 bg-light">
+    <div class="container">
+        <div class="cta-block py-5">
+            <div class="row align-items-center ">
+                <div class="col-lg-8">
+                    <span class="text-color">{{ .subtitle | markdownify }}</span>
+                    <h2 class="mt-2 mb-4 mb-lg-0">{{ .title | markdownify }}</h2>
+                </div>
+                {{ if .button.enable }}
+                <div class="col-lg-4">
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" class="btn btn-main btn-round-full float-lg-right">{{ .label }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /small cta -->
+
+<!-- contact form -->
+{{ else if eq $type "contact" }}
+<section class="contact-form-wrap section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <span class="text-color">{{ .subtitle }}</span>
+                <h3 class="text-md mb-5">{{ .title }}</h3>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- form submit email place on "mail.php" file -->
+                        <form id="contact-form" class="contact__form" method="post" action="mail.php">
+                            <!-- form message -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                        Your message was sent successfully.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option selected disabled>I Need help in ...</option>
+                                    {{ range .selectoption }}
+                                    <option value="{{ .option | urlize}}">{{ .option }}</option>
+                                    {{ end }}
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input name="subject" id="subject" type="text" class="form-control" placeholder="Your Subject">
+                            </div>
+                            <div class="form-group">
+                                <input name="name" id="name" type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input name="email" id="email" type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group-2 mb-4">
+                <textarea name="message" id="message" class="form-control" rows="4"
+                          placeholder="Your Message"></textarea>
+                            </div>
+                            <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="short-info mt-5 mt-lg-0">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>Call Us</h5>
+                                    {{ $.Site.Params.contact.mobile }}
+                                </li>
+                                <li>
+                                    <h5>Email Us</h5>
+                                    {{ $.Site.Params.contact.email }}
+                                </li>
+                                <li>
+                                    <h5>Location</h5>
+                                    {{ $.Site.Params.contact.location }}
+                                </li>
+                                <li>
+                                    We also speak Slovak!
+                                </li>
+                            </ul>
+
+                            <ul class="social-icons list-inline mt-5">
+                                {{ range $.Site.Params.social }}
+                                <li class="list-inline-item">
+                                    <a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /contact form -->
+
+<!-- map -->
+{{ else if eq $type "map" }}
+<section class="contact-form-wrap section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="google-map mt-90 mb-5">
+                    <div id="map"
+                         data-latitude="{{ with $.Site.Params.mapLatitude }} {{ . }} {{ end }}"
+                         data-longitude="{{ with $.Site.Params.mapLongitude }} {{ . }} {{ end }}"
+                         data-marker="{{ with $.Site.Params.mapMarker }} {{ . | absURL }} {{ end }}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /map -->
+
+<!-- branch -->
+{{ else if eq $type "branch" }}
+<section class="contact-form-wrap section">
+    <div class="container">
+        <div class="row">
+            {{ range .branchoffice }}
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info">
+                    <h4 class="mb-4">{{ .title | markdownify }}</h4>
+                    <ul class="address-block list-unstyled">
+                        {{ range .info }}
+                        <li><i class="{{ .icon }} mr-3"></i>{{ .label }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /branch -->
+
 {{ else }}
 {{ errorf "Unknown row type %s" $type }}
 

@@ -99,6 +99,177 @@ testimonial1:
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
+bigcounter1:
+  title : "We help entreprenuers <br>starts up and turn <span class=\"text-color\">their ideas into</span> produtcs"
+  counterItem:
+    - icon : "ti-crown" # here we use themify icon pack : https://themify.me/themify-icons
+      title : "Weed Smoked"
+      count : "420"
+      unit : "+"
+    - icon : "ti-spray" # here we use themify icon pack : https://themify.me/themify-icons
+      title : "Hands disinfected"
+      count : "32"
+      unit : ""
+    - icon : "ti-thumb-up" # here we use themify icon pack : https://themify.me/themify-icons
+      title : "Award Winner"
+      count : "14"
+      unit : ""
+promovideo1:
+  title : "Growing Software Company Since 2008"
+  videoThumb: "images/about/img-34.png"
+  videoId: "dQw4w9WgXcQ"
+  button:
+    enable : true
+    label : "Our projects"
+    link : "service"
+team1:
+  enable : true
+  title : "Our Team"
+  content : "Something something text"
+  teamMember:
+    - name : "Andrea Komová"
+      image : "images/team/03-1.jpg"
+      designation : "Project Lead, HR"
+    - name : "Juraj Mičko"
+      image : "images/team/01-3.jpg"
+      designation : " Co-Founder, Hacker Service"
+    - name : "Pavol Drotár"
+      image : "images/team/03-1.jpg"
+      designation : "Co-Founder, Marketing"
+    - name : "Ádám Urbán"
+      image : "images/team/01-3.jpg"
+      designation : "Co-founder"
+pricing1:
+  title : "Our pricing"
+  content : "Labore tempore ratione magnam iste sint dicta dolor doloremque similique tempora optio, expedita veritatis enim nam itaque illum excepturi id dolores, officia?"
+  pricingTable:
+    - name : "Basic"
+      price : "$29.99"
+      duration : "Yearly"
+      serviceList:
+        - listItem : "50 gb Hosting"
+        - listItem : "Business Analysis"
+        - listItem : "24 Hours Support"
+        - listItem : "Customer Management"
+      button:
+        label: "Choose plan"
+        link : "#"
+    - name : "Standard"
+      price : "$49.99"
+      duration : "Yearly"
+      serviceList:
+        - listItem : "50 gb Hosting"
+        - listItem : "Business Analysis"
+        - listItem : "24 Hours Support"
+        - listItem : "Customer Management"
+      button:
+        label: "Choose plan"
+        link : "#"
+    - name : "Premium"
+      price : "$99.99"
+      duration : "Yearly"
+      serviceList:
+        - listItem : "50 gb Hosting"
+        - listItem : "Business Analysis"
+        - listItem : "24 Hours Support"
+        - listItem : "Customer Management"
+      button:
+        label: "Choose plan"
+        link : "#"
+services1:
+  serviceItem:
+    - title : "Custom Software development"
+      image : "images/service/service-1.jpg"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
+            unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
+            earum, culpa, ipsa!"
+    - title : "Software Maintenance"
+      image : "images/service/service-3.jpg"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
+            unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
+            earum, culpa, ipsa!"
+    - title : "Web App Development"
+      image : "images/service/service-4.jpg"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
+            unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
+            earum, culpa, ipsa!"
+casestudy1:
+  title : "How we works"
+  content : "There are many variations of lorem passages of Lorem Ipsum available, but the majority have suffered. All the Lorem Ipsum generators."
+  case:
+    - title : "Competitor Research"
+      image : "images/about/process-3.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Making Functional Strategy"
+      image : "images/about/process-2.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Project Outline"
+      image : "images/about/process-1.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Final Delivery"
+      image : "images/about/structure_sass.png"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+solutions1:
+  title : "Industry Leading Managed <br>Services & Staffing Solutions"
+  content : "Quos recusandae dolore, consequuntur nemo hic nisi perferendis. Vel praesentium magnam architecto delectus
+            blanditiis doloremque, deleniti aperiam ab adipisci!"
+  serviceItem:
+    - title : "Flexible Engagement <br>Models"
+      icon : "ti-panel" # here we use themify icon pack : https://themify.me/themify-icons
+    - title : "Custom Software <br>Development"
+      icon : "ti-desktop" # here we use themify icon pack : https://themify.me/themify-icons
+    - title : "Product Innovation &<br>Technology"
+      icon : "ti-light-bulb" # here we use themify icon pack : https://themify.me/themify-icons
+    - title : "Mobility<br> Service"
+      icon : "ti-mobile" # here we use themify icon pack : https://themify.me/themify-icons
+smallcta1:
+  subtitle : "For Every type business"
+  title : "Entrust your project to our best team of professionals"
+  button:
+    enable : true
+    label : "Contact Us"
+    link : "contact"
+contact1:
+  subtitle : "Send a message"
+  title : "Contact Form"
+  selectOption:
+    - option : "Software Design"
+    - option : "Development cycle"
+    - option : "Software Development"
+    - option : "Maintenance"
+    - option : "Process Query"
+    - option : "Cost and Duration"
+    - option : "Modal Delivery"
+branch1:
+  branchOffice:
+    - title : "Corporate Office"
+      info:
+        - label : "North Main Street,Brooklyn Australia"
+          icon : "ti-location-pin" # here we use themify icon pack : https://themify.me/themify-icons
+        - label : "Email: contact@mail.com"
+          icon : "ti-email" # here we use themify icon pack : https://themify.me/themify-icons
+        - label : "Phone:+88 01672 506 744"
+          icon : "ti-mobile" # here we use themify icon pack : https://themify.me/themify-icons
+    - title : "USA Location"
+      info:
+        - label : "North Main Street,Brooklyn Australia"
+          icon : "ti-location-pin" # here we use themify icon pack : https://themify.me/themify-icons
+        - label : "Email: contact@mail.com"
+          icon : "ti-email" # here we use themify icon pack : https://themify.me/themify-icons
+        - label : "Phone:+88 01672 506 744"
+          icon : "ti-mobile" # here we use themify icon pack : https://themify.me/themify-icons
+    - title : "Europe"
+      info:
+        - label : "North Main Street,Brooklyn Australia"
+          icon : "ti-location-pin" # here we use themify icon pack : https://themify.me/themify-icons
+        - label : "Email: contact@mail.com"
+          icon : "ti-email" # here we use themify icon pack : https://themify.me/themify-icons
+        - label : "Phone:+88 01672 506 744"
+          icon : "ti-mobile" # here we use themify icon pack : https://themify.me/themify-icons
 ---
 
 {{< row >}}
@@ -126,17 +297,29 @@ And *I can* use **markdown**!
 {{< /row >}}
 
 {{< row type="banner" config="banner1" / >}}
-
 {{< row type="bannerFeature" config="bannerFeature1" / >}}
-
 {{< row type="feature" config="feature1" / >}}
-
 {{< row type="cta" config="cta1" / >}}
-
 {{< row type="project" config="project1" / >}}
-
 {{< row type="counter" config="counter1" / >}}
-
 {{< row type="clients" config="clients1" / >}}
-
 {{< row type="testimonial" config="testimonial1" / >}}
+{{< row type="bigcounter" config="bigcounter1" / >}}
+
+{{< row type="promovideo" config="promovideo1" >}}
+We organise events for computer enthusiasts
+
+* YAAA.
+* whooo.
+* Create and manage any process for your business needs.
+{{< /row >}}
+
+{{< row type="team" config="team1" / >}}
+{{< row type="pricing" config="pricing1" / >}}
+{{< row type="services" config="services1" / >}}
+{{< row type="casestudy" config="casestudy1" / >}}
+{{< row type="solutions" config="solutions1" / >}}
+{{< row type="smallcta" config="smallcta1" / >}}
+{{< row type="contact" config="contact1" / >}}
+{{< row type="map" / >}}
+{{< row type="branch" config="branch1" / >}}
