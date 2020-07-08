@@ -1,0 +1,127 @@
+baseURL: 'https://hackkosice.com/'
+languageCode: en-us
+title: Hack Kosice
+theme: orbitor-hugo
+summaryLength: '10'
+paginate: 4
+outputs:
+  home: ["HTML", "AMP", "RSS", "JSON"]
+params:
+  plugins:
+    css:
+      - URL: plugins/bootstrap/css/bootstrap.min.css
+      - URL: plugins/themify/css/themify-icons.css
+      - URL: plugins/magnific-popup/dist/magnific-popup.css
+      - URL: plugins/modal-video/modal-video.css
+      - URL: plugins/animate-css/animate.css
+      - URL: plugins/slick-carousel/slick/slick.css
+      - URL: plugins/slick-carousel/slick/slick-theme.css
+    js:
+      - URL: plugins/jQuery/jquery.min.js
+      - URL: plugins/bootstrap/js/popper.js
+      - URL: plugins/bootstrap/js/bootstrap.min.js
+      - URL: plugins/magnific-popup/dist/jquery.magnific-popup.min.js
+      - URL: plugins/slick-carousel/slick/slick.min.js
+      - URL: plugins/counterup/jquery.waypoints.min.js
+      - URL: plugins/counterup/jquery.counterup.min.js
+      - URL: plugins/modal-video/modal-video.js
+      - URL: plugins/search/fuse.min.js
+      - URL: plugins/search/mark.js
+      - URL: plugins/search/search.js
+      - URL: plugins/google-map/map.js
+      - URL: >-
+          https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js
+  logo: images/logo.svg
+  logoAlt: images/logo.svg
+  home: Home
+  description: 250 Hackers. 24 Hours. 1 Spirit.
+  author: Hack Kosice
+  cookie: true
+  expireDay: 2
+  gmapAPI: >-
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places
+  mapLatitude: '51.5223477'
+  mapLongitude: '-0.1622023'
+  mapMarker: images/marker.png
+  googleAnalitycsID: Your ID
+  copyright: '&copy; Copyright Hack Kosice 2020'
+  preloader:
+    enable: true
+  navBtn:
+    enable: true
+    label: Contact
+    link: contact
+  footer:
+    about:
+      title: Hack Kosice
+      content: >-
+        Our motivation is to bring the great international experience, that
+        hackathon is, closer to our home – Slovakia and as a result, create
+        something extraordinary.
+  contact:
+    mobile: +23-345-67890
+    email: contact@hackkosice.com
+    location: 'Kosice, Slovakia'
+  social:
+    - icon: ti-facebook
+      link: 'https://www.facebook.com/hackkosice/'
+    - icon: ti-twitter-alt
+      link: 'https://twitter.com/HackKosice'
+    - icon: ti-instagram
+      link: 'https://www.instagram.com/hackkosice/'
+  postShare:
+    - icon: ti-facebook
+      link: 'https://www.facebook.com/hackkosice/'
+    - icon: ti-twitter-alt
+      link: 'https://twitter.com/HackKosice'
+    - icon: ti-instagram
+      link: 'https://www.facebook.com/hackkosice/'
+menu:
+  main:
+    - name: Examples
+      weight: 2
+      hasChildren: true
+    - name: Bare Markdown
+      URL: examples/bare-markdown
+      parent: Examples
+    - name: Preview all sections
+      URL: examples/preview-all-sections
+      parent: Examples
+    - name: Portfolio
+      URL: portfolio
+      weight: 3
+    - name: Blog
+      URL: blog
+      weight: 4
+  footer1:
+    - name: About
+      URL: about
+      weight: 1
+    - name: Portfolio
+      URL: portfolio
+      weight: 2
+    - name: Service
+      URL: service
+      weight: 3
+    - name: Blog
+      URL: blog
+      weight: 4
+    - name: Contact
+      URL: contact
+      weight: 5
+  footer2:
+    - name: About
+      URL: about
+      weight: 1
+    - name: Portfolio
+      URL: portfolio
+      weight: 2
+    - name: Service
+      URL: service
+      weight: 3
+    - name: Blog
+      URL: blog
+      weight: 4
+    - name: Contact
+      URL: contact
+      weight: 5
