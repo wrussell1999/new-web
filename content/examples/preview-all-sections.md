@@ -298,13 +298,21 @@ And *I can* use **markdown**!
 {{< /row >}}
 
 {{< row type="banner" config="banner1" / >}}
+
 {{< row type="bannerFeature" config="bannerFeature1" / >}}
+
 {{< row type="feature" config="feature1" / >}}
+
 {{< row type="cta" config="cta1" / >}}
+
 {{< row type="project" config="project1" / >}}
+
 {{< row type="counter" config="counter1" / >}}
+
 {{< row type="clients" config="clients1" / >}}
+
 {{< row type="testimonial" config="testimonial1" / >}}
+
 {{< row type="bigcounter" config="bigcounter1" / >}}
 
 {{< row type="promovideo" config="promovideo1" >}}
@@ -316,11 +324,19 @@ We organise events for computer enthusiasts
 {{< /row >}}
 
 {{< row type="team" config="team1" / >}}
+
 {{< row type="pricing" config="pricing1" / >}}
+
 {{< row type="services" config="services1" / >}}
+
 {{< row type="casestudy" config="casestudy1" / >}}
+
 {{< row type="solutions" config="solutions1" / >}}
+
 {{< row type="smallcta" config="smallcta1" / >}}
+
 {{< row type="contact" config="contact1" / >}}
+
 {{< row type="map" / >}}
+
 {{< row type="branch" config="branch1" / >}}
