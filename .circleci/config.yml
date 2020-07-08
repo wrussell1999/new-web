@@ -1,19 +1,26 @@
 version: 2.1
 orbs:
   hugo: circleci/hugo@0.5.2
+  firebase-deploy: azdevs/firebase-deploy@1.0.0
 jobs:
   deploy_dev:
     docker:
       - image: cibuilds/base
     steps:
-      #- attach_workspace:
-      #    at: workspace
       - add_ssh_keys
       - run:
           name: Deploy at server
           command: |
             echo 'hackkosice.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCHgOExXpEGEvZ1Usofy87wMdTgOwKtEwoHft6q2MTuup25f4bmgj3SyB5/sjpySSs0ti7Vg60EtzRMMvRSXbv4=' >> ~/.ssh/known_hosts
             ssh -v hackkosice@hackkosice.com "~/dev.hackkosice.com/deploy.sh"
+  deploy_firebase:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - firebase-deploy/deploy:
+          token: $FIREBASE_TOKEN
 workflows:
   main:
     jobs:
@@ -22,6 +29,12 @@ workflows:
           html-proofer: false
           hugo-extra-flags: -DF
       - deploy_dev:
+          filters:
+            branches:
+              only: master
+          requires:
+            - hugo/build
+      - deploy_firebase:
           filters:
             branches:
               only: master
