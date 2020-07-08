@@ -11,7 +11,6 @@ parameters:
     default: 'master'
 jobs:
   build:
-    description: Build the site with Hugo.
     executor:
       name: hugo/cibuilds
       tag: << pipeline.parameters.hugo-version >>
@@ -48,16 +47,31 @@ jobs:
               rm -r public
               hugo --baseURL="<< parameters.baseurl >>"
               cp -r public/* ../public_html'
-  deploy_firebase:
+  build_firebase:
     parameters:
       baseurl:
         type: string
-    docker:
-      - image: circleci/node:lts
+    executor:
+      name: hugo/cibuilds
+      tag: << pipeline.parameters.hugo-version >>
     steps:
       - checkout
       - hugo/hugo-build:
           extra-flags: -DF --baseURL="<< parameters.baseurl >>"
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
+            - firebase.json
+            - .firebaserc
+            - firestore.rules
+            - firestore.indexes.json
+  deploy_firebase:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - attach_workspace:
+          at: ~/project
       - firebase-deploy/deploy:
           token: $FIREBASE_TOKEN
 workflows:
@@ -65,6 +79,13 @@ workflows:
     jobs:
       - build:
           html-proofer: false
+      - build_firebase:
+          baseurl: 'https://fire.hackkosice.com/'
+          filters:
+            branches:
+              only: << pipeline.parameters.deploy-branch >>
+          requires:
+            - build
       - deploy_dev:
           baseurl: 'https://dev.hackkosice.com/'
           filters:
@@ -73,9 +94,8 @@ workflows:
           requires:
             - build
       - deploy_firebase:
-          baseurl: 'https://fire.hackkosice.com/'
           filters:
             branches:
               only: << pipeline.parameters.deploy-branch >>
           requires:
-            - build
+            - build_firebase
