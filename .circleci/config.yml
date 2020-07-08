@@ -2,42 +2,26 @@ version: 2.1
 orbs:
   hugo: circleci/hugo@0.5.2
   firebase-deploy: azdevs/firebase-deploy@1.0.0
+parameters:
+  hugo-version:
+    type: string
+    default: '0.73'
+  deploy-branch:
+    type: string
+    default: 'master'
 jobs:
   build:
-    description: Build a site with Hugo.
+    description: Build the site with Hugo.
+    executor:
+      name: hugo/cibuilds
+      tag: << pipeline.parameters.hugo-version >>
     parameters:
-      destination:
-        default: public
-        description: Path to where Hugo outputs generated site. Relative to `source`.
-        type: string
       html-proofer:
         default: true
         description: Whether or not to test the outputted HTML with HTML Proofer.
         type: boolean
-      hugo-extra-flags:
-        default: ""
-        description: Additional flags to pass when running Hugo (e.g. -DF).
-        type: string
-      source:
-        default: .
-        description: Path to Hugo root relative to working_directory.
-        type: string
-      version:
-        default: latest
-        description: Hugo version to use. Defaults to latest.
-        type: string
-    executor:
-      name: hugo/cibuilds
-      tag: << parameters.version >>
     steps:
       - checkout
-      - run:
-          command: |
-            if [ -f ".gitmodules" ]; then
-              git submodule sync
-              git submodule update --init --recursive
-            fi
-          name: Checkout Submodules if Needed
       - hugo/hugo-build:
           extra-flags: -DF
       - when:
@@ -45,15 +29,10 @@ jobs:
           steps:
             - hugo/html-proofer:
                 path: ./public
-      - persist_to_workspace:
-          paths:
-            - << parameters.destination >>
-            - firebase.json
-            - .firebaserc
-            - firestore.rules
-            - firestore.indexes.json
-          root: << parameters.source >>
   deploy_dev:
+    parameters:
+      baseurl:
+        type: string
     docker:
       - image: cibuilds/base
     steps:
@@ -62,31 +41,41 @@ jobs:
           name: Deploy at server
           command: |
             echo 'hackkosice.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCHgOExXpEGEvZ1Usofy87wMdTgOwKtEwoHft6q2MTuup25f4bmgj3SyB5/sjpySSs0ti7Vg60EtzRMMvRSXbv4=' >> ~/.ssh/known_hosts
-            ssh -v hackkosice@hackkosice.com "~/dev.hackkosice.com/deploy.sh"
+            ssh hackkosice@hackkosice.com '
+              cd dev.hackkosice.com/repository
+              git checkout << pipeline.parameters.deploy-branch >>
+              git pull
+              rm -r public
+              hugo --baseURL="<< parameters.baseurl >>"
+              cp -r public/* ../public_html'
   deploy_firebase:
+    parameters:
+      baseurl:
+        type: string
     docker:
       - image: circleci/node:lts
     steps:
-      - attach_workspace:
-          at: ~/project
+      - checkout
+      - hugo/hugo-build:
+          extra-flags: -DF --baseURL="<< parameters.baseurl >>"
       - firebase-deploy/deploy:
           token: $FIREBASE_TOKEN
 workflows:
   main:
     jobs:
       - build:
-          version: '0.73'
           html-proofer: false
-          hugo-extra-flags: -DF
       - deploy_dev:
+          baseurl: 'https://dev.hackkosice.com/'
           filters:
             branches:
-              only: master
+              only: << pipeline.parameters.deploy-branch >>
           requires:
             - build
       - deploy_firebase:
+          baseurl: 'https://fire.hackkosice.com/'
           filters:
             branches:
-              only: master
+              only: << pipeline.parameters.deploy-branch >>
           requires:
             - build
