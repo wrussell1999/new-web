@@ -54,6 +54,8 @@ jobs:
     executor:
       name: hugo/cibuilds
       tag: << pipeline.parameters.hugo-version >>
+    environment:
+      TZ: "Europe/Bratislava"
     steps:
       - checkout
       - hugo/hugo-build:
