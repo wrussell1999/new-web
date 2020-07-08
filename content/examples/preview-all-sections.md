@@ -1,7 +1,7 @@
 ---
 title: The Story of Hack Kosice
 date: 2020-07-06T11:46:13+00:00
-use_rows: true
+use_sections: true
 
 banner1:
   bgImage : "images/bg/background.png"
@@ -273,7 +273,7 @@ branch1:
           icon : "ti-mobile" # here we use themify icon pack : https://themify.me/themify-icons
 ---
 
-{{< row >}}
+{{< section >}}
 # Hack Kosice was born
 
 A hackathon in Kosice, Slovakia, organised by Slovak students, supported by Major League Hacking.
@@ -289,54 +289,54 @@ So, why *a hackathon* in *Kosice*?
 - There was nothing like a good hackathon in Kosice.
 
 Hence, [Hack Kosice](https://hackkosice.com) was born. **Welcome in the family!**
-{{< /row >}}
+{{< /section >}}
 
-{{< row type="basic" style="background: yellow;" >}}
-hello from a basic row with yellow background!
+{{< section type="basic" style="background: yellow;" >}}
+hello from a basic section with yellow background!
 
 And *I can* use **markdown**!
-{{< /row >}}
+{{< /section >}}
 
-{{< row type="banner" config="banner1" / >}}
+{{< section type="banner" config="banner1" / >}}
 
-{{< row type="bannerFeature" config="bannerFeature1" / >}}
+{{< section type="bannerFeature" config="bannerFeature1" / >}}
 
-{{< row type="feature" config="feature1" / >}}
+{{< section type="feature" config="feature1" / >}}
 
-{{< row type="cta" config="cta1" / >}}
+{{< section type="cta" config="cta1" / >}}
 
-{{< row type="project" config="project1" / >}}
+{{< section type="project" config="project1" / >}}
 
-{{< row type="counter" config="counter1" / >}}
+{{< section type="counter" config="counter1" / >}}
 
-{{< row type="clients" config="clients1" / >}}
+{{< section type="clients" config="clients1" / >}}
 
-{{< row type="testimonial" config="testimonial1" / >}}
+{{< section type="testimonial" config="testimonial1" / >}}
 
-{{< row type="bigcounter" config="bigcounter1" / >}}
+{{< section type="bigcounter" config="bigcounter1" / >}}
 
-{{< row type="promovideo" config="promovideo1" >}}
+{{< section type="promovideo" config="promovideo1" >}}
 We organise events for computer enthusiasts
 
 * YAAA.
 * whooo.
 * Create and manage any process for your business needs.
-{{< /row >}}
+{{< /section >}}
 
-{{< row type="team" config="team1" / >}}
+{{< section type="team" config="team1" / >}}
 
-{{< row type="pricing" config="pricing1" / >}}
+{{< section type="pricing" config="pricing1" / >}}
 
-{{< row type="services" config="services1" / >}}
+{{< section type="services" config="services1" / >}}
 
-{{< row type="casestudy" config="casestudy1" / >}}
+{{< section type="casestudy" config="casestudy1" / >}}
 
-{{< row type="solutions" config="solutions1" / >}}
+{{< section type="solutions" config="solutions1" / >}}
 
-{{< row type="smallcta" config="smallcta1" / >}}
+{{< section type="smallcta" config="smallcta1" / >}}
 
-{{< row type="contact" config="contact1" / >}}
+{{< section type="contact" config="contact1" / >}}
 
-{{< row type="map" / >}}
+{{< section type="map" / >}}
 
-{{< row type="branch" config="branch1" / >}}
+{{< section type="branch" config="branch1" / >}}

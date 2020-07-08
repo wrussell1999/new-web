@@ -2,7 +2,7 @@
 title: Hack Kosice
 date: 2020-07-06T11:46:13+00:00
 description: "This is meta description"
-use_rows: true
+use_sections: true
 
 homepage_banner:
   enable: true
@@ -63,14 +63,14 @@ sponsors:
     - logo : "images/about/07.png"
 ---
 
-{{< row type="banner" config="homepage_banner" / >}}
+{{< section type="banner" config="homepage_banner" / >}}
 
-{{< row type="bannerFeature" config="homepage_features" / >}}
+{{< section type="bannerFeature" config="homepage_features" / >}}
 
-{{< row type="cta" config="homepage_cta" / >}}
+{{< section type="cta" config="homepage_cta" / >}}
 
-{{< row type="project" config="homepage_portfolio" / >}}
+{{< section type="project" config="homepage_portfolio" / >}}
 
-{{< row type="counter" config="homepage_numbers" / >}}
+{{< section type="counter" config="homepage_numbers" / >}}
 
-{{< row type="clients" config="sponsors" / >}}
+{{< section type="clients" config="sponsors" / >}}
