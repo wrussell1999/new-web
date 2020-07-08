@@ -1,6 +1,7 @@
 ---
 title: The Story of Hack Kosice
 date: 2020-07-06T11:46:13+00:00
+bgImage: "images/bg/background.jpg"
 use_sections: true
 
 counter1:
