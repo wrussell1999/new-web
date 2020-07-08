@@ -84,6 +84,9 @@ menu:
     - name: Bare Markdown
       URL: examples/bare-markdown
       parent: Examples
+    - name: Simple sections
+      URL: examples/simple-sections
+      parent: Examples
     - name: Preview all sections
       URL: examples/preview-all-sections
       parent: Examples
