@@ -3,6 +3,56 @@ orbs:
   hugo: circleci/hugo@0.5.2
   firebase-deploy: azdevs/firebase-deploy@1.0.0
 jobs:
+  build:
+    description: Build a site with Hugo.
+    parameters:
+      destination:
+        default: public
+        description: Path to where Hugo outputs generated site. Relative to `source`.
+        type: string
+      html-proofer:
+        default: true
+        description: Whether or not to test the outputted HTML with HTML Proofer.
+        type: boolean
+      hugo-extra-flags:
+        default: ""
+        description: Additional flags to pass when running Hugo (e.g. -DF).
+        type: string
+      source:
+        default: .
+        description: Path to Hugo root relative to working_directory.
+        type: string
+      version:
+        default: latest
+        description: Hugo version to use. Defaults to latest.
+        type: string
+    executor:
+      name: hugo/cibuilds
+      tag: << parameters.version >>
+    steps:
+      - checkout
+      - run:
+          command: |
+            if [ -f ".gitmodules" ]; then
+              git submodule sync
+              git submodule update --init --recursive
+            fi
+          name: Checkout Submodules if Needed
+      - hugo/hugo-build:
+          extra-flags: -DF
+      - when:
+          condition: << parameters.html-proofer >>
+          steps:
+            - hugo/html-proofer:
+                path: ./public
+      - persist_to_workspace:
+          paths:
+            - << parameters.destination >>
+            - firebase.json
+            - .firebaserc
+            - firestore.rules
+            - firestore.indexes.json
+          root: << parameters.source >>
   deploy_dev:
     docker:
       - image: cibuilds/base
@@ -24,7 +74,7 @@ jobs:
 workflows:
   main:
     jobs:
-      - hugo/build:
+      - build:
           version: '0.73'
           html-proofer: false
           hugo-extra-flags: -DF
@@ -33,10 +83,10 @@ workflows:
             branches:
               only: master
           requires:
-            - hugo/build
+            - build
       - deploy_firebase:
           filters:
             branches:
               only: master
           requires:
-            - hugo/build
+            - build
