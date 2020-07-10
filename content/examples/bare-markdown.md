@@ -6,6 +6,7 @@ bgImage: "images/bg/background.jpg"
 menu:
   main:
     parent: examples
+    weight: 10
 ---
 
 # The simplest possible webpage

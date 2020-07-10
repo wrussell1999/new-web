@@ -5,6 +5,7 @@ bgImage: "images/bg/background.jpg"
 menu:
   main:
     parent: examples
+    weight: 20
 use_sections: true
 
 counter1:
