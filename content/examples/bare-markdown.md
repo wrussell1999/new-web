@@ -1,8 +1,11 @@
 ---
-title: The simplest webpage
+title: Bare markdown
 date: 2020-07-06T11:46:13+00:00
 description: "This is meta description"
 bgImage: "images/bg/background.jpg"
+menu:
+  main:
+    parent: examples
 ---
 
 # The simplest possible webpage

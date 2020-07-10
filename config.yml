@@ -76,25 +76,7 @@ params:
     - icon: ti-instagram
       link: 'https://www.facebook.com/hackkosice/'
 menu:
-  main:
-    - name: Examples
-      weight: 2
-      hasChildren: true
-    - name: Bare Markdown
-      URL: examples/bare-markdown
-      parent: Examples
-    - name: Simple sections
-      URL: examples/simple-sections
-      parent: Examples
-    - name: Preview all sections
-      URL: examples/preview-all-sections
-      parent: Examples
-    - name: Portfolio
-      URL: portfolio
-      weight: 3
-    - name: Blog
-      URL: blog
-      weight: 4
+  #main:
   footer1:
     - name: About
       URL: about
