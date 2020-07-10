@@ -29,8 +29,7 @@ params:
       - URL: plugins/search/mark.js
       - URL: plugins/search/search.js
       - URL: plugins/google-map/map.js
-      - URL: >-
-          https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js
+      - URL: plugins/js-cookie/js.cookie.min.js
   logo: images/logo.svg
   logoAlt: images/logo.svg
   home: Home
