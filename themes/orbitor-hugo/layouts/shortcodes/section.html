@@ -308,7 +308,7 @@
             {{ range .teammember }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-block mb-5 mb-lg-0">
-                    <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid w-100">
+                    {{ partial "profile-pic.html" .image }}
                     <h4 class="mt-4 mb-0">{{ .name }}</h4>
                     <p>{{ .designation }}</p>
                 </div>
