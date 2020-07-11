@@ -1,0 +1,76 @@
+people:
+  - id: andrea
+    name: Andrea Komová
+    image: images/team/andrea.jpg
+    designation: Project Lead, HR
+  - id: juraj
+    name: Juraj Mičko
+    image: images/team/juraj.jpg
+    designation: Founder, Hacker Service
+  - id: pavol
+    name: Pavol Drotár
+    image: images/team/pavol.png
+    designation: Co-Founder, Marketing
+  - id: adam
+    name: Ádám Urbán
+    image: images/team/adam.jpg
+    designation: Co-founder
+  - id: jakub
+    name: Jakub Žoldák
+    image: images/team/jakub.jpg
+    designation: Sponsors
+  - id: rajmund
+    name: Rajmund Hruška
+    image: images/team/rajmund.jpg
+    designation: Hacker Service
+  - id: svandak
+    name: Samuel Vandak
+    image: images/team/svandak.jpg
+    designation: Sponsors
+  - id: dmatis
+    name: Dominik Matis
+    image: images/team/dmatis.jpg
+    designation: Hacker Service
+  - id: pondus
+    name: Peter Onduš
+    image: images/team/pondus.png
+    designation: Lead – Hacker Service
+  - id: ffabian
+    name: Filip Fabian
+    image: images/team/ffabian.JPG
+    designation: Lead – Marketing
+  - id: pridilla
+    name: Peter Ridilla
+    image: images/team/pridilla.png
+    designation: Lead – Sponsors
+  - id: zoltan
+    name: Zoltán Hanesz
+    image: images/team/zoltan.jpg
+    designation: Marketing
+  - id: zoli.s
+    name: Zoltán Szitás
+    image: images/team/zoli.s.JPG
+    designation: Marketing
+  - id: apasztor
+    name: Adam Pásztor
+    image: images/team/apasztor.JPG
+    designation: Marketing
+  - id: martin
+    name: Martin Piala
+    image: images/team/martin.png
+    designation: Member
+  - id: mtarca
+    name: Matej Tarča
+    image: images/team/mtarca.jpg
+    designation: Marketing
+  - id: jhavrankova
+    name: Janka Havranková
+    image: images/team/jhavrankova.jpg
+    designation: Marketing
+
+  - id: pavol_sokol
+    name: RNDr. JUDr. Pavol Sokol, PhD.
+    external: true
+    image: images/team/external/pavol_sokol.jpg
+    institution: Univerzita Pavla Jozefa Šafárika v Košiciach
+    designation: vedúci Laboratória kybernetickej bezpečnosti a Centra aplikovanej informatiky
