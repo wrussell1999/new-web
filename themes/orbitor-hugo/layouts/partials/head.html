@@ -22,4 +22,7 @@
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
 
+  {{ "<!-- Lazy Script -->" | safeHTML }}
+  {{ $script := resources.Get "js/lazy.js"}}
+  <script src="{{ $script.Permalink }}"></script>
 </head>
