@@ -6,7 +6,7 @@
 {{ $image := resources.Get .asset }}
 {{ if $image }}
 {{ $image = $image.Fill .format }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid w-100">
+<img data-src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="lozad img-fluid w-100">
 {{ else }}
 {{ errorf "Image '%s' cannot be found in assets" .asset }}
 {{ end }}
