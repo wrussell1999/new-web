@@ -1,0 +1,10 @@
+{{/*
+  use the template as follows:
+  {{ with partial "person.html" (dict "person" . "ctx" $) }}
+*/}}
+
+{{ $filtered := where .ctx.Site.Data.people.people "id" .person.id }}
+{{ if not (eq (len $filtered) 1) }}
+{{ errorf "There is no (unique) match for person with id '%s'" .person.id }}
+{{ end }}
+{{ return merge (index $filtered 0) .person }}

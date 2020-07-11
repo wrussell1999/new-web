@@ -129,22 +129,16 @@ promovideo1:
     label : "Our projects"
     link : "service"
 team1:
-  enable : true
   title : "Our Team"
   content : "Something something text"
   teamMember:
-    - name : "Andrea Komová"
-      image : "images/team/03-1.jpg"
-      designation : "Project Lead, HR"
-    - name : "Juraj Mičko"
-      image : "images/team/01-3.jpg"
-      designation : " Co-Founder, Hacker Service"
-    - name : "Pavol Drotár"
-      image : "images/team/03-1.jpg"
-      designation : "Co-Founder, Marketing"
-    - name : "Ádám Urbán"
-      image : "images/team/01-3.jpg"
-      designation : "Co-founder"
+    - id: andrea
+    - id: juraj
+      name: Somebody
+      institution: Hack Kosice
+      designation: I do something
+    - id: pavol
+    - id: adam
 pricing1:
   title : "Our pricing"
   content : "Labore tempore ratione magnam iste sint dicta dolor doloremque similique tempora optio, expedita veritatis enim nam itaque illum excepturi id dolores, officia?"
