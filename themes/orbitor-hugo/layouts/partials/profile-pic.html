@@ -1,7 +1,0 @@
-{{ $image := resources.Get . }}
-{{ if $image }}
-{{ $image = $image.Fill "370x420 q80 jpg" }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid w-100">
-{{ else }}
-{{ errorf "Image '%s' cannot be found in assets" . }}
-{{ end }}

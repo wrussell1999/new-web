@@ -3,7 +3,9 @@ title: Prednášky
 date: 2020-07-06T11:46:13+00:00
 description: "This is meta description"
 bgImage: "images/bg/background.jpg"
-menu: main
+menu:
+  main:
+    name: Lectures
 use_sections: true
 
 prednasky:
@@ -90,18 +92,39 @@ prednasajuci:
       institution: Gymnázium, Poštová
       designation: Computer Science
     - id: pavol_sokol
+counter1:
+  counterItem:
+    - title: Stredných škôl
+      count: "5"
+      unit: ""
+    - title: IT komunít
+      count: "5"
+      unit: ""
+    - title: Prednášok
+      count: "12"
+      unit: ""
+    - title: Účasť študentov
+      count: "1054"
+      unit: "+"
 testimonial1:
   title: Čo o nás hovoria?
   content: ""
   testimonialItem:
       - name: RNDr. Monika Molokáčová
-        image: "sample/images/team/testimonial1.jpg"
+        image: images/institutions/gympos-logo-transp-square.png
         location: Gymnázium, Poštová 9, Košice
         content: Spojenie Hack Košice, našich absolventov v role spíkrov a našich žiakov v role poslucháčov malo na Poštovej úspech bez ohľadu na mimoriadnu situáciu a prerušenie vyučovania. Novému projektu HK in Schools držíme palce, aby aj do budúcna neformálne vzdelával žiakov a približoval im atraktívne témy z oblasti IT. Ďakujeme a tešíme sa na ďalšie Vaše nápady.
       - name: PaedDr. Jana Pekárová, PhD.
-        image: "sample/images/team/testimonial1.jpg"
+        image: images/institutions/gvoza_logo.png
         location: Gymnázium, Veľká okružná 22, Žilina
         content: Od študentov pre študentov? Hack Košice dáva stredoškolským študentom prístupným spôsobom možnosť nahliadnuť do zákulisia počítačových hier, do sveta počítačovej grafiky prepojeného s matematikou a modelovaním. Naši študenti sa dozvedeli viac nielen o svetle a tieni vo svojích obľúbených rolových hrách, ale i o ďalších problémoch riešených v informatike. Príležitosť klásť otázky, dostať zrozumiteľné odpovede a motivovať (sa) k informatike. Odporúčam!
+mam_zaujem:
+  subtitle: Máte záujem o prednášku pre Vašich študentov?
+  title: Napíšte nám Vaše preferencie — sme flexibilní!
+  button:
+    enable: true
+    label: Mám záujem
+    link: contact
 ---
 
 {{< section >}}
@@ -112,6 +135,10 @@ V snahe pomôcť zvýšiť záujem o informačné technológie medzi mladými ľ
 
 {{< section type="services" config="prednasky" / >}}
 
+{{< section type="counter" config="counter1" / >}}
+
 {{< section type="team" config="prednasajuci" / >}}
+
+{{< section type="smallcta" config="mam_zaujem" / >}}
 
 {{< section type="testimonial" config="testimonial1" / >}}

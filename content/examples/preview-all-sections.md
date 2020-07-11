@@ -86,22 +86,22 @@ testimonial1:
             laudantium. Corrupti ipsa perspiciatis commodi nesciunt rerum mollitia enim voluptate!"
   testimonialItem:
       - name : "John Partho"
-        image : "sample/images/team/testimonial1.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
       - name : "Julio Dimple"
-        image : "sample/images/team/testimonial2.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
       - name : "John Partho"
-        image : "sample/images/team/testimonial1.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
       - name : "Julio Dimple"
-        image : "sample/images/team/testimonial2.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
