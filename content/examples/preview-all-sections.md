@@ -179,17 +179,17 @@ pricing1:
 services1:
   serviceItem:
     - title : "Custom Software development"
-      image : "sample/images/service/service-1.jpg"
+      image : images/lectures/developing-software.jpg
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
     - title : "Software Maintenance"
-      image : "sample/images/service/service-3.jpg"
+      image : images/lectures/creative-thinking.jpg
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
     - title : "Web App Development"
-      image : "sample/images/service/service-4.jpg"
+      image : images/lectures/developing-software.jpg
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
