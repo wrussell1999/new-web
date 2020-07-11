@@ -74,34 +74,34 @@ clients1:
   title : "Our Sponsors"
   content : "A hackathon can't happen without sponsors. Currently, these companies Sponsor us."
   logos:
-    - logo : "images/about/02.png"
-    - logo : "images/about/03.png"
-    - logo : "images/about/04.png"
-    - logo : "images/about/05.png"
-    - logo : "images/about/06.png"
-    - logo : "images/about/07.png"
+    - logo : "sample/images/about/02.png"
+    - logo : "sample/images/about/03.png"
+    - logo : "sample/images/about/04.png"
+    - logo : "sample/images/about/05.png"
+    - logo : "sample/images/about/06.png"
+    - logo : "sample/images/about/07.png"
 testimonial1:
   title : "What they say about us"
   content : "They are truely amazing in the industry ,molestiae expedita aspernatur officia, similique minima
             laudantium. Corrupti ipsa perspiciatis commodi nesciunt rerum mollitia enim voluptate!"
   testimonialItem:
       - name : "John Partho"
-        image : "images/team/testimonial1.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
       - name : "Julio Dimple"
-        image : "images/team/testimonial2.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
       - name : "John Partho"
-        image : "images/team/testimonial1.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
       - name : "Julio Dimple"
-        image : "images/team/testimonial2.jpg"
+        image : images/institutions/gympos-logo-transp-square.png
         location : "Newyork USA"
         content : "Maiores quasi placeat harum itaque, ducimus cumque quas expedita hic. Qui ullam iste provident mollitia
               expedita facilis fuga repellat."
@@ -122,7 +122,7 @@ bigcounter1:
       unit : ""
 promovideo1:
   title : "Growing Software Company Since 2008"
-  videoThumb: "images/about/img-34.png"
+  videoThumb: "sample/images/about/img-34.png"
   videoId: "dQw4w9WgXcQ"
   button:
     enable : true
@@ -179,17 +179,17 @@ pricing1:
 services1:
   serviceItem:
     - title : "Custom Software development"
-      image : "images/service/service-1.jpg"
+      image : "sample/images/service/service-1.jpg"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
     - title : "Software Maintenance"
-      image : "images/service/service-3.jpg"
+      image : "sample/images/service/service-3.jpg"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
     - title : "Web App Development"
-      image : "images/service/service-4.jpg"
+      image : "sample/images/service/service-4.jpg"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
@@ -198,19 +198,19 @@ casestudy1:
   content : "There are many variations of lorem passages of Lorem Ipsum available, but the majority have suffered. All the Lorem Ipsum generators."
   case:
     - title : "Competitor Research"
-      image : "images/about/process-3.jpg"
+      image : "sample/images/about/process-3.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Making Functional Strategy"
-      image : "images/about/process-2.jpg"
+      image : "sample/images/about/process-2.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Project Outline"
-      image : "images/about/process-1.jpg"
+      image : "sample/images/about/process-1.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Final Delivery"
-      image : "images/about/structure_sass.png"
+      image : "sample/images/about/structure_sass.png"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
 solutions1:

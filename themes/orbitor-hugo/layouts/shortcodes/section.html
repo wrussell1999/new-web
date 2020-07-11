@@ -165,7 +165,7 @@
             {{ range .counteritem }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="counter-item text-center mb-5 mb-lg-0">
-                    <h2 class="mb-0"><span class="counter-stat font-weight-bold">{{ .count }}</span> +</h2>
+                    <h2 class="mb-0"><span class="counter-stat font-weight-bold">{{ .count }}</span>{{ with .unit }} {{ . }}{{ end }}</h2>
                     <p>{{ .title | markdownify }}</p>
                 </div>
             </div>
@@ -224,7 +224,7 @@
                     <p>{{ .content | markdownify }}</p>
                     <div class="client-info d-flex align-items-center">
                         <div class="client-img">
-                            <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid">
+                            {{ partial "square-pic.html" (dict "asset" .image "format" "70x70 q80 jpg") }}
                         </div>
                         <div class="info">
                             <h6>{{ .name }}</h6>
@@ -309,7 +309,7 @@
             {{ with partial "person.html" (dict "person" . "ctx" $) }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-block mb-5 mb-lg-0">
-                    {{ partial "profile-pic.html" .image }}
+                    {{ partial "square-pic.html" (dict "asset" .image "format" "370x420 q80 jpg") }}
                     <h4 class="mt-4 mb-0">{{ .name }}</h4>
                     {{ if .institution }}
                     <p>{{ .institution | safeHTML }}<br/><i>{{ .designation | safeHTML }}</i></p>

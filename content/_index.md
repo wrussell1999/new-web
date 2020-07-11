@@ -56,12 +56,12 @@ sponsors:
   title : "Our Sponsors"
   content : "A hackathon can't happen without sponsors. Currently, these companies Sponsor us."
   logos:
-    - logo : "images/about/02.png"
-    - logo : "images/about/03.png"
-    - logo : "images/about/04.png"
-    - logo : "images/about/05.png"
-    - logo : "images/about/06.png"
-    - logo : "images/about/07.png"
+    - logo : "sample/images/about/02.png"
+    - logo : "sample/images/about/03.png"
+    - logo : "sample/images/about/04.png"
+    - logo : "sample/images/about/05.png"
+    - logo : "sample/images/about/06.png"
+    - logo : "sample/images/about/07.png"
 ---
 
 {{< section type="banner" config="homepage_banner" / >}}

@@ -1,0 +1,12 @@
+{{/*
+    use the template as follows:
+    {{ partial "square-pic.html" (dict "asset" . "format" "370x420 q80 jpg") }}
+*/}}
+
+{{ $image := resources.Get .asset }}
+{{ if $image }}
+{{ $image = $image.Fill .format }}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid w-100">
+{{ else }}
+{{ errorf "Image '%s' cannot be found in assets" .asset }}
+{{ end }}
