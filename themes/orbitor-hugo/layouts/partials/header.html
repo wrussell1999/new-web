@@ -37,7 +37,7 @@
       </ul>
       {{ if .Site.Params.navBtn.enable }}
       <a href="{{ .Site.Params.navBtn.link | absURL }}"
-        class="btn {{ if .IsHome }} btn-solid-border {{ else }} btn-solid-white {{end}} d-none d-lg-block">{{ .Site.Params.navBtn.label }} <i
+        class="btn btn-solid-border d-none d-lg-block">{{ .Site.Params.navBtn.label }} <i
           class="ti-angle-right ml-2"></i></a>
       {{ end }}
     </div>
