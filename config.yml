@@ -42,7 +42,7 @@ params:
   mapLatitude: '51.5223477'
   mapLongitude: '-0.1622023'
   mapMarker: images/marker.png
-  googleAnalitycsID: Your ID
+  googleAnalitycsID: G-ZKZ4SZVXK3
   copyright: '&copy; Copyright Hack Kosice 2020'
   preloader:
     enable: true
