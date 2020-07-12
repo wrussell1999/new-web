@@ -48,6 +48,7 @@ feature1:
       content : "A complete web app solution for business"
 cta1:
   title : "What is a hackathon?"
+  background: images/bg/background2.png
   content : "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly!"
   button:
     enable: true

@@ -28,10 +28,8 @@
 
 <!-- Slider -->
 {{ else if eq $type "banner" }}
-
-{{ $image := resources.Get .bgimage }}
-{{ if not $image }}{{ errorf "Image '%s' cannot be found in assets" .asset }}{{ end }}
-{{ $image = $image.Resize "1920x q90 jpg" }}
+{{ $image := partial "get-image.html" .bgimage }}
+{{ $image = $image.Resize "1920x q80 jpg" }}
 <section class="banner d-flex align-items-center" style="background-image: url('{{ $image.RelPermalink }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
     <div class="container">
         <div class="row">
@@ -108,7 +106,9 @@
 
 <!-- call to action -->
 {{ else if eq $type "cta" }}
-<section class="section cta lozad" data-background-image="{{ .background }}">
+{{ $image := partial "get-image.html" .background }}
+{{ $image = $image.Resize "1920x q60 jpg" }}
+<section class="section cta lozad" data-background-image="{{ $image.RelPermalink }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -209,6 +209,7 @@
 
 <!-- testimonial -->
 {{ else if eq $type "testimonial" }}
+{{ $testimonial_img_format := "70x70 q80 jpg" }}
 <section class="section testimonial">
     <div class="container">
         <div class="row">
@@ -228,7 +229,7 @@
                     <p>{{ .content | markdownify }}</p>
                     <div class="client-info d-flex align-items-center">
                         <div class="client-img">
-                            {{ partial "fill-image.html" (dict "asset" .image "format" "70x70 q80 jpg") }}
+                            {{ partial "fill-image.html" (dict "asset" .image "format" $testimonial_img_format) }}
                         </div>
                         <div class="info">
                             <h6>{{ .name }}</h6>
@@ -298,6 +299,7 @@
 
 <!-- team -->
 {{ else if eq $type "team" }}
+{{ $teammember_img_format := "370x420 q80 jpg" }}
 <section class="section team">
     <div class="container">
         <div class="row justify-content-center">
@@ -313,7 +315,7 @@
             {{ with partial "person.html" (dict "person" . "ctx" $) }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-block mb-5 mb-lg-0">
-                    {{ partial "fill-image.html" (dict "asset" .image "format" "370x420 q80 jpg") }}
+                    {{ partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format) }}
                     <h4 class="mt-4 mb-0">{{ .name }}</h4>
                     {{ if .institution }}
                     <p>{{ .institution | safeHTML }}<br/><i>{{ .designation | safeHTML }}</i></p>

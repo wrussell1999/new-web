@@ -27,7 +27,7 @@ homepage_features:
       content : "Listen to the Hack Kosice podcast on Spotify. We discuss tech and interview motivating entrepreneurs."
 homepage_cta:
   title : "What is a hackathon?"
-  background: "../images/bg/background2.png"
+  background: images/bg/background2.png
   content : "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly!"
   button:
     enable: true
