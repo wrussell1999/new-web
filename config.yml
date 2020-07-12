@@ -7,6 +7,10 @@ paginate: 4
 outputs:
   home: ["HTML", "AMP", "RSS", "JSON"]
 timeout: 120s
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   plugins:
     css:
