@@ -170,7 +170,7 @@
 
 <!-- Clients Slider -->
 {{ else if eq $type "clients" }}
-<section class="section awards bg-light">
+<section class="section awards" style="background-color: {{ .color }};">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -182,14 +182,18 @@
         </div>
 
         <div class="row">
-            {{ range .logos }}
+            {{ range .sponsors }}
+            {{ with partial "sponsor.html" (dict "sponsor" . "ctx" $) }}
             <div class="col-lg-2 col-md-3 col-sm-4">
                 <div class="award-img-block mb-4 mb-lg-0">
                     <div class="award-img">
-                        <img src="{{ .logo | absURL }}" alt="" class="img-fluid">
+                        <a href="{{ .url }}">
+                            {{ partial "fill-image.html" (dict "asset" .logo "format" "250x250 q80 png" "alt" .name) }}
+                        </a>
                     </div>
                 </div>
             </div>
+            {{ end }}
             {{ end }}
         </div>
     </div>

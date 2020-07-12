@@ -3,144 +3,144 @@ sponsors:
     tier: general
     name: Pavol Jozef Safarik University
     url: https://www.upjs.sk/en/
-    image: images/sponsors/general/upjs.png
+    logo: images/sponsors/general/upjs.png
   - id: kpi
     tier: academic
     name: Katedra počítačov a informatiky
     url: https://kpi.fei.tuke.sk/
-    image: images/sponsors/academic/kpi.png
+    logo: images/sponsors/academic/kpi.png
   - id: vucke
     tier: public
     name: Košický samosprávny kraj
     url: https://web.vucke.sk/sk/
-    image: images/sponsors/public/vucke.png
+    logo: images/sponsors/public/vucke.png
   - id: kosice
     tier: public
     name: Mesto Košice
     url: https://www.kosice.sk/
-    image: images/sponsors/public/kosice.png
+    logo: images/sponsors/public/kosice.png
   - id: vse
     tier: platinum
     name: VSE
     url: https://www.vse.sk/
-    image: images/sponsors/platinum/vse.png
+    logo: images/sponsors/platinum/vse.png
   - id: tatra_banka
     tier: gold
     name: Tatra Banka
     url: https://www.tatrabanka.sk/
-    image: images/sponsors/gold/tatra_banka.png
+    logo: images/sponsors/gold/tatra_banka.png
   - id: vsl
     tier: gold
     name: VSL Software
     url: http://www.vsl.sk/en/
-    image: images/sponsors/gold/vsl.png
+    logo: images/sponsors/gold/vsl.png
   - id: telekom
     tier: gold
     name: Deutsche Telekom IT Solutions
     url: https://myt-systems.sk/
-    image: images/sponsors/gold/telekom.png
+    logo: images/sponsors/gold/telekom.png
   - id: visma
     tier: gold
     name: Visma
     url: https://visma.com/
-    image: images/sponsors/gold/visma.png
+    logo: images/sponsors/gold/visma.png
   - id: siemens
     tier: gold
     name: Siemens Healthineers
     url: https://www.siemens-healthineers.com/sk/
-    image: images/sponsors/gold/siemens.png
+    logo: images/sponsors/gold/siemens.png
   - id: software_ag
     tier: silver
     name: Software AG
     url: https://www.softwareag.com/
-    image: images/sponsors/silver/software_ag.png
+    logo: images/sponsors/silver/software_ag.png
   - id: global_logic
     tier: silver
     name: Global Logic
     url: https://www.globallogic.com/
-    image: images/sponsors/silver/global_logic.png
+    logo: images/sponsors/silver/global_logic.png
   - id: storyous
     tier: silver
     name: Storyous
     url: https://storyous.com/
-    image: images/sponsors/silver/storyous.png
+    logo: images/sponsors/silver/storyous.png
   - id: thermo_fisher
     tier: silver
     name: ThermoFisher Scientific
     url: https://thermofisher.jobs.cz/
-    image: images/sponsors/silver/thermo_fisher.png
+    logo: images/sponsors/silver/thermo_fisher.png
   - id: 46elks
     tier: bronze
     name: 46elks
     url: https://46elks.com/
-    image: images/sponsors/bronze/46elks.png
+    logo: images/sponsors/bronze/46elks.png
   - id: google
     tier: bronze
     name: Google
     url: https://google.com/
-    image: images/sponsors/bronze/google.png
+    logo: images/sponsors/bronze/google.png
   - id: matsuko
     tier: bronze
     name: Matsuko
     url: http://matsuko.com/
-    image: images/sponsors/bronze/matsuko.png
+    logo: images/sponsors/bronze/matsuko.png
   - id: fontech
     tier: medial
     name: Fontech
     url: https://fontech.startitup.sk/
-    image: images/sponsors/medial/fontech.png
+    logo: images/sponsors/medial/fontech.png
   - id: zagx
     tier: medial
     name: ZAGX Productions
     url: https://www.instagram.com/zagxproductions/
-    image: images/sponsors/medial/zagx.png
+    logo: images/sponsors/medial/zagx.png
   - id: nextech
     tier: medial
     name: Nextech
     url: http://nextech.sk/
-    image: images/sponsors/medial/nextech.jpg
+    logo: images/sponsors/medial/nextech.jpg
   - id: startitup
     tier: medial
     name: Startitup
     url: https://www.startitup.sk/
-    image: images/sponsors/medial/startitup.png
+    logo: images/sponsors/medial/startitup.png
   - id: homostudiosus
     tier: medial
     name: Homo Studiosus
     url: https://www.instagram.com/homostudiosus/
-    image: images/sponsors/medial/homostudiosus.png
+    logo: images/sponsors/medial/homostudiosus.png
   - id: robime_it
     tier: medial
     name: Robime.it
     url: https://robime.it/
-    image: images/sponsors/medial/robime_it.png
+    logo: images/sponsors/medial/robime_it.png
   - id: mlh
     tier: partners
     name: Major League Hacking
     url: https://mlh.io/
-    image: images/sponsors/partners/mlh.png
+    logo: images/sponsors/partners/mlh.png
   - id: talentum
     tier: partners
     name: Talentum Cassoviensis
     url: http://talentum.net/
-    image: images/sponsors/partners/talentum.png
+    logo: images/sponsors/partners/talentum.png
   - id: notion
     tier: partners
     name: Notion
     url: https://www.notion.so/
-    image: images/sponsors/partners/notion.png
+    logo: images/sponsors/partners/notion.png
   - id: monday
     tier: partners
     name: Monday
     url: https://www.monday.com/
-    image: images/sponsors/partners/monday.png
+    logo: images/sponsors/partners/monday.png
   - id: menahacks
     tier: partners
     name: Mena Hacks
     url: https://menahacks.com/
-    image: images/sponsors/partners/menahacks.png
+    logo: images/sponsors/partners/menahacks.png
   - id: challengerocket
     tier: partners
     name: Challenge Rocker
     url: https://bit.ly/HackKosiceLogo
-    image: images/sponsors/partners/challengerocket.png
+    logo: images/sponsors/partners/challengerocket.png

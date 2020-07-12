@@ -50,16 +50,53 @@ homepage_numbers:
     - title : "Students"
       count : "1350"
       unit : ""
-sponsors:
-  title : "Our Sponsors"
-  content : "A hackathon can't happen without sponsors. Currently, these companies Sponsor us."
-  logos:
-    - logo : "sample/images/about/02.png"
-    - logo : "sample/images/about/03.png"
-    - logo : "sample/images/about/04.png"
-    - logo : "sample/images/about/05.png"
-    - logo : "sample/images/about/06.png"
-    - logo : "sample/images/about/07.png"
+
+general_sponsors:
+  title : "General Partner"
+  color: white
+  sponsors :
+    - id : upjs
+
+public_sponsors:
+  title : "Public Partners"
+  color: white
+  sponsors :
+    - id : vucke
+    - id : kosice
+
+platinum_sponsors:
+  title : "Platinum Sponsors"
+  color: light-grey
+  sponsors :
+    - id : vse
+
+gold_sponsors:
+  title : "Gold Sponsors"
+  color: gold
+  sponsors :
+    - id : tatra_banka
+    - id : vsl
+    - id : telekom
+    - id : visma
+    - id : siemens
+
+silver_sponsors:
+  title : "Silver Sponsors"
+  color: silver
+  sponsors :
+    - id : software_ag
+    - id : global_logic
+    - id : storyous
+    - id : thermo_fisher
+
+bronze_sponsors:
+  title : "Bronze Sponsors"
+  color: orange
+  sponsors :
+    - id : 46elks
+    - id : google
+    - id : matsuko
+
 ---
 
 {{< section type="banner" config="homepage_banner" / >}}
@@ -72,4 +109,16 @@ sponsors:
 
 {{< section type="counter" config="homepage_numbers" / >}}
 
-{{< section type="clients" config="sponsors" / >}}
+{{< section type="basic" style="padding-bottom:0px">}}
+# Our Sponsors
+A hackathon can't happen without sponsors. Currently, these companies Sponsor us.
+{{< /section >}}
+
+{{< section type="clients" config="general_sponsors" / >}}
+{{< section type="clients" config="public_sponsors" / >}}
+{{< section type="clients" config="platinum_sponsors" / >}}
+{{< section type="clients" config="gold_sponsors" / >}}
+{{< section type="clients" config="silver_sponsors" / >}}
+{{< section type="clients" config="bronze_sponsors" / >}}
+{{< section type="clients" config="medial_sponsors" / >}}
+{{< section type="clients" config="partners_sponsors" / >}}
