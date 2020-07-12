@@ -143,18 +143,7 @@
     <div class="container-fluid">
         <div class="row portfolio-gallery">
             {{ range (where $.Site.RegularPages "Type" "portfolio" )}}
-            <div class="col-lg-4 col-md-6">
-                <div class="portflio-item position-relative mb-4">
-                    <a href="{{.Permalink}}">
-                        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" class="img-fluid w-100">
-                        <div class="overlay-item"><i class="ti-link"></i></div>
-                        <div class="portfolio-item-content">
-                            <h3 class="mb-0 text-white">{{ .Title | markdownify }}</h3>
-                            <p class="text-white-50">{{ .Params.Category }}</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            {{ partial "portfolio-item.html" . }}
             {{ end }}
         </div>
     </div>
@@ -315,7 +304,7 @@
             {{ with partial "person.html" (dict "person" . "ctx" $) }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-block mb-5 mb-lg-0">
-                    {{ partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format) }}
+                    {{ partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) }}
                     <h4 class="mt-4 mb-0">{{ .name }}</h4>
                     {{ if .institution }}
                     <p>{{ .institution | safeHTML }}<br/><i>{{ .designation | safeHTML }}</i></p>

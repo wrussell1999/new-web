@@ -1,0 +1,12 @@
+<div class="col-lg-4 col-md-6">
+    <div class="portflio-item position-relative mb-4">
+        <a href="{{ .Permalink }}">
+            {{ partial "fill-image.html" (dict "asset" .Params.Image "format" "370x420 q60 jpg" "alt" .Title) }}
+            <div class="overlay-item"><i class="ti-link"></i></div>
+            <div class="portfolio-item-content">
+                <h3 class="mb-0 text-white">{{ .Title | markdownify }}</h3>
+                <p class="text-white-50">{{ .Params.Category }}</p>
+            </div>
+        </a>
+    </div>
+</div>

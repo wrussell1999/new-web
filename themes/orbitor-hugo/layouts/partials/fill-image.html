@@ -1,12 +1,9 @@
 {{/*
     use the template as follows:
-    {{ partial "fill-image.html" (dict "asset" . "format" "370x420 q80 jpg") }}
+    {{ partial "fill-image.html" (dict "asset" . "format" "370x420 q80 jpg" "alt" "Title of the image") }}
+    ("alt" parameter is optional)
 */}}
 
-{{ $image := resources.Get .asset }}
-{{ if $image }}
+{{ $image := partial "get-image.html" .asset }}
 {{ $image = $image.Fill .format }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid w-100">
-{{ else }}
-{{ errorf "Image '%s' cannot be found in assets" .asset }}
-{{ end }}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid w-100"{{ with .alt }} alt="{{ . }}"{{ end }}>

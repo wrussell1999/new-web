@@ -1,9 +1,6 @@
 {{ $bgimage := "" }}
 {{ with .Params.BgImage }}
-{{ $image := resources.Get . }}
-{{ if not $image }}
-{{ errorf "Image '%s' cannot be found in assets" .Params.BgImage }}
-{{ end }}
+{{ $image := partial "get-image.html" . }}
 {{ if gt $image.Width 1920 }}
 {{ $image = $image.Resize "1920x" }}
 {{ end }}
