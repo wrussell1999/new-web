@@ -124,7 +124,7 @@ mam_zaujem:
   button:
     enable: true
     label: Mám záujem
-    link: contact
+    link: "mailto:contact@hackkosice.com?subject=Z%C3%A1ujem%20o%20predn%C3%A1%C5%A1ku&body=Dobr%C3%BD%20de%C5%88%2C%0D%0A%0D%0AM%C3%A1m%20z%C3%A1ujem%20o%20predn%C3%A1%C5%A1ku%20...%20pre%20%C5%BEiakov%20mojej%20triedy.%20Vyhovoval%20by%20v%C3%A1m%20term%C3%ADn%20...%3F"
 ---
 
 {{< section >}}

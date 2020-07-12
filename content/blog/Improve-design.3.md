@@ -3,7 +3,7 @@ title: "15 Money Tips To Make You Rich In the end of 2018"
 date: 2019-09-05T15:24:04+06:00
 draft: false
 description: "This is meta description"
-bgImage: "sample/images/bg/section-bg5.jpg"
+bgImage: images/bg/background.jpg
 image: "sample/images/blog/blog-4.jpg"
 categories: 
   - "Social"

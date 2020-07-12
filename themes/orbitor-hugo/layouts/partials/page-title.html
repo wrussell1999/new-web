@@ -1,4 +1,18 @@
-<section class="page-title bg-cover" style="background-image: url('{{ .Params.BgImage | absURL }}'), url('{{`sample/images/bg/section-bg5.jpg` | absURL }}');">
+{{ $bgimage := "" }}
+{{ with .Params.BgImage }}
+{{ $image := resources.Get . }}
+{{ if not $image }}
+{{ errorf "Image '%s' cannot be found in assets" .Params.BgImage }}
+{{ end }}
+{{ if gt $image.Width 1920 }}
+{{ $image = $image.Resize "1920x" }}
+{{ end }}
+{{ $image = $image.Filter (images.Gamma 0.4) }}
+<!--  (images.Brightness -5) (images.GaussianBlur 1) (images.Colorize 338 65 10) -->
+{{ $bgimage = $image.RelPermalink }}
+{{ end }}
+
+<section class="page-title bg-cover" style="background-image: {{ with $bgimage }}url('{{ $bgimage }}'), {{ end }}url('{{`sample/images/bg/section-bg5.jpg` | absURL }}');">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
