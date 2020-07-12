@@ -28,7 +28,11 @@
 
 <!-- Slider -->
 {{ else if eq $type "banner" }}
-<section class="banner d-flex align-items-center" style="background-image: url('{{ .bgimage | absURL }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
+
+{{ $image := resources.Get .bgimage }}
+{{ if not $image }}{{ errorf "Image '%s' cannot be found in assets" .asset }}{{ end }}
+{{ $image = $image.Resize "1920x q90 jpg" }}
+<section class="banner d-flex align-items-center" style="background-image: url('{{ $image.RelPermalink }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-12 col-xl-8">
@@ -368,7 +372,7 @@
 
 <!-- services -->
 {{ else if eq $type "services" }}
-{{ $img_format := "640x360 q60 jpg" }}
+{{ $services_img_format := "640x360 q60 jpg" }}
 <section class="section service-2">
     <div class="container">
         {{ $.Scratch.Set "counter" 0 }}
@@ -378,7 +382,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="service-img mb-5 mb-lg-0">
-                    {{ partial "fill-image.html" (dict "asset" .image "format" $img_format) }}
+                    {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
                 </div>
             </div>
             <div class="col-lg-6">
@@ -403,7 +407,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="service-img">
-                        {{ partial "fill-image.html" (dict "asset" .image "format" $img_format) }}
+                        {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
                     </div>
                 </div>
             </div>

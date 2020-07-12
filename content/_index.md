@@ -5,9 +5,8 @@ description: "This is meta description"
 use_sections: true
 
 homepage_banner:
-  enable: true
-  bgImage : "images/bg/background.png"
-  subtitle : "250 Hackers. 24 Hours. 1 Spirit."
+  bgImage: images/bg/background-triangle.png
+  subtitle: "250 Hackers. 24 Hours. 1 Spirit."
   title : "Hack Kosice 2020"
   content : "Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food."
   button:
@@ -15,7 +14,6 @@ homepage_banner:
     label : "Apply"
     link : "https://apply.hackkosice.com/"
 homepage_features:
-  enable : true
   title : "More than a hackathon!"
   featureItem:
     - icon : "ti-light-bulb" # here we use themify icon pack : https://themify.me/themify-icons
