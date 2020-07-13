@@ -3,6 +3,7 @@
 menu:
   main:
     identifier: examples
-    name: Page examples 
+    name: Page examples
+    weight: 100
 draft: true
 ---
