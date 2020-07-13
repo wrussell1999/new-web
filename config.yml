@@ -99,18 +99,12 @@ menu:
       URL: contact
       weight: 5
   footer2:
-    - name: About
-      URL: about
-      weight: 1
-    - name: Portfolio
-      URL: portfolio
-      weight: 2
-    - name: Service
-      URL: service
-      weight: 3
-    - name: Blog
-      URL: blog
-      weight: 4
-    - name: Contact
-      URL: contact
-      weight: 5
+    - name: MLH Code of Conduct
+      URL: https://static.mlh.io/docs/mlh-code-of-conduct.pdf
+      weight: 30
+    - name: MLH Privacy Policy
+      URL: https://mlh.io/privacy
+      weight: 40
+    - name: MLH Contest T&C
+      URL: https://github.com/MLH/mlh-policies/blob/master/prize-terms-and-conditions/contest-terms.md
+      weight: 50
