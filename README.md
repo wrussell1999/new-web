@@ -18,15 +18,21 @@ If you prefer developing locally (you can preview any changes immediately and wi
 
 If you are developing locally, running `hugo server` command will reload these changes automatically and immediately.
 
+### Contributing
+
+[GitHub issues](https://github.com/hackkosice/new-web/issues) shows all things that still *need to be done*. Please, take any issue and just do it 🙂
+
 ## Getting Started
 
 ### Structure
 
+- `assets` - images and other assets that need pre-processing (usually, all images are loaded from this folder, so that they can be resized, compressed, and cut as needed)
 - `config.yml` - global configuration (website title, menu, metadata, other options)
 - `content` - contains all the content: pages, blog posts, portfolio
-- `static` - images and other static assets
-- `themes/orbitor-hugo`
-    - `layouts` - HTML code of the website
+- `static` - images and other static assets that are kept without any modification (unlike `assets`)
+- `themes/orbitor-hugo` - the theme, defining how `content` is viewed
+    - `assets` - JS and CSS code
+    - `layouts` - HTML templates, HTML code and shortcodes
     
 ### Page metadata
 
