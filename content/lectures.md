@@ -95,17 +95,17 @@ prednasajuci:
     - id: pavol_sokol
 counter1:
   counterItem:
-    - title: Stredných škôl
+    - title: Škôl
       count: "5"
       unit: ""
     - title: IT komunít
-      count: "5"
+      count: "6"
       unit: ""
     - title: Prednášok
-      count: "12"
+      count: "30"
       unit: ""
     - title: Účasť študentov
-      count: "1054"
+      count: "1797"
       unit: "+"
 testimonial1:
   title: Čo o nás hovoria?
