@@ -45,12 +45,16 @@ jobs:
               git checkout << pipeline.parameters.deploy-branch >>
               git pull
               rm -r public
-              hugo --baseURL="<< parameters.baseurl >>"
+              hugo --baseURL="<< parameters.baseurl >>" -DF
               cp -r public/* ../public_html'
   build_firebase:
     parameters:
       baseurl:
         type: string
+      html-proofer:
+        default: false
+        description: Whether or not to test the outputted HTML with HTML Proofer.
+        type: boolean
     executor:
       name: hugo/cibuilds
       tag: << pipeline.parameters.hugo-version >>
@@ -60,6 +64,11 @@ jobs:
       - checkout
       - hugo/hugo-build:
           extra-flags: -DF --baseURL="<< parameters.baseurl >>"
+      - when:
+          condition: << parameters.html-proofer >>
+          steps:
+            - hugo/html-proofer:
+                path: ./public
       - persist_to_workspace:
           root: .
           paths:
@@ -79,22 +88,11 @@ jobs:
 workflows:
   main:
     jobs:
-      - build:
-          html-proofer: false
       - build_firebase:
           baseurl: 'https://fire.hackkosice.com/'
           filters:
             branches:
               only: << pipeline.parameters.deploy-branch >>
-          requires:
-            - build
-      - deploy_dev:
-          baseurl: 'https://dev.hackkosice.com/'
-          filters:
-            branches:
-              only: << pipeline.parameters.deploy-branch >>
-          requires:
-            - build
       - deploy_firebase:
           filters:
             branches:
