@@ -86,9 +86,6 @@ menu:
     - name: About
       URL: about
       weight: 1
-    - name: Portfolio
-      URL: portfolio
-      weight: 2
     - name: Blog
       URL: blog
       weight: 4
