@@ -374,7 +374,7 @@
         {{ range $index, $element := .serviceitem }}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         {{ if (modBool $index 2) }}
-        <div class="row">
+        <div class="row flex-column-reverse flex-lg-row">
             <div class="col-lg-6">
                 <div class="service-img mb-5 mb-lg-0">
                     {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
