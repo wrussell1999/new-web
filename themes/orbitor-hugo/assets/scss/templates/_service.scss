@@ -30,7 +30,9 @@
 .content-padding{
 	padding: 100px 0px;
 }
-
+.content-padding-bottom:not(:last-child){
+	padding-bottom: 100px;
+}
 
 
 .service-img{
