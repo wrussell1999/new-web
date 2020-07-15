@@ -14,7 +14,7 @@
 {{ with $config }}
 
 {{ if eq $type "basic" }}
-<section class="section"{{ with $.Get "style"}} style="{{ . | safeCSS }}"{{ end }}>
+<section class="section" {{ with $.Get "style"}} style="{{ . | safeCSS }}" {{ end }}>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -30,7 +30,8 @@
 {{ else if eq $type "banner" }}
 {{ $image := partial "get-image.html" .bgimage }}
 {{ $image = $image.Resize "1920x q80 jpg" }}
-<section class="banner d-flex align-items-center" style="background-image: url('{{ $image.RelPermalink }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
+<section class="banner d-flex align-items-center"
+    style="background-image: url('{{ $image.RelPermalink }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-12 col-xl-8">
@@ -40,7 +41,8 @@
                     <p class="mb-5">{{ .content | markdownify }}</p>
                     {{ if .button.enable }}
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }} <i
+                            class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                     {{ end }}
                 </div>
@@ -52,7 +54,7 @@
 
 <!-- banner feature -->
 {{ else if eq $type "bannerFeature" }}
-<section class="section about"{{ with $.Get "style"}} style="{{ . | safeCSS }}"{{ end }}>
+<section class="section about" {{ with $.Get "style"}} style="{{ . | safeCSS }}" {{ end }}>
     <div class="container">
         <div class="row">
             {{ range .featureitem }}
@@ -117,7 +119,8 @@
                     <p class="mb-30">{{ .content | markdownify }}</p>
                     {{ if .button.enable }}
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }}<i
+                            class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                     {{ end }}
                 </div>
@@ -158,7 +161,8 @@
             {{ range .counteritem }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="counter-item text-center mb-5 mb-lg-0">
-                    <h2 class="mb-0"><span class="counter-stat font-weight-bold">{{ .count }}</span>{{ with .unit }} {{ . }}{{ end }}</h2>
+                    <h2 class="mb-0"><span class="counter-stat font-weight-bold">{{ .count }}</span>{{ with .unit }}
+                        {{ . }}{{ end }}</h2>
                     <p>{{ .title | markdownify }}</p>
                 </div>
             </div>
@@ -251,7 +255,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="counter-item counter--style text-center mb-5 mb-lg-0">
                             <i class="{{ .icon }}"></i>
-                            <h2 class="mb-0 mt-3"><span class="counter-stat font-weight-bold">{{ .count }}</span> {{ .unit }}</h2>
+                            <h2 class="mb-0 mt-3"><span class="counter-stat font-weight-bold">{{ .count }}</span>
+                                {{ .unit }}</h2>
                             <p>{{ .title }}</p>
                         </div>
                     </div>
@@ -274,7 +279,8 @@
                     <div class="content">{{ $.Inner | markdownify }}</div>
                     {{ if .button.enable }}
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i
+                            class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                     {{ end }}
                 </div>
@@ -311,7 +317,7 @@
                     {{ partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) }}
                     <h4 class="mt-4 mb-0">{{ .name }}</h4>
                     {{ if .institution }}
-                    <p>{{ .institution | safeHTML }}<br/><i>{{ .designation | safeHTML }}</i></p>
+                    <p>{{ .institution | safeHTML }}<br /><i>{{ .designation | safeHTML }}</i></p>
                     {{ else }}
                     <p>{{ .designation | safeHTML }}</p>
                     {{ end }}
@@ -338,7 +344,7 @@
         </div>
         <div class="row">
             {{ range .pricingtable }}
-            <div class="col-lg-4">
+            <div class="col-lg">
                 <div class="pricing-block card text-center">
                     <div class="price-header">
                         <span class="text-uppercase letter-spacing h5">{{ .name }}</span>
@@ -381,7 +387,8 @@
             </div>
             <div class="col-lg-6">
                 <div class="service-info">
-                    <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
+                    <span
+                        class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
                     {{ partial "badges.html" $element }}
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
                     <div class="content">{{ .content | markdownify }}</div>
@@ -527,17 +534,19 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input name="subject" id="subject" type="text" class="form-control" placeholder="Your Subject">
+                                <input name="subject" id="subject" type="text" class="form-control"
+                                    placeholder="Your Subject">
                             </div>
                             <div class="form-group">
                                 <input name="name" id="name" type="text" class="form-control" placeholder="Your Name">
                             </div>
                             <div class="form-group">
-                                <input name="email" id="email" type="email" class="form-control" placeholder="Email Address">
+                                <input name="email" id="email" type="email" class="form-control"
+                                    placeholder="Email Address">
                             </div>
                             <div class="form-group-2 mb-4">
-                <textarea name="message" id="message" class="form-control" rows="4"
-                          placeholder="Your Message"></textarea>
+                                <textarea name="message" id="message" class="form-control" rows="4"
+                                    placeholder="Your Message"></textarea>
                             </div>
                             <button class="btn btn-main" name="submit" type="submit">Send Message</button>
                         </form>
@@ -586,10 +595,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="google-map mt-90 mb-5">
-                    <div id="map"
-                         data-latitude="{{ with $.Site.Params.mapLatitude }} {{ . }} {{ end }}"
-                         data-longitude="{{ with $.Site.Params.mapLongitude }} {{ . }} {{ end }}"
-                         data-marker="{{ with $.Site.Params.mapMarker }} {{ . | absURL }} {{ end }}"></div>
+                    <div id="map" data-latitude="{{ with $.Site.Params.mapLatitude }} {{ . }} {{ end }}"
+                        data-longitude="{{ with $.Site.Params.mapLongitude }} {{ . }} {{ end }}"
+                        data-marker="{{ with $.Site.Params.mapMarker }} {{ . | absURL }} {{ end }}"></div>
                 </div>
             </div>
         </div>
