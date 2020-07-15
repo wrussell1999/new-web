@@ -54,7 +54,7 @@ Toto je testovaci text.
 
 ---
 
-[x]  Sprav toto
-[ ]  Potom toto
-[ ]  Napokon toto
+- [x]  Sprav toto
+- [ ]  Potom toto
+- [ ]  Napokon toto
 
