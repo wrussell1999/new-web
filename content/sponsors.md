@@ -38,11 +38,9 @@ Below are some items we expect from you within one week of us sending the contra
 
 # Attendees
 
-- 
 
 # Discussion
 
-- 
 
 # Action points
 
@@ -56,7 +54,7 @@ Toto je testovaci text.
 
 ---
 
-- [x]  Sprav toto
-- [ ]  Potom toto
-- [ ]  Napokon toto
+[x]  Sprav toto
+[ ]  Potom toto
+[ ]  Napokon toto
 
