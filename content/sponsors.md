@@ -28,6 +28,7 @@ Below are some items we expect from you within one week of us sending the contra
 2. Send us your company’s name you want to use and a short description (5-6 sentences, will be used by the marketing team)
 3. Send us contact information to your contact person
 4. The following items are needed for the contract only, so you can include them in the draft you send back and do not have to send them separately
+
     1. Send us your company’s seat (location of the headquarters)
     2. Send us your company’s identification number (IČO for Slovak companies)
 
@@ -60,6 +61,7 @@ We want to start working with you on these things as soon as we sign the contrac
   ## Heading
   1. A numbered
   2. list
+  
      * With some
      * Sub bullets
 </details>
