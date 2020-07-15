@@ -144,6 +144,28 @@ pricing1:
   title : "Our pricing"
   content : "Labore tempore ratione magnam iste sint dicta dolor doloremque similique tempora optio, expedita veritatis enim nam itaque illum excepturi id dolores, officia?"
   pricingTable:
+    - name : "Basic4"
+      price : "$29.99"
+      duration : "Yearly"
+      serviceList:
+        - listItem : "50 gb Hosting"
+        - listItem : "Business Analysis"
+        - listItem : "24 Hours Support"
+        - listItem : "Customer Management"
+      button:
+        label: "Choose plan"
+        link : "#"
+    - name : "Basic3"
+      price : "$29.99"
+      duration : "Yearly"
+      serviceList:
+        - listItem : "50 gb Hosting"
+        - listItem : "Business Analysis"
+        - listItem : "24 Hours Support"
+        - listItem : "Customer Management"
+      button:
+        label: "Choose plan"
+        link : "#"
     - name : "Basic"
       price : "$29.99"
       duration : "Yearly"
