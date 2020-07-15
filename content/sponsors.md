@@ -21,7 +21,8 @@ All communication with sponsors is dealt with the Sponsors team of Hack Kosice. 
 In order to make this hackathon happen we will need you to send us pieces of information or take some actions. From time to time we will send you a list of actions to be taken by you and we ask you to act upon those.
 
 <details>
-<summary>Action list 1 - ASAP</summary>
+<summary><strong>Action list 1 - ASAP</strong></summary>
+<p></p>
 
 Below are some items we expect from you within one week of us sending the contract draft
 
@@ -35,7 +36,8 @@ Below are some items we expect from you within one week of us sending the contra
 </details>
 
 <details>
-<summary>Action list 2 - until 28.2.2020</summary>
+<summary><strong>Action list 2 - until 28.2.2020</strong></summary>
+<p></p>
 
 We want to start working with you on these things as soon as we sign the contract with you:
 
@@ -53,7 +55,8 @@ We want to start working with you on these things as soon as we sign the contrac
 </details>
 
 <details>
-<summary>Action list 3 - until 13.3.2020</summary>
+<summary><strong>Action list 3 - until 13.3.2020</strong></summary>
+<p></p>
 
 1. Send us branded items
 2. Send us prizes (or bring it to HK20 – let us know if you will do so)
