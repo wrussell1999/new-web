@@ -12,7 +12,7 @@ menu:
 
 In the name of the entire Hack Kosice organising team we would like to thank you for expressing interest in sponsoring our event. With your help, we have no doubt that Hack Kosice will be a great event, giving hackers an unforgettable experience.
 
-**Contact with Hack Kosice**
+### Contact with Hack Kosice
 
 All communication with sponsors is dealt with the Sponsors team of Hack Kosice. Our agent who communicated with you will be happy to answer all you questions. If you are not sure whom to contact, contact Peter Ridilla (<pridilla@hackkosice.com>).
 
