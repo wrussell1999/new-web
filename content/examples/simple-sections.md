@@ -30,9 +30,9 @@ counter1:
 
 This is a `basic` section and you can use [Markdown](https://www.markdownguide.org/basic-syntax/) here.
 
-“I have attended more than 50 hackathons worldwide and Hack Kosice is among the best events I have been to. Despite it being the first edition of Hack Kosice, the event felt really well put together and the production quality was absolutely top notch.” Aaron - Major League Hacking
+*“I have attended more than 50 hackathons worldwide and Hack Kosice is among the best events I have been to. Despite it being the first edition of Hack Kosice, the event felt really well put together and the production quality was absolutely top notch.”* Aaron - Major League Hacking
 
-“We are really happy that we could participate with all of you. It was definitely a great weekend with a lot of positive energy. As the first-timers in organization, it was done on very high level - you are professionals :-) Many thanks to all of you, honestly best event we took part on for a long time :-)” Mediworks - software solutions a.s.
+*“We are really happy that we could participate with all of you. It was definitely a great weekend with a lot of positive energy. As the first-timers in organization, it was done on very high level - you are professionals :-) Many thanks to all of you, honestly best event we took part on for a long time :-)”* Mediworks - software solutions a.s.
 
 {{< /section >}}
 
