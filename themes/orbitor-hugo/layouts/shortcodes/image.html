@@ -1,0 +1,5 @@
+{{- $params := (dict "asset" $.Params.asset "format" $.Params.format) -}}
+{{- with $.Params.alt -}}
+{{- $params = merge $params (dict "alt" .) -}}
+{{- end -}}
+{{- partial "fill-image.html" $params -}}

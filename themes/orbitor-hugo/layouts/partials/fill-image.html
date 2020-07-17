@@ -4,6 +4,7 @@
     ("alt" parameter is optional)
 */}}
 
-{{ $image := partial "get-image.html" .asset }}
-{{ $image = $image.Fill .format }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid w-100"{{ with .alt }} alt="{{ . }}"{{ end }}>
+{{- $image := partial "get-image.html" .asset -}}
+{{- $image = $image.Fill .format -}}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid"{{ with .alt }} alt="{{ . }}"{{ end }}>
+{{- "" -}}
