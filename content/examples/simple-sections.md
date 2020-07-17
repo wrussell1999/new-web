@@ -34,8 +34,6 @@ This is a `basic` section and you can use [Markdown](https://www.markdownguide.o
 
 *“We are really happy that we could participate with all of you. It was definitely a great weekend with a lot of positive energy. As the first-timers in organization, it was done on very high level - you are professionals :-) Many thanks to all of you, honestly best event we took part on for a long time :-)”* **Mediworks - software solutions a.s.**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/883b116e-92f1-4bc1-8294-1b1c2c0400ad/logo_purple_1x.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/883b116e-92f1-4bc1-8294-1b1c2c0400ad/logo_purple_1x.png)
-
 {{< /section >}}
 
 {{< section type="counter" config="counter1" / >}}
