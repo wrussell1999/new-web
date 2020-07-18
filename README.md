@@ -12,7 +12,7 @@ When you want to make changes to the live website, you can either use Git (for d
 
 If you prefer developing locally (you can preview any changes immediately and without having to commit), follow these steps:
 
-1.  [Install Hugo](https://gohugo.io/getting-started/installing/)
+1.  [Install Hugo extended](https://gohugo.io/getting-started/installing/)
 2.  `git clone git@github.com:hackkosice/new-web`
 3.  `hugo server -DF` (`-DF` is to include drafts and posts dated in the future) or `hugo -DF` to just build the website (to the `public` directory)
 
