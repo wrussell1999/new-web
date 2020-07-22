@@ -1,0 +1,10 @@
+{{/*
+    use the template as follows:
+    {{ partial "client-image.html" (dict "asset" . "format" "370x420 q0 jpg" "alt" "Title of the image") }}
+    ("alt" parameter is optional)
+*/}}
+
+{{- $image := partial "get-image.html" .asset -}}
+{{- $image = $image.Fit .format -}}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid"{{ with .alt }} alt="{{ . }}"{{ end }}>
+{{- "" -}}
