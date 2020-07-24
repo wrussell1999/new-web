@@ -109,10 +109,10 @@ counter1:
       count: "6"
       unit: ""
     - title: Prednášok
-      count: "30"
+      count: "31"
       unit: ""
     - title: Účasť študentov
-      count: "1797"
+      count: "1880"
       unit: "+"
 testimonial1:
   title: Čo o nás hovoria?
