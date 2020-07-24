@@ -60,4 +60,22 @@ We want to start working with you on these things as soon as we sign the contrac
 3.  Send us API codes/Hardware/Coupons (or bring it to HK20 – let us know if you will do so)
 </details>
 
+<details class="bg-color-platinum">
+<summary>PLATINUM</summary>
+{{< include file="sponsors/benefits-platinum.md" >}}
+</details>
 
+<details class="bg-color-gold">
+<summary>GOLD</summary>
+{{< include file="sponsors/benefits-platinum.md" >}}
+</details>
+
+<details class="bg-color-silver">
+<summary>SILVER</summary>
+{{< include file="sponsors/benefits-platinum.md" >}}
+</details>
+
+<details class="bg-color-bronze">
+<summary>BRONZE</summary>
+{{< include file="sponsors/benefits-platinum.md" >}}
+</details>

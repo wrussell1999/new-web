@@ -62,24 +62,19 @@
 				width: 19%;
 				text-align: center;
 				display: inline-block;
-				padding: 40px 0px;
+				padding: 40px 0;
 			}
 		}
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+details {
+	padding: 20px;
+}
+summary {
+	font-weight: bold;
+	outline: none;
+}
+details:not([open]) summary {
+	margin-bottom: 0;
+}
