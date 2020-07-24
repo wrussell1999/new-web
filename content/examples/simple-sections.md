@@ -1,5 +1,5 @@
 ---
-title: Hack Kosice 2019
+title: Simple sections
 date: 2020-07-06T11:46:13+00:00
 bgImage: "images/bg/background.jpg"
 menu:
@@ -37,3 +37,7 @@ This is a `basic` section and you can use [Markdown](https://www.markdownguide.o
 {{< /section >}}
 
 {{< section type="counter" config="counter1" / >}}
+
+{{< section >}}
+{{< include file="/assets/sample/included-file.md" >}}
+{{< /section >}}
