@@ -1,2 +1,2 @@
-{{ $file := .Get "file" | readFile }}
+{{ $file := .Get "file" | printf "/assets/%s" | readFile }}
 {{ (print $file) | markdownify }}

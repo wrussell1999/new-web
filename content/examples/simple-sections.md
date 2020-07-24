@@ -39,5 +39,5 @@ This is a `basic` section and you can use [Markdown](https://www.markdownguide.o
 {{< section type="counter" config="counter1" / >}}
 
 {{< section >}}
-{{< include file="/assets/sample/included-file.md" >}}
+{{< include file="sample/included-file.md" >}}
 {{< /section >}}

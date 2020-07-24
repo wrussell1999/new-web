@@ -105,3 +105,31 @@ menu:
     parent: Blog
     weight: 20
 ```
+
+### Include an image
+
+Upload the image to the `assets` folder (in a reasonable subdirectory) and use the following shortcode in markdown files (see [bare-markdown.md](https://github.com/hackkosice/new-web/blob/master/content/examples/bare-markdown.md) for usage):
+
+```markdown
+{{< image asset="images/lectures/hacker.jpg" format="400x267 q60 jpg" alt="Hacker" >}}
+```
+
+with the following parameters:
+
+- `asset` is a path to the image within the `assets` folder
+- `format` contains information about how the image should be compressed:
+    - size (width x height)
+    - quality (`q100` means 100% quality), where `q60` is a good value to choose as you still can't see a difference by eye (or `q80` if you really need a high-quality image)
+    - format - you can just use `jpg` in most cases
+- `alt` - alternate text (description of the image), shown if the image cannot be displayed (i.e. the user is blind and has a screen reader, or when loading of images is disabled)
+
+### Include another file
+
+If you want the same part/section/text to be included in multiple pages:
+
+- create a file with the *shared* content in the `assets` folder (for example: [included-file.md](https://github.com/hackkosice/new-web/blob/master/assets/sample/included-file.md))
+- use the following shortcode in all pages where you want to include the content, where `file` is the relative location of the file within the `assets` folder:
+    
+    ```markdown
+    {{< include file="sample/included-file.md" >}}
+    ```
