@@ -130,7 +130,7 @@ partners_sponsors:
 {{< section type="project" config="homepage_portfolio" / >}}
 
 {{< section type="counter" config="homepage_numbers" / >}}
-{{< section type="basic" style="padding-bottom:0px; padding-top: 50px;">}}
+{{< section type="basic" style="padding-bottom:0px;">}}
 # Our Sponsors
 A hackathon can't happen without sponsors. Currently, these companies Sponsor us.
 {{< /section >}}
