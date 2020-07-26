@@ -34,6 +34,8 @@ counter1:
 
 **Other:** Strong wi-fi connection, electricity, light and sound equipment
 
+{{< image asset="images/bg/kasarne_kulturpark.jpg" format="400x267 q60 jpg" alt="Hacker" >}}
+
 
 # A basic section hk19
 
