@@ -28,9 +28,11 @@ counter1:
 # Venue 
 ## Kasárne Kulturpark
 
-**Capacity**: 150 hackers
-**Rooms**: 2 hacking spaces
-**Other**: Strong wi-fi connection, electricity, light and sound equipment
+**Capacity:** 150 hackers
+
+**Rooms:** 2 hacking spaces 
+
+**Other:** Strong wi-fi connection, electricity, light and sound equipment
 
 
 # A basic section hk19
