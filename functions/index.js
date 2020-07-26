@@ -19,7 +19,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
     const name = req.body.name;
     const subject = req.body.subject;
     const message = req.body.message;
-    console.log('Received an email from %s (%s), with subject %s, saying: %', name, email, subject, message);
+    console.log('Received an email from %s (%s), with subject %s, saying: %s', name, email, subject, message);
     const mailOptions = {
           from: email,
           to: functions.config().contact.user,
