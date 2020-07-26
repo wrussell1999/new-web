@@ -2,8 +2,8 @@
 # This file is not supposed to be viewed, just defines the menu entry
 menu:
   main:
-    identifier: examples
-    name: Page examples
+    identifier: other
+    name: Other
     weight: 100
 draft: true
 ---
