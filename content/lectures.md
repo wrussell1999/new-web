@@ -68,6 +68,13 @@ prednasky:
           url: https://www.upjs.sk/prirodovedecka-fakulta/
         - text: 90 min
           type: info
+    - title: Ako sa nestratiť v kóde
+      content: Úvod do magického sveta Gitu a verziovania pri programovaní. Git je neodeliteľná súčasť života každého programátora, ktorý chce pracovať na projektoch v tíme. Budeme sa rozprávať o najpoužívanejšom nástroji pre správu git projektov - Githube a pozrieme sa na to ako sa využíva v praxi. 
+      image: images/lectures/github.jpg
+      badges:
+        - text: 90 min
+          type: info
+    
 prednasajuci:
   title: Prednášajúci
   teamMember:
@@ -102,10 +109,10 @@ counter1:
       count: "6"
       unit: ""
     - title: Prednášok
-      count: "30"
+      count: "31"
       unit: ""
     - title: Účasť študentov
-      count: "1797"
+      count: "1880"
       unit: "+"
 testimonial1:
   title: Čo o nás hovoria?

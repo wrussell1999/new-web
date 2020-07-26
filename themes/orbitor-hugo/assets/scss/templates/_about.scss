@@ -112,15 +112,23 @@
 
 // Awards
 
+.awards {
+	padding: 20px 0px;
+  }
+
 .award-img-block{
-	height: 160px;
-	border:1px solid #eee;
+	//height: 120px;
+	//border:1px solid #eee;
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	background: $light;
 }
 
+.award-img-block:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
 
 //  Video
 //  

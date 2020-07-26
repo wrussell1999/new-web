@@ -53,20 +53,20 @@ homepage_numbers:
 
 general_sponsors:
   title : "General Partner"
-  color: white
+  color: black
   sponsors :
     - id : upjs
 
 public_sponsors:
   title : "Public Partners"
-  color: white
+  color: black
   sponsors :
     - id : vucke
     - id : kosice
 
 platinum_sponsors:
   title : "Platinum Sponsors"
-  color: light-grey
+  color: gainsboro
   sponsors :
     - id : vse
 
@@ -97,6 +97,28 @@ bronze_sponsors:
     - id : google
     - id : matsuko
 
+medial_sponsors:
+  title : "Medial Partners"
+  color: black
+  sponsors :
+    - id : fontech
+    - id : zagx
+    - id : nextech
+    - id : startitup
+    - id : homostudiosus
+    - id : robime_it
+
+partners_sponsors:
+  title : "Partners"
+  color: black
+  sponsors :
+    - id : mlh
+    # TODO looks large - id : talentum
+    - id : notion
+    - id : monday
+    - id : menahacks
+    - id : challengerocket
+
 ---
 
 {{< section type="banner" config="homepage_banner" / >}}
@@ -108,12 +130,10 @@ bronze_sponsors:
 {{< section type="project" config="homepage_portfolio" / >}}
 
 {{< section type="counter" config="homepage_numbers" / >}}
-
-{{< section type="basic" style="padding-bottom:0px">}}
+{{< section type="basic" style="padding-bottom:0px;">}}
 # Our Sponsors
 A hackathon can't happen without sponsors. Currently, these companies Sponsor us.
 {{< /section >}}
-
 {{< section type="clients" config="general_sponsors" / >}}
 {{< section type="clients" config="public_sponsors" / >}}
 {{< section type="clients" config="platinum_sponsors" / >}}
