@@ -3,7 +3,7 @@ title: Bare markdown
 description: "This is meta description"
 menu:
   main:
-    parent: examples
+    parent: other
     weight: 10
 ---
 

@@ -55,13 +55,13 @@ menu: main
 Content of each page, after the metadata block, is written in [Markdown](https://www.markdownguide.org/basic-syntax/).
 
 1.  Create a new file in the `content` directory, named `something.md` (where `/something` is be the path how you access the page)
-2.  Copy the content from [bare-markdown.md](https://github.com/hackkosice/new-web/blob/master/content/examples/bare-markdown.md), and edit it as needed. The file contains page metadata (delimited by `---`), then page contents.
+2.  Copy the content from [bare-markdown.md](https://github.com/hackkosice/new-web/blob/master/content/other/bare-markdown.md), and edit it as needed. The file contains page metadata (delimited by `---`), then page contents.
 
 ### Create a rich page
 
 A more advanced page can be composed of sections of various types. The `basic` type is just what you saw above - a simple page is just one `basic` section.
  
-- A rich page is distinguished by specifying `use_sections: true` in the page metadata. See [preview-all-sections.md](https://github.com/hackkosice/new-web/blob/master/content/examples/preview-all-sections.md) for an example.
+- A rich page is distinguished by specifying `use_sections: true` in the page metadata. See [preview-all-sections.md](https://github.com/hackkosice/new-web/blob/master/content/other/preview-all-sections.md) for an example.
 - In Markdown, you create a section by surrounding the content with `{{< section type="banner" config="banner1" >}}` and `{{< /section >}}`, where `type` defines the type of the row, and `config` specifies which values from the page metadata should be used to populate the section with data. See the example file.
 
 The following **page types** are supported:
@@ -108,7 +108,7 @@ menu:
 
 ### Include an image
 
-Upload the image to the `assets` folder (in a reasonable subdirectory) and use the following shortcode in markdown files (see [bare-markdown.md](https://github.com/hackkosice/new-web/blob/master/content/examples/bare-markdown.md) for usage):
+Upload the image to the `assets` folder (in a reasonable subdirectory) and use the following shortcode in markdown files (see [bare-markdown.md](https://github.com/hackkosice/new-web/blob/master/content/other/bare-markdown.md) for usage):
 
 ```markdown
 {{< image asset="images/lectures/hacker.jpg" format="400x267 q60 jpg" alt="Hacker" >}}

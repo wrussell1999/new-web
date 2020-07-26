@@ -4,7 +4,7 @@ date: 2020-07-06T11:46:13+00:00
 bgImage: "images/bg/background.jpg"
 menu:
   main:
-    parent: examples
+    parent: other
     weight: 20
 use_sections: true
 
