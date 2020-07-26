@@ -1,5 +1,5 @@
 ---
-title: Simple sections
+title: Hack Kosice 2019
 date: 2020-07-06T11:46:13+00:00
 bgImage: "images/bg/background.jpg"
 menu:
@@ -25,6 +25,12 @@ counter1:
 ---
 
 {{< section >}}
+# Venue 
+## Kasárne Kulturpark
+
+**Capacity:** 150 hackers
+**Rooms:** 2 hacking spaces 
+**Other:** Strong wi-fi connection, electricity, light and sound equipment
 
 # A basic section hk19
 
