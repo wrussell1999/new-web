@@ -29,7 +29,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
     // returning result
     return transporter.sendMail(mailOptions, (erro, info) => {
       if (erro) {
-        return res.send(erro.toString());
+        return res.status(500).send(erro.toString());
       }
       return res.send("Message Sent");
     });
