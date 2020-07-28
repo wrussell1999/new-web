@@ -11,7 +11,7 @@ use_sections: true
 counter1:
   counterItem :
     - title : "Registrations"
-      count : "551"
+      count : "550"
       unit : ""
     - title : "Countries"
       count : "41"
