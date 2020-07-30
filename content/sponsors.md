@@ -5,11 +5,11 @@ bgImage: "images/bg/background.jpg"
 description: "Sponsors page"
 ---
 
-{{< include file="sponsors/benefits-platinum.md" >}}
+{{< include file="sponsors/onboard-desc.md" >}}
 
 <details class="bg-color-platinum">
 <summary>PLATINUM</summary>
-{{< include file="sponsors/onboard-desc.md" >}}
+{{< include file="sponsors/benefits-platinum.md" >}}
 </details>
 
 <details class="bg-color-gold">
