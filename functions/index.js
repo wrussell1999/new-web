@@ -1,37 +1,29 @@
 const functions = require("firebase-functions");
-const nodemailer = require("nodemailer");
+const sgMail = require("@sendgrid/mail");
 const cors = require("cors")({ origin: true });
 
-let transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: functions.config().contact.user,
-    pass: functions.config().contact.pass,
-  },
-});
+sgMail.setApiKey(functions.config().contact.sendgrid.api.key);
 
 exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    // getting dest email by query string
     const email = req.body.email;
-    const name = req.body.name;
     const subject = req.body.subject;
     const message = req.body.message;
-    console.log('Received an email from %s (%s), with subject %s, saying: %s', name, email, subject, message);
-    const mailOptions = {
-          from: email,
-          to: functions.config().contact.user,
-          subject: subject,
-          text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-    };
+    console.log('Received an email from %s, with subject %s, saying: %s', email, subject, message);
+    const msg = {
+        to: 'contact@hackkosice.com',
+        from: 'contact@hackkosice.com',
+        reply_to: email,
+        subject: subject,
+        text: message,
+    }
+
     // returning result
-    return transporter.sendMail(mailOptions, (erro, info) => {
-      if (erro) {
-        return res.status(500).send(erro.toString());
-      }
-      return res.send("Message Sent");
+    return sgMail.send(msg, (error, result) => {
+        if (error) {
+            return res.status(500).send(error.toString());
+        }
+        return res.send("Message Sent");
     });
   });
 });
