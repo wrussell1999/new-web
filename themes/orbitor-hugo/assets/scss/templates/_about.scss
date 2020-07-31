@@ -114,8 +114,7 @@
 
 .awards {
 	padding: 20px 0px;
-  }
-
+}
 .award-img-block{
 	//height: 120px;
 	//border:1px solid #eee;
@@ -123,8 +122,11 @@
 	display: flex;
 	justify-content: center;
 }
-
-.award-img-block:after {
+.award-img{
+	display: flex;
+	align-items : center;
+}
+.award-img:after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;

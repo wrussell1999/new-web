@@ -190,11 +190,9 @@
             {{ with partial "sponsor.html" (dict "sponsor" . "ctx" $) }}
             <div class="col-lg-2 col-md-3 col-sm-4">
                 <div class="award-img-block mb-4 mb-lg-0">
-                    <div class="award-img">
-                        <a href="{{ .url }}">
-                            {{ partial "client-image.html" (dict "asset" .logo "format" "200x200 q80 png" "alt" .name) }}
-                        </a>
-                    </div>
+                    <a href="{{ .url }}" class="award-img">
+                        {{ partial "client-image.html" (dict "asset" .logo "format" "200x200 q80 png" "alt" .name) }}
+                    </a>
                 </div>
             </div>
             {{ end }}
