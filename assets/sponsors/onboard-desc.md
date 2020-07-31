@@ -10,7 +10,7 @@ All communication with sponsors is dealt with the Sponsors team of Hack Kosice. 
 
 In order to make this hackathon happen we will need you to send us pieces of information or take some actions. From time to time we will send you a list of actions to be taken by you and we ask you to act upon those.
 
-<details>
+<details open>
 <summary><strong>Action list 1 - ASAP</strong></summary>
 <p></p>
 
@@ -25,7 +25,7 @@ Below are some items we expect from you within one week of us sending the contra
     * Send us your company’s identification number (IČO for Slovak companies)
 </details>
 
-<details>
+<details open>
 <summary><strong>Action list 2 - until 14.8.2020</strong></summary>
 <p></p>
 
@@ -44,7 +44,7 @@ We want to start working with you on these things as soon as we sign the contrac
 11.  Let us know about any other requirements you have 🙂
 </details>
 
-<details>
+<details open>
 <summary><strong>Action list 3 - until 21.8.2020</strong></summary>
 <p></p>
 
