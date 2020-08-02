@@ -6,6 +6,7 @@ bgImage: "images/bg/background.jpg"
 menu:
   main:
     name: Lectures
+    parent: opportunities
     weight: 20
 use_sections: true
 

@@ -81,7 +81,10 @@ params:
     - icon: ti-instagram
       link: 'https://www.facebook.com/hackkosice/'
 menu:
-  #main:
+  main:
+    - name: Opportunities
+      identifier: opportunities
+      weight: 50
   footer1:
     - name: About
       URL: about

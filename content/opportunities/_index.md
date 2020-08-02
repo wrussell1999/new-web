@@ -1,12 +1,14 @@
 ---
-title: Events
+title: Opportunities
 date: 2020-07-06T11:46:13+00:00
 bgImage: "images/bg/background.jpg"
 menu:
   main:
-    parent: other
-    weight: 20
+    name: Overview
+    parent: opportunities
+    weight: 10
 use_sections: true
+layout: single
 
 counter1:
   counterItem :
@@ -22,11 +24,7 @@ counter1:
     - title : "Sponsors"
       count : "27"
       unit : ""
----
-
-{{< section >}}
-
-casestudy1:
+timeline:
   title : "How we works"
   content : "There are many variations of lorem passages of Lorem Ipsum available, but the majority have suffered. All the Lorem Ipsum generators."
   case:
@@ -46,12 +44,11 @@ casestudy1:
       image : "sample/images/about/structure_sass.png"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
-
-{{< /section >}}
+---
 
 {{< section type="counter" config="counter1" / >}}
 
-{{< section type="casestudy" config="casestudy1" / >}}
+{{< section type="casestudy" config="timeline" / >}}
 
 {{< section >}}
 {{< include file="sample/included-file.md" >}}
