@@ -130,6 +130,15 @@ promovideo1:
     enable : true
     label : "Our projects"
     link : "service"
+sideimg1:
+  title: 'Venue: Kasárne Kulturpark'
+  image: images/kasarne_kulturpark.jpg
+  format: "540x360 q60 jpg"
+  link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
+  button:
+    enable: true
+    label: See on Google Maps
+    link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
 team1:
   title : "Our Team"
   content : "Something something text"
@@ -336,9 +345,17 @@ And *I can* use **markdown**!
 
 {{< section type="testimonial" config="testimonial1" / >}}
 
+{{< section type="promovideo" config="promovideo1" >}}
+We organise events for computer enthusiasts
+
+* YAAA.
+* whooo.
+* Create and manage any process for your business needs.
+{{< /section >}}
+
 {{< section type="bigcounter" config="bigcounter1" / >}}
 
-{{< section type="promovideo" config="promovideo1" >}}
+{{< section type="sideimg" config="sideimg1" >}}
 We organise events for computer enthusiasts
 
 * YAAA.
