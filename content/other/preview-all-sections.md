@@ -7,6 +7,7 @@ menu:
     parent: other
     weight: 100
 use_sections: true
+draft: true
 
 banner1:
   bgImage: images/bg/background-triangle.png

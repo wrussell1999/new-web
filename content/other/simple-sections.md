@@ -7,6 +7,7 @@ menu:
     parent: other
     weight: 20
 use_sections: true
+draft: true
 
 counter1:
   counterItem :

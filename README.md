@@ -50,6 +50,8 @@ menu: main
 ...website content goes here!
 ```
 
+If you add `draft: true` to the metadata, the given page will not be published in production.
+
 ### Create a simple page
 
 Content of each page, after the metadata block, is written in [Markdown](https://www.markdownguide.org/basic-syntax/).

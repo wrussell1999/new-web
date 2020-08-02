@@ -63,7 +63,7 @@ jobs:
     steps:
       - checkout
       - hugo/hugo-build:
-          extra-flags: -DF --baseURL="<< parameters.baseurl >>"
+          extra-flags: -F --baseURL="<< parameters.baseurl >>"
       - when:
           condition: << parameters.html-proofer >>
           steps:
