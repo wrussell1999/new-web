@@ -3,6 +3,7 @@ title: Sponsors
 date: 2020-07-15T13:53:13+00:00
 bgImage: "images/bg/background.jpg"
 description: "Sponsors page"
+layout: single
 ---
 
 {{< include file="sponsors/onboard-desc.md" >}}
