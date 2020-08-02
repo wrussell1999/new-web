@@ -33,8 +33,15 @@
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="widget widget-contact mb-5 mb-lg-0">
 					<h4 class="text-capitalize mb-4">Get in Touch</h4>
-					<h6><a href="tel:{{ .Site.Params.contact.mobile }}"> <i class="ti-mobile mr-3"></i>{{ .Site.Params.contact.mobile }}</a></h6>
-					<h6><a href="mailto:{{ .Site.Params.contact.email }}"> <i class="ti-headphone-alt mr-3"></i>{{ .Site.Params.contact.email }}</a></h6>
+					{{- with .Site.Params.contact.mobile -}}
+					<h6><a href="tel:{{ . }}"> <i class="ti-mobile mr-3"></i>{{ . }}</a></h6>
+					{{- end -}}
+					{{- with .Site.Params.contact.email -}}
+					<h6><a href="mailto:{{ . }}"> <i class="ti-email mr-3"></i>{{ . }}</a></h6>
+					{{- end -}}
+					{{- with .Site.Params.contact.text -}}
+					<p>{{ . | markdownify }}</p>
+					{{- end -}}
 					<ul class="list-inline footer-socials mt-5">
 						{{ range .Site.Params.social }}
 						<li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} mr-2"></i></a></li>

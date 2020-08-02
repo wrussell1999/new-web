@@ -3,7 +3,7 @@
 menu:
   main:
     identifier: other
-    name: Other
+    name: '[Templates]'
     weight: 100
 draft: true
 ---
