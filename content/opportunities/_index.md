@@ -50,6 +50,3 @@ timeline:
 
 {{< section type="casestudy" config="timeline" / >}}
 
-{{< section >}}
-{{< include file="sample/included-file.md" >}}
-{{< /section >}}
