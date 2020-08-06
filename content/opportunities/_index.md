@@ -10,20 +10,6 @@ menu:
 use_sections: true
 layout: single
 
-counter1:
-  counterItem :
-    - title : "Registrations"
-      count : "550"
-      unit : ""
-    - title : "Countries"
-      count : "41"
-      unit : ""
-    - title : "Attendees"
-      count : "162"
-      unit : ""
-    - title : "Sponsors"
-      count : "27"
-      unit : ""
 timeline:
   title : "Events organised"
   content : "Hack Kosice is building a growing community of like-minded people passionate about technology. Here is the list of events Hack Kosice organised for the hackers."
@@ -61,7 +47,6 @@ timeline:
 
 ---
 
-{{< section type="counter" config="counter1" / >}}
 
 {{< section type="casestudy" config="timeline" / >}}
 
