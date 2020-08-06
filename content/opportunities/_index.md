@@ -25,9 +25,25 @@ counter1:
       count : "27"
       unit : ""
 timeline:
-  title : "How we works"
+  title : "Events organised"
   content : "There are many variations of lorem passages of Lorem Ipsum available, but the majority have suffered. All the Lorem Ipsum generators."
   case:
+    - title : "Competitor Research"
+      image : "sample/images/about/process-3.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Making Functional Strategy"
+      image : "sample/images/about/process-2.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Project Outline"
+      image : "sample/images/about/process-1.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Final Delivery"
+      image : "sample/images/about/structure_sass.png"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Competitor Research"
       image : "sample/images/about/process-3.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
