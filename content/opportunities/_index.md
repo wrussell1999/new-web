@@ -60,6 +60,15 @@ timeline:
       image : "sample/images/about/structure_sass.png"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Making Functional Strategy"
+      image : "sample/images/about/process-2.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+    - title : "Project Outline"
+      image : "sample/images/about/process-1.jpg"
+      content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
+              Commodi voluptas, deleniti distinctio quam totam vitae."
+
 ---
 
 {{< section type="counter" config="counter1" / >}}
