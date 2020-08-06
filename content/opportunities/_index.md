@@ -29,7 +29,7 @@ timeline:
   content : "Hack Kosice is building a growing community of like-minded people passionate about technology. Here is the list of events Hack Kosice organised for the hackers."
   case:
     - title : "MLH Localhost 1 - September 2018"
-      image : "assets/images/mlhlocalhost1.jpg"
+      image : "images/mlhlocalhost1.jpg"
       content : "Our first event to introduce Hack Kosice and build the local community with MLH."
     - title : "Local Hack Day - December 2018"
       image : "sample/images/about/process-2.jpg"
