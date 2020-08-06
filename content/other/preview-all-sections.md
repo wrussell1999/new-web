@@ -231,19 +231,19 @@ casestudy1:
   content : "There are many variations of lorem passages of Lorem Ipsum available, but the majority have suffered. All the Lorem Ipsum generators."
   case:
     - title : "Competitor Research"
-      image : "sample/images/about/process-3.jpg"
+      image : "images/lectures/chinese-anshun-bridge.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Making Functional Strategy"
-      image : "sample/images/about/process-2.jpg"
+      image : "images/lectures/creative-thinking.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Project Outline"
-      image : "sample/images/about/process-1.jpg"
+      image : "images/lectures/developing-software.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Final Delivery"
-      image : "sample/images/about/structure_sass.png"
+      image : "images/lectures/github.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
 solutions1:

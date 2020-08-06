@@ -446,6 +446,7 @@
 
 <!-- case study -->
 {{ else if eq $type "casestudy" }}
+{{ $casestudy_img_format := "640x360 q60 jpg" }}
 <section class="section case-study">
     <div class="container">
         <div class="row justify-content-center">
@@ -464,7 +465,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="case-img">
-                        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid">
+                        {{ partial "fill-image.html" (dict "asset" .image "format" $casestudy_img_format "alt" .title) }}
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -488,7 +489,7 @@
                 </div>
                 <div class="col-lg-6  order-1 order-lg-2">
                     <div class="case-img">
-                        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid">
+                        {{ partial "fill-image.html" (dict "asset" .image "format" $casestudy_img_format "alt" .title) }}
                     </div>
                 </div>
             </div>
