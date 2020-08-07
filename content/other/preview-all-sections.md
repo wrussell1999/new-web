@@ -209,6 +209,7 @@ pricing1:
         label: "Choose plan"
         link : "#"
 services1:
+  numbering: true
   serviceItem:
     - title : "Custom Software development"
       image : images/lectures/developing-software.jpg
@@ -228,7 +229,10 @@ services1:
         - text: light
           type: light
         - text: dark
-          type: dark           
+          type: dark
+      button:
+        label: Button!
+        link: https://hackkosice.com
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
