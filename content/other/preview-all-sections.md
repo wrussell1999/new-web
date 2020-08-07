@@ -15,9 +15,11 @@ banner1:
   title : "Hack Kosice 2020"
   content : "Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food."
   button:
-    enable : true
-    label : "Apply"
-    link : "https://apply.hackkosice.com/"
+    label: Apply
+    link: "https://apply.hackkosice.com/"
+  button2:
+    label: Read more
+    link: /opportunities/hk20
 bannerFeature1:
   title : "More than a hackathon!"
   featureItem:

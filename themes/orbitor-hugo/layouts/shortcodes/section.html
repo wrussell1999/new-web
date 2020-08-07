@@ -38,13 +38,15 @@
                 <div class="block">
                     <span class="text-uppercase text-sm letter-spacing">{{ .subtitle | markdownify }}</span>
                     <h1 class="mb-3 mt-3">{{ .title | markdownify }}</h1>
-                    <p class="mb-5">{{ .content | markdownify }}</p>
-                    {{ if .button.enable }}
-                    {{ with .button }}
+                    <div class="mb-5">{{ .content | markdownify }}</div>
+                    {{- with .button -}}
                     <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }} <i
                             class="ti-angle-right ml-2"></i></a>
-                    {{ end }}
-                    {{ end }}
+                    {{- end -}}
+                    {{- with .button2 -}}
+                    <a href="{{ .link | absURL }}" class="btn btn-solid-border ml-4">{{ .label }} <i
+                            class="ti-angle-right ml-2"></i></a>
+                    {{- end -}}
                 </div>
             </div>
         </div>
