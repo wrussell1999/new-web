@@ -11,11 +11,14 @@ homepage_banner:
   content: |
     Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food.
     
-    Hack Kosice 2020 will take place on **September 5th - 6th**, in **[Kunsthalle, Kosice](https://goo.gl/maps/RE8BfkWreX1Jpnes5)**
+    Hack Kosice 2020 will take place on **September 5th - 6th**, in **[Kunsthalle, Kosice](https://goo.gl/maps/RE8BfkWreX1Jpnes5).**
   button:
-    enable : true
-    label : "Apply"
-    link : "https://apply.hackkosice.com/"
+    label: Apply
+    link: "https://apply.hackkosice.com/"
+  button2:
+    label: Read more
+    link: /opportunities/hk20
+    
 homepage_features:
   title : "More than a hackathon!"
   featureItem:
@@ -34,8 +37,8 @@ homepage_cta:
   content : "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly!"
   button:
     enable: true
-    label : "Read more"
-    link : "about"
+    label: Read more
+    link: /opportunities/hk20
 homepage_numbers:
   counterItem :
     - title : "Sponsors"
