@@ -99,7 +99,7 @@ people:
         link: 'mailto:zoltan@hackkosice.com'
   - id: zoli.s
     name: Zoltán Szitás
-    image: images/team/zoli.s.jpg
+    image: images/team/zoli.s.JPG
     designation: Marketing
     social:
       - icon: ti-email
