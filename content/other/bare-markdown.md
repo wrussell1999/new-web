@@ -5,6 +5,7 @@ menu:
   main:
     parent: other
     weight: 10
+draft: true
 ---
 
 # The simplest possible webpage

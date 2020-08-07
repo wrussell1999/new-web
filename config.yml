@@ -63,8 +63,10 @@ params:
         hackathon is, closer to our home – Slovakia and as a result, create
         something extraordinary.
   contact:
-    mobile: +23-345-67890
+    #mobile: +23-345-67890
     email: contact@hackkosice.com
+    text: |
+      We are friendly.<br>We also speak Slovak.
     location: 'Kosice, Slovakia'
   social:
     - icon: ti-facebook
@@ -81,7 +83,10 @@ params:
     - icon: ti-instagram
       link: 'https://www.facebook.com/hackkosice/'
 menu:
-  #main:
+  main:
+    - name: Opportunities
+      identifier: opportunities
+      weight: 50
   footer1:
     - name: About
       URL: about

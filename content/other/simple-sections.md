@@ -1,5 +1,5 @@
 ---
-title: Hack Kosice 2019
+title: Simple sections
 date: 2020-07-06T11:46:13+00:00
 bgImage: "images/bg/background.jpg"
 menu:
@@ -7,6 +7,7 @@ menu:
     parent: other
     weight: 20
 use_sections: true
+draft: true
 
 counter1:
   counterItem :
@@ -34,7 +35,7 @@ counter1:
 
 **Other:** Strong wi-fi connection, electricity, light and sound equipment
 
-{{< image asset="images/bg/kasarne_kulturpark.jpg" format="400x267 q60 jpg" alt="Hacker" >}}
+{{< image asset="images/kasarne_kulturpark.jpg" format="400x267 q60 jpg" alt="Hacker" >}}
 
 
 # A basic section hk19

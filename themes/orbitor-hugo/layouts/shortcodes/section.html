@@ -294,6 +294,38 @@
 </section>
 <!-- /promo video -->
 
+<!-- sideimg -->
+{{ else if eq $type "sideimg" }}
+{{ $sideimg_default_format := "540x585 q60 jpg"}}
+<section class="section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="feature-list">
+                    <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                    <div class="content">{{ $.Inner | markdownify }}</div>
+                    {{ if .button.enable }}
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="col-lg-6 sideimg-img">
+                {{- with .format -}}
+                {{- $sideimg_default_format = . -}}
+                {{- end -}}
+                {{ if isset . "link" }}
+                <a href="{{ .link | absURL }}">{{ partial "fill-image.html" (dict "asset" .image "format" $sideimg_default_format) }}</a>
+                {{ else }}
+                {{ partial "fill-image.html" (dict "asset" .image "format" $sideimg_default_format) }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /sideimg -->
+
 <!-- team -->
 {{ else if eq $type "team" }}
 {{ $teammember_img_format := "370x420 q80 jpg" }}
@@ -372,23 +404,37 @@
 <!-- services -->
 {{ else if eq $type "services" }}
 {{ $services_img_format := "640x360 q60 jpg" }}
+{{ $numbering := or (not (isset . "numbering")) (.numbering) }}
 <section class="section service-2">
     <div class="container">
+        {{ if isset . "title" }}
+        <div class="row content-padding-bottom"><h2 class="text-md">{{ .title }}</h2></div>
+        {{ end }}
         {{ $.Scratch.Set "counter" 0 }}
         {{ range $index, $element := .serviceitem }}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         <div class="row flex-lg-row content-padding-bottom">
             <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
                 <div class="service-img mb-5 mb-lg-0">
+                    {{ if isset . "link" }}
+                    <a href="{{ .link }}" target="_blank">{{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
+                    {{ else }}
                     {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
+                    {{ end }}
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="service-info">
+                    {{ if $numbering }}
                     <span
                         class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
+                    {{ end }}
                     {{ partial "badges.html" $element }}
+                    {{ if isset . "link" }}
+                    <a href="{{ .link }}" target="_blank"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
+                    {{ else }}
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
+                    {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
                 </div>
             </div>
@@ -400,6 +446,7 @@
 
 <!-- case study -->
 {{ else if eq $type "casestudy" }}
+{{ $casestudy_img_format := "640x360 q60 jpg" }}
 <section class="section case-study">
     <div class="container">
         <div class="row justify-content-center">
@@ -418,7 +465,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="case-img">
-                        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid">
+                        {{ partial "fill-image.html" (dict "asset" .image "format" $casestudy_img_format "alt" .title) }}
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -442,7 +489,7 @@
                 </div>
                 <div class="col-lg-6  order-1 order-lg-2">
                     <div class="case-img">
-                        <img src="{{ .image | absURL }}" alt="{{ .title | markdownify }}" class="img-fluid">
+                        {{ partial "fill-image.html" (dict "asset" .image "format" $casestudy_img_format "alt" .title) }}
                     </div>
                 </div>
             </div>

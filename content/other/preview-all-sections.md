@@ -7,6 +7,7 @@ menu:
     parent: other
     weight: 100
 use_sections: true
+draft: true
 
 banner1:
   bgImage: images/bg/background-triangle.png
@@ -129,6 +130,15 @@ promovideo1:
     enable : true
     label : "Our projects"
     link : "service"
+sideimg1:
+  title: 'Venue: Kasárne Kulturpark'
+  image: images/kasarne_kulturpark.jpg
+  format: "540x360 q60 jpg"
+  link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
+  button:
+    enable: true
+    label: See on Google Maps
+    link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
 team1:
   title : "Our Team"
   content : "Something something text"
@@ -221,19 +231,19 @@ casestudy1:
   content : "There are many variations of lorem passages of Lorem Ipsum available, but the majority have suffered. All the Lorem Ipsum generators."
   case:
     - title : "Competitor Research"
-      image : "sample/images/about/process-3.jpg"
+      image : "images/lectures/chinese-anshun-bridge.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Making Functional Strategy"
-      image : "sample/images/about/process-2.jpg"
+      image : "images/lectures/creative-thinking.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Project Outline"
-      image : "sample/images/about/process-1.jpg"
+      image : "images/lectures/developing-software.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
     - title : "Final Delivery"
-      image : "sample/images/about/structure_sass.png"
+      image : "images/lectures/github.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
 solutions1:
@@ -335,9 +345,17 @@ And *I can* use **markdown**!
 
 {{< section type="testimonial" config="testimonial1" / >}}
 
+{{< section type="promovideo" config="promovideo1" >}}
+We organise events for computer enthusiasts
+
+* YAAA.
+* whooo.
+* Create and manage any process for your business needs.
+{{< /section >}}
+
 {{< section type="bigcounter" config="bigcounter1" / >}}
 
-{{< section type="promovideo" config="promovideo1" >}}
+{{< section type="sideimg" config="sideimg1" >}}
 We organise events for computer enthusiasts
 
 * YAAA.
