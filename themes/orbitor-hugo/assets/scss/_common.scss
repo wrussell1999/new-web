@@ -372,7 +372,7 @@ a:focus {
     padding-left: 20px;
   }
 
-  ul {
+  ul:not(.list-inline) {
     padding-left: 0;
     list-style-type: none;
 

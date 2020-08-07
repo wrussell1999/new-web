@@ -2,4 +2,13 @@
 	img{
 		border-radius: 5px;
 	}
+	.team-socials{
+		display: inline;
+		float: right;
+		font-size: initial;
+
+		.list-inline-item:not(:last-child){
+			margin-right: 0.3rem;
+		}
+	}
 }

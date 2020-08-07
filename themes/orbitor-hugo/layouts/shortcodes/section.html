@@ -344,13 +344,23 @@
             {{ with partial "person.html" (dict "person" . "ctx" $) }}
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-block mb-5 mb-lg-0">
-                    {{ partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) }}
-                    <h4 class="mt-4 mb-0">{{ .name }}</h4>
-                    {{ if .institution }}
-                    <p>{{ .institution | safeHTML }}<br /><i>{{ .designation | safeHTML }}</i></p>
-                    {{ else }}
-                    <p>{{ .designation | safeHTML }}</p>
-                    {{ end }}
+                    {{- partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) -}}
+                    <h4 class="mt-3 mb-1">{{ .name }}
+                        {{- with .social -}}
+                        <ul class="list-inline team-socials ml-2">
+                            {{- range . -}}
+                            <li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
+                            {{- end -}}
+                        </ul>
+                        {{- end -}}
+                    </h4>
+                    <p class="condensed-text">
+                        {{- if .institution -}}
+                        {{ .institution | safeHTML }} — <i>{{ .designation | safeHTML }}</i>
+                        {{- else -}}
+                        {{ .designation | safeHTML }}
+                        {{- end -}}
+                    </p>
                 </div>
             </div>
             {{ end }}

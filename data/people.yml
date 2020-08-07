@@ -3,70 +3,135 @@ people:
     name: Andrea Komová
     image: images/team/andrea.jpg
     designation: Project Lead, HR
+    social:
+      - icon: ti-email
+        link: 'mailto:andrea@hackkosice.com'
+      - icon: ti-facebook
+        link: https://www.facebook.com/andrea.komova
+      - icon: ti-linkedin
+        link: https://www.linkedin.com/in/andrea-koma
   - id: juraj
     name: Juraj Mičko
     image: images/team/juraj.jpg
     designation: Founder, Hacker Service
+    social:
+      - icon: ti-email
+        link: 'mailto:juraj@hackkosice.com'
+      - icon: ti-facebook
+        link: https://www.facebook.com/micko.juraj
+      - icon: ti-linkedin
+        link: https://www.linkedin.com/in/juraj-micko
   - id: pavol
     name: Pavol Drotár
     image: images/team/pavol.png
     designation: Co-Founder, Marketing
+    social:
+      - icon: ti-email
+        link: 'mailto:pavol@hackkosice.com'
   - id: adam
     name: Ádám Urbán
     image: images/team/adam.jpg
     designation: Co-founder
+    social:
+      - icon: ti-email
+        link: 'mailto:adam@hackkosice.com'
   - id: jakub
     name: Jakub Žoldák
     image: images/team/jakub.jpg
     designation: Sponsors
+    social:
+      - icon: ti-email
+        link: 'mailto:jakub@hackkosice.com'
+      - icon: ti-facebook
+        link: https://www.facebook.com/jakub.zoldak
+      - icon: ti-linkedin
+        link: https://www.linkedin.com/in/jakub-zoldak/
   - id: rajmund
     name: Rajmund Hruška
     image: images/team/rajmund.jpg
     designation: Hacker Service
+    social:
+      - icon: ti-email
+        link: 'mailto:rajmund@hackkosice.com'
+      - icon: ti-facebook
+        link: https://www.facebook.com/rajmund.hruska
   - id: svandak
     name: Samuel Vandak
     image: images/team/svandak.jpg
     designation: Sponsors
+    social:
+      - icon: ti-email
+        link: 'mailto:svandak@hackkosice.com'
   - id: dmatis
     name: Dominik Matis
     image: images/team/dmatis.jpg
     designation: Hacker Service
+    social:
+      - icon: ti-email
+        link: 'mailto:dmatis@hackkosice.com'
   - id: pondus
     name: Peter Onduš
     image: images/team/pondus.png
     designation: Lead – Hacker Service
+    social:
+      - icon: ti-email
+        link: 'mailto:pondus@hackkosice.com'
   - id: ffabian
     name: Filip Fabian
     image: images/team/ffabian.JPG
     designation: Lead – Marketing
+    social:
+      - icon: ti-email
+        link: 'mailto:ffabian@hackkosice.com'
   - id: pridilla
     name: Peter Ridilla
     image: images/team/pridilla.png
     designation: Lead – Sponsors
+    social:
+      - icon: ti-email
+        link: 'mailto:pridilla@hackkosice.com'
   - id: zoltan
     name: Zoltán Hanesz
     image: images/team/zoltan.jpg
     designation: Hacker Service
+    social:
+      - icon: ti-email
+        link: 'mailto:zoltan@hackkosice.com'
   - id: zoli.s
     name: Zoltán Szitás
     image: images/team/zoli.s.JPG
     designation: Marketing
+    social:
+      - icon: ti-email
+        link: 'mailto:zoli.s@hackkosice.com'
   - id: apasztor
     name: Adam Pásztor
     image: images/team/apasztor.JPG
     designation: Marketing
+    social:
+      - icon: ti-email
+        link: 'mailto:apasztor@hackkosice.com'
   - id: martin
     name: Martin Piala
     image: images/team/martin.png
     designation: Member
+    social:
+      - icon: ti-email
+        link: 'mailto:martin@hackkosice.com'
   - id: mtarca
     name: Matej Tarča
     image: images/team/mtarca.jpg
     designation: Marketing
+    social:
+      - icon: ti-email
+        link: 'mailto:mtarca@hackkosice.com'
   - id: jhavrankova
     name: Janka Havranková
     image: images/team/jhavrankova.jpg
     designation: Marketing
+    social:
+      - icon: ti-email
+        link: 'mailto:jhavrankova@hackkosice.com'
 
   - id: pavol_sokol
     name: RNDr. JUDr. Pavol Sokol, PhD.
