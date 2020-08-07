@@ -14,7 +14,7 @@
 {{ with $config }}
 
 {{ if eq $type "basic" }}
-<section class="section" {{ with $.Get "style"}} style="{{ . | safeCSS }}" {{ end }}>
+<section class="section{{ with .class }} {{ . }}{{ end }}" {{ with $.Get "style"}} style="{{ . | safeCSS }}" {{ end }}>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -84,7 +84,7 @@
                 <div class="process-block pl-4">
                     <span class="text-uppercase text-sm letter-spacing">{{ .subtitle | markdownify }}</span>
                     <h2 class="mb-4 mt-3">{{ .title | markdownify }}</h2>
-                    <p class="mb-4">{{ .content | markdownify }}</p>
+                    <div class="content mb-4">{{ $.Inner | markdownify }}</div>
                 </div>
             </div>
 

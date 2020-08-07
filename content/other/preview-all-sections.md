@@ -33,7 +33,6 @@ bannerFeature1:
 feature1:
   subtitle : "Why choose us"
   title : "We help you to make work easy"
-  content : "We understand what your business means to you,your requirements considering trends.Smet nemo excepturi voluptas eligendi ."
   featureItem:
     - icon : "ti-light-bulb" # here we use themify icon pack : https://themify.me/themify-icons
       title : "Data analysis"
@@ -333,7 +332,9 @@ And *I can* use **markdown**!
 
 {{< section type="bannerFeature" config="bannerFeature1" / >}}
 
-{{< section type="feature" config="feature1" / >}}
+{{< section type="feature" config="feature1" >}}
+We understand what your business means to you,your requirements considering trends.Smet nemo excepturi voluptas eligendi.
+{{< /section >}} 
 
 {{< section type="cta" config="cta1" / >}}
 
