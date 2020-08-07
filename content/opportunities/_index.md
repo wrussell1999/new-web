@@ -21,7 +21,7 @@ timeline:
       image: "images/plagatLHD_1920_890.jpg"
       content: "Global MLH hackathon organised at many places. We were one of the hosts."
     - title: "Hack Kosice 2019 - March 2019"
-      image: "images/plagatLHD_1920_890.jpg"
+      image: "images/logo_purple_date.png"
       content: "The main event of the year and the first international student hackathon with accreditation from Major League Hacking in Slovakia. 150 participants were chosen from 551 registrations from 44 countries to compete in different categories and created an inspirational environment of the international hackathon."
     - title: "Local Hack Day: Learn - October 2019"
       image: "images/plagatLHD_1920_890.jpg"
