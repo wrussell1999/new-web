@@ -8,7 +8,10 @@ homepage_banner:
   bgImage: images/bg/background-triangle.png
   subtitle: "250 Hackers. 24 Hours. 1 Spirit."
   title : "Hack Kosice 2020"
-  content : "Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food."
+  content: |
+    Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food.
+    
+    Hack Kosice 2020 will take place on **September 5th - 6th**, in **[Kunsthalle, Kosice](https://goo.gl/maps/RE8BfkWreX1Jpnes5)**
   button:
     enable : true
     label : "Apply"
@@ -125,10 +128,12 @@ partners_sponsors:
 {{< section type="cta" config="homepage_cta" / >}}
 
 {{< section type="counter" config="homepage_numbers" / >}}
+
 {{< section type="basic" style="padding-bottom:0px;">}}
 # Our Sponsors
 A hackathon can't happen without sponsors. Currently, these companies Sponsor us.
 {{< /section >}}
+
 {{< section type="clients" config="general_sponsors" / >}}
 {{< section type="clients" config="public_sponsors" / >}}
 {{< section type="clients" config="platinum_sponsors" / >}}
