@@ -587,21 +587,18 @@
                     <div class="col-lg-4">
                         <div class="short-info mt-5 mt-lg-0">
                             <ul class="list-unstyled">
-                                <li>
-                                    <h5>Call Us</h5>
-                                    {{ $.Site.Params.contact.mobile }}
-                                </li>
-                                <li>
-                                    <h5>Email Us</h5>
-                                    {{ $.Site.Params.contact.email }}
-                                </li>
-                                <li>
-                                    <h5>Location</h5>
-                                    {{ $.Site.Params.contact.location }}
-                                </li>
-                                <li>
-                                    We also speak Slovak!
-                                </li>
+                                {{- with $.Site.Params.contact.mobile -}}
+                                <li><h5>Call Us</h5>{{ . }}</li>
+                                {{- end -}}
+                                {{- with $.Site.Params.contact.email -}}
+                                <li><h5>Email Us</h5><a href="mailto:{{ . }}" target="_blank">{{ . }}</a></li>
+                                {{- end -}}
+                                {{- with $.Site.Params.contact.location -}}
+                                <li><h5>Location</h5><a href="{{ $.Site.Params.contact.location_link }}" target="_blank">{{ . }}</a></li>
+                                {{- end -}}
+                                {{- with $.Site.Params.contact.text -}}
+                                <li>{{ . | markdownify }}</li>
+                                {{- end -}}
                             </ul>
 
                             <ul class="social-icons list-inline mt-5">
