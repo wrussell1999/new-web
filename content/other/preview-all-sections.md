@@ -212,6 +212,23 @@ services1:
   serviceItem:
     - title : "Custom Software development"
       image : images/lectures/developing-software.jpg
+      badges:
+        - text: primary
+          type: primary
+        - text: secondary
+          type: secondary
+        - text: success
+          type: success
+        - text: danger
+          type: danger
+        - text: warning
+          type: warning
+        - text: info
+          type: info
+        - text: light
+          type: light
+        - text: dark
+          type: dark           
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum, nobis quos dolores reiciendis
             unde. Est obcaecati aspernatur pariatur aliquid quos repellendus, amet architecto similique, cumque nisi
             earum, culpa, ipsa!"
