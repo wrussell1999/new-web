@@ -33,9 +33,6 @@ homepage_cta:
     enable: true
     label : "Read more"
     link : "about"
-homepage_portfolio:
-  title : "More than a hackathon!"
-  content : "Events, podcasts, lectures, startups..."
 homepage_numbers:
   counterItem :
     - title : "Sponsors"
@@ -126,8 +123,6 @@ partners_sponsors:
 {{< section type="bannerFeature" config="homepage_features" / >}}
 
 {{< section type="cta" config="homepage_cta" / >}}
-
-{{< section type="project" config="homepage_portfolio" / >}}
 
 {{< section type="counter" config="homepage_numbers" / >}}
 {{< section type="basic" style="padding-bottom:0px;">}}
