@@ -436,8 +436,7 @@
             <div class="col-lg-6">
                 <div class="service-info">
                     {{ if $numbering }}
-                    <span
-                        class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
+                    <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
                     {{ end }}
                     {{ partial "badges.html" $element }}
                     {{ if isset . "link" }}
@@ -446,6 +445,9 @@
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
                     {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-4">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    {{ end }}
                 </div>
             </div>
         </div>
