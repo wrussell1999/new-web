@@ -76,3 +76,19 @@ The ‘capital of the East’ is currently one of the most active and vivid cent
 
 With a high concentration of computer science students from local universities and a number of important tech-related companies, the city opens up to a number of possibilities for the effective organisation of a high-quality hackathon.
 {{< /section >}}
+
+{{< section >}}
+## How it all started?
+
+It all started as a crazy idea of a few crazy guys from Košice, after they began university studies in the UK. The Hack Kosice project was officially born on 4 Apr 2018 at a fishing trip 🙂
+
+So, why *a hackathon* in *Kosice*?
+
+- We always aspired to give something back to our 'home' community - before, we gave talks at some high schools about international opportunities and helped younger students with their applications to study abroad
+- We study Computer Science
+- We attended a few hackathons and were inspired by everyone's passion. Hackathons changed our lives.
+- [MLH](https://mlh.io/) was a perfect way to bring something new, yet well-tested, popular in the western parts of the world, to Košice
+- Košice is our home city and here was nothing like a good hackathon there
+
+Hence, [Hack Kosice](https://hackkosice.com) was born. **Welcome in the family!**
+{{< /section >}}
