@@ -448,7 +448,7 @@
                     {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | absURL }}" target="_blank" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                 </div>
             </div>
@@ -486,6 +486,9 @@
                     <div class="case-content">
                         <h4 class="mb-3">{{ .title | markdownify }}</h4>
                         <p>{{ .content | markdownify }}</p>
+                        {{ with .button }}
+                        <a href="{{ .link | absURL }}" target="_blank"  class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                        {{ end }}
                     </div>
                 </div>
             </div>
@@ -500,7 +503,7 @@
                         <h4 class="mb-3">{{ .title | markdownify }}</h4>
                         <p>{{ .content | markdownify }}</p>
                         {{ with .button }}
-                        <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                        <a href="{{ .link | absURL }}" target="_blank"  class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                         {{ end }}
                     </div>
                 </div>
