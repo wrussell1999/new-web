@@ -36,6 +36,9 @@ timeline:
       image: "images/amazonalexaresized.jpg"
       content: "An evening event where beginning programmers could build their first skills for Amazon Alexa. Furthermore, the author of the best project won the Amazon Echo Dot 3!"
     - title: "Hack Kosice Digital - March 2020"
+      button:
+        label: See the website
+        link: https://hackkosice.com/digital/
       image: "images/hkdigitalresized.jpg"
       content: "A fully online, international hackathon that unifies “best brains” to fight the pandemic. Hack Kosice Digital, supported by Major League Hacking, was a full weekend online event so that hackers could get enough of sleep! Winning projects were pushed to health authorities!"
     - title: "Localhost Online: Github Workshop - Jun 2020"
