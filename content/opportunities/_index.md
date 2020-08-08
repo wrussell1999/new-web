@@ -37,6 +37,7 @@ timeline:
       content: "An evening event where beginning programmers could build their first skills for Amazon Alexa. Furthermore, the author of the best project won the Amazon Echo Dot 3!"
     - title: "Hack Kosice Digital - March 2020"
       button:
+        enable: true
         label: See the website
         link: https://hackkosice.com/digital/
       image: "images/hkdigitalresized.jpg"
