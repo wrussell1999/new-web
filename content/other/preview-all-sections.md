@@ -256,6 +256,9 @@ casestudy1:
       image : "images/lectures/chinese-anshun-bridge.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!
               Commodi voluptas, deleniti distinctio quam totam vitae."
+      button:
+        label: See the website
+        link: /
     - title : "Making Functional Strategy"
       image : "images/lectures/creative-thinking.jpg"
       content : "Nihil fugit officia esse vero, animi tenetur ullam, dolor aperiam minus aliquid enim laudantium fuga!

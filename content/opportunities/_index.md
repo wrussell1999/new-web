@@ -38,9 +38,8 @@ timeline:
     - title: "Hack Kosice Digital - March 2020"
       image: "images/hkdigitalresized.jpg"
       button:
-        enable: true
         label: See the website
-        link: https://hackkosice.com/digital/
+        link: /digital/
       content: "A fully online, international hackathon that unifies “best brains” to fight the pandemic. Hack Kosice Digital, supported by Major League Hacking, was a full weekend online event so that hackers could get enough of sleep! Winning projects were pushed to health authorities!"
     - title: "Localhost Online: Github Workshop - Jun 2020"
       image: "images/githubresized.jpg"
