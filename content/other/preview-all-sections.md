@@ -345,8 +345,8 @@ So, why *a hackathon* in *Kosice*?
 Hence, [Hack Kosice](https://hackkosice.com) was born. **Welcome in the family!**
 {{< /section >}}
 
-{{< section type="basic" style="background: yellow;" >}}
-hello from a basic section with yellow background!
+{{< section type="basic" class="bg-light" style="border-top: 1px solid black; border-bottom: 1px solid black;" >}}
+hello from a basic section with custom `class` and `style` attributes! (note that it is not a good practice to use custom styles)
 
 And *I can* use **markdown**!
 {{< /section >}}
