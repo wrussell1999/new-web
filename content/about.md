@@ -11,7 +11,7 @@ use_sections: true
 team1:
   title : "Our Team"
   content : "These are the people who stand behind organising Hack Kosice
-and dreamers who want to help other people grow."
+and dreamers who want to help others grow."
   teamMember:
     - id: andrea
     - id: juraj
@@ -61,7 +61,7 @@ why_kosice:
 {{< section type="sideimg" config="who_we_are" >}}
 We are a group of young and active Slovak students, highly passionate about inventing and exploring new ideas, innovating and improving current ones, and by doing this trying to better and enrich the world around us.
 
-**Our mission is to educate and empower students in the field of IT and Tech, but also in other educational and professional fields - basically everyone who believes in changing the world positively through innovation.**
+**Our mission is to educate and empower students in the field of IT and Tech, but also everyone who believes in changing the world positively through innovation.**
 
 Hack Kosice has a long-term support from [Major League Hacking](https://mlh.io/), the world-wide official hackathon league.
 {{< /section >}}
@@ -71,7 +71,7 @@ We bring the great international experience, that a hackathon is, closer to our 
 
 We believe that by opening our country to the world and promoting the international spirit of this event to Slovak students, we effectively enrich both sides and help create a friendly atmosphere stimulating development & innovation.
 
-We also hope to contribute and change Slovakia to become a hub of innovation and development of the 21st century.
+We also hope to contribute and to change Slovakia to become a hub of innovation and development of the 21st century.
 {{< /section >}}
 
 {{< section type="sideimg" config="why_kosice" >}}
