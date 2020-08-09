@@ -328,6 +328,24 @@ branch1:
           icon : "ti-email" # here we use themify icon pack : https://themify.me/themify-icons
         - label : "Phone:+88 01672 506 744"
           icon : "ti-mobile" # here we use themify icon pack : https://themify.me/themify-icons
+column-list1:
+  columns: 
+    - title: 'Venue: Kasárne Kulturpark'
+      content:
+        - listItem: 'Item 1'
+        - listItem: 'Item 2'
+      button: 
+        enable: true
+        label: See on Google Maps
+        link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6 
+    - title: 'Venue: Kasárne Kulturpark'
+      content:
+        - listItem: 'Item 1'
+        - listItem: 'Item 2'
+      button: 
+        enable: true
+        label: See on Google Maps
+        link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
 ---
 
 {{< section >}}
@@ -389,6 +407,8 @@ We organise events for computer enthusiasts
 * whooo.
 * Create and manage any process for your business needs.
 {{< /section >}}
+
+{{< section type="column-list" config="column-list1" / >}}
 
 {{< section type="team" config="team1" / >}}
 
