@@ -53,11 +53,11 @@ what_we_do:
 why_kosice:
   title: Why Kosice
   image: images/kosice.jpg
-  format: "540x360 q60 jpg"
+  format: "540x360 q80 jpg"
 how_it_started:
   title: How it all started
   image: images/hk_with_swift.jpg
-  format: "540x360 q60 jpg"
+  format: "540x360 q80 jpg"
 ---
 
 {{< section type="team" config="team1" / >}}
