@@ -32,7 +32,7 @@ and dreamers who want to help others grow."
     - id: martin
 who_we_are:
   title: Who we are
-  image: images/hk_with_swift.jpg
+  image: images/hk19_organisers_crop.jpg
   format: "540x360 q60 jpg"
 what_we_do:
   subtitle: Why work with us
@@ -54,16 +54,24 @@ why_kosice:
   title: Why Kosice
   image: images/kosice.jpg
   format: "540x360 q60 jpg"
+how_it_started:
+  title: How it all started
+  image: images/hk_with_swift.jpg
+  format: "540x360 q60 jpg"
 ---
 
 {{< section type="team" config="team1" / >}}
 
-{{< section type="sideimg" config="who_we_are" >}}
+{{< section type="basic" config="who_we_are" class="bg-light" >}}
+## Who we are
+
 We are a group of young and active Slovak students, highly passionate about inventing and exploring new ideas, innovating and improving current ones, and by doing this trying to better and enrich the world around us.
 
 **Our mission is to educate and empower students in the field of IT and Tech, but also everyone who believes in changing the world positively through innovation.**
 
 Hack Kosice has a long-term support from [Major League Hacking](https://mlh.io/), the world-wide official hackathon league.
+
+{{< image asset="images/hk19_organisers.jpg" format="1110x360 q60 jpg" alt="Organisers of Hack Kosice 2019" class="mt-4" >}}
 {{< /section >}}
 
 {{< section type="feature" config="what_we_do" >}}
@@ -80,9 +88,7 @@ The ‘capital of the East’ is currently one of the most active and vivid cent
 With a high concentration of computer science students from local universities and a number of important tech-related companies, the city opens up to a number of possibilities for the effective organisation of a high-quality hackathon.
 {{< /section >}}
 
-{{< section >}}
-## How it all started?
-
+{{< section type="sideimg" config="how_it_started" class="bg-white" >}}
 It all started as a crazy idea of a few crazy guys from Košice, after they began university studies in the UK. The Hack Kosice project was officially born on 4 Apr 2018 at a fishing trip 🙂
 
 So, why *a hackathon* in *Kosice*?

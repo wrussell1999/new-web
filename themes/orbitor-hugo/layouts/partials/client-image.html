@@ -1,10 +1,11 @@
 {{/*
     use the template as follows:
-    {{ partial "client-image.html" (dict "asset" . "format" "370x420 q0 jpg" "alt" "Title of the image") }}
-    ("alt" parameter is optional)
+    {{ partial "client-image.html" (dict "asset" . "format" "370x420 q0 jpg" "alt" "Title of the image" "class" "mt-4") }}
+    ("alt" and "class" parameters are optional:)
+    {{ partial "client-image.html" (dict "asset" . "format" "370x420 q0 jpg") }}
 */}}
 
 {{- $image := partial "get-image.html" .asset -}}
 {{- $image = $image.Fit .format -}}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid"{{ with .alt }} alt="{{ . }}"{{ end }}>
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid{{ with .class }} {{ . }}{{ end }}"{{ with .alt }} alt="{{ . }}"{{ end }}>
 {{- "" -}}

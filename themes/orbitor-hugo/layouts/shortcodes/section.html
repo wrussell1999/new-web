@@ -299,7 +299,7 @@
 <!-- sideimg -->
 {{ else if eq $type "sideimg" }}
 {{ $sideimg_default_format := "540x585 q60 jpg"}}
-<section class="section bg-light">
+<section class="section bg-light{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
