@@ -16,41 +16,43 @@ onsite-online-hackathon:
     - title: 'On-site hackathon'
       content:
         - listItem: '150 on-site hackers ready to innovate'
-        - listItem: '10+ sponsors stands '
+        - listItem: '10+ sponsors stands'
         - listItem: 'Safety measures to maintain social distancing'
         - listItem: 'Live workshops'
         - listItem: 'Free food and tons of SWAG'
         - listItem: 'Plenty of other games and activities'
       button: 
-        enable: true
+        enable: false
         label: Information for on-site hackers
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6 
     - title: 'Online hackathon'
       content:
-        - listItem: '150 on-site hackers ready to innovate'
-        - listItem: '10+ sponsors stands '
-        - listItem: 'Safety measures to maintain social distancing'
-        - listItem: 'Live workshops'
-        - listItem: 'Free food and tons of SWAG'
-        - listItem: 'Plenty of other games and activities'
+        - listItem: '100 hackers fully connected online'
+        - listItem: 'Non-stop live stream of the whole event'
+        - listItem: 'Virtual sponsors stands'
+        - listItem: 'Even faster 1-on-1 mentor matching & networking online'
+        - listItem: 'Access to all workshops, challenges, and opportunities online'
+        - listItem: 'Engagement through bidirectional video streamed to the venue'
       button: 
-        enable: true
+        enable: false
         label: Information for online hackers
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
-
-    
 ---
 {{< section >}}
 # On-site + Online = Hybrid hackathon
 
 After having to postpone our event in March due to the global pandemic, the Hack Kosice team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all our on-site and online participants.
 
+To blend the On-site and Online parts of Hack Kosice 2020 as much as possible and maximise your experience, we decided to provide:
+- **[Swapcard](https://www.swapcard.com/)** platform for hybrid events,
+- **video stream** of the whole event
+
+You'll find more information about this in our emails once you [apply](http://apply.hackkosice.com/) and get invited to Hack Kosice 2020. Or don't hesitate to [contact us](mailto:contact@hackkosice.com) anytime.
 {{< /section >}}
 
-{{< section type="column-list" config="onsite-online-hackathon" / >}}
+{{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}
 
-{{< section >}}
-
+{{< section class="pt-0" >}}
 ## FAQ
 
 <details class="bg-light">

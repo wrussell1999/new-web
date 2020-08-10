@@ -695,7 +695,7 @@
 <!-- column list -->
 {{ else if eq $type "column-list" }}
 {{ $sideimg_default_format := "540x585 q60 jpg"}}
-<section>
+<section class="section{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         <div class="row align-items-center">
             {{ range .columns}}
