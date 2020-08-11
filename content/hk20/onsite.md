@@ -2,11 +2,11 @@
 title: On-site part
 date: 2020-07-06T11:46:13+00:00
 menu:
-  #main:
-  #  weight: 30
-  #  parent: hk20
+  main:
+    weight: 30
+    parent: hk20
 use_sections: true
-layout: single
+draft: true
 ---
 {{< section >}}
 # Schedule
