@@ -195,7 +195,7 @@
             <div class="col-lg-2 col-md-3 col-sm-4">
                 <div class="award-img-block mb-4 mb-lg-0">
                     <a href="{{ .url }}" class="award-img">
-                        {{ partial "client-image.html" (dict "asset" .logo "format" "200x200 q80 png" "alt" .name) }}
+                        {{ partial "fit-image.html" (dict "asset" .logo "format" "200x200 q80 png" "alt" .name) }}
                     </a>
                 </div>
             </div>
@@ -431,9 +431,9 @@
             <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
                 <div class="service-img mb-5 mb-lg-0">
                     {{ if isset . "link" }}
-                    <a href="{{ .link }}" target="_blank">{{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
+                    <a href="{{ .link }}" target="_blank">{{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
                     {{ else }}
-                    {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
+                    {{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}
                     {{ end }}
                 </div>
             </div>
