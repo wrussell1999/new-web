@@ -331,17 +331,17 @@ branch1:
 column-list1:
   columns: 
     - title: 'Venue: Kasárne Kulturpark'
-      content:
-        - listItem: 'Item 1'
-        - listItem: 'Item 2'
+      content: |
+        - Item 1
+        - Item 2
       button: 
         enable: true
         label: See on Google Maps
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6 
     - title: 'Venue: Kasárne Kulturpark'
-      content:
-        - listItem: 'Item 1'
-        - listItem: 'Item 2'
+      content: |
+        - Item 1
+        - Item 2
       button: 
         enable: true
         label: See on Google Maps
