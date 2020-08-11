@@ -195,7 +195,7 @@
             <div class="col-lg-2 col-md-3 col-sm-4">
                 <div class="award-img-block mb-4 mb-lg-0">
                     <a href="{{ .url }}" class="award-img">
-                        {{ partial "client-image.html" (dict "asset" .logo "format" "200x200 q80 png" "alt" .name) }}
+                        {{ partial "fit-image.html" (dict "asset" .logo "format" "200x200 q80 png" "alt" .name) }}
                     </a>
                 </div>
             </div>
@@ -459,6 +459,51 @@
     </div>
 </section>
 <!-- /services -->
+
+<!-- fit-services -->
+{{ else if eq $type "fit-services" }}
+{{ $services_img_format := "640x360 q60 jpg" }}
+{{ $numbering := or (not (isset . "numbering")) (.numbering) }}
+<section class="section">
+    <div class="container">
+        {{ with .title }}
+        <h2 class="text-md mb-5">{{ . }}</h2>
+        {{ end }}
+        {{ $.Scratch.Set "counter" 0 }}
+        {{ range $index, $element := .serviceitem }}
+        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        <div class="row flex-lg-row content-padding-bottom">
+            <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
+                <div class="service-img mb-5 mb-lg-0">
+                    {{ if isset . "link" }}
+                    <a href="{{ .link }}" target="_blank">{{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
+                    {{ else }}
+                    {{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-info">
+                    {{ if $numbering }}
+                    <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
+                    {{ end }}
+                    {{ partial "badges.html" $element }}
+                    {{ if isset . "link" }}
+                    <a href="{{ .link }}" target="_blank"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
+                    {{ else }}
+                    <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
+                    {{ end }}
+                    <div class="content">{{ .content | markdownify }}</div>
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" target="_blank" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+<!-- /fit-services -->
 
 <!-- case study -->
 {{ else if eq $type "casestudy" }}
