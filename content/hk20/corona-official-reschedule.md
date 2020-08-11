@@ -6,7 +6,7 @@ aliases:
   - /corona/
 menu:
   main:
-    name: Rescheduled to September
+    name: Coronavirus statement
     parent: hk20
     weight: 50
 ---
