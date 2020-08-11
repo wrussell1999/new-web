@@ -113,4 +113,4 @@ hardware:
 _Our friends from [Major League Hacking](https://mlh.io/) will bring amazing state-of-the-art hardware that you can borrow in case you are participating on-site, to make your vision come true!_
 {{< /section >}}
 
-{{< section type="services" config="hardware" / >}}
+{{< section type="fit-services" config="hardware" / >}}
