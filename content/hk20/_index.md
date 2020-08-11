@@ -1,13 +1,11 @@
 ---
 title: Hack Kosice 2020
 date: 2020-07-06T11:46:13+00:00
-aliases:
-  - /hk20/
 menu:
   main:
-    weight: 15
+    weight: 10
     name: Hack Kosice 2020
-    parent: Hackathon 2020
+    parent: hk20
 use_sections: true
 layout: single
 

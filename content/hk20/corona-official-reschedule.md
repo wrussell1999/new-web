@@ -4,8 +4,9 @@ date: 2020-03-12T11:46:13+00:00
 description: Due to Covid-19, Hack Kosice 2020 is rescheduled to 5–6 September 2020.
 menu:
   main:
-    name: Covid-19
-    weight: 50
+    name: Rescheduled to September
+    parent: hk20
+    weight: 20
 ---
 
 # Official statement regarding Coronavirus

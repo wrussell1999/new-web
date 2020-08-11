@@ -5,7 +5,7 @@ description: Get to know the team behind Hack Kosice.
 menu:
   main:
     name: About Us
-    weight: 42
+    weight: 60
 use_sections: true
 
 team1:
