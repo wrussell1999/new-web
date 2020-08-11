@@ -10,20 +10,19 @@ draft: true
 ---
 
 {{< section >}}
-# Schedule
+## Schedule
 
 Add customised schedule for online hackers
 {{< /section >}}
 
 {{< section >}}
-# Engage on Swapcard
+## Engage on Swapcard
 
 Add info about how to use Swapcard - maybe a separate more detailed "how to" page and link to it?
 {{< /section >}}
 
 {{< section >}}
-# Categories
+## Categories
 
 Add info about categories - include only prizes available for online hackers
 {{< /section >}}
-
