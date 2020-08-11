@@ -30,10 +30,6 @@ and dreamers who want to help others grow."
     - id: apasztor
     - id: jhavrankova
     - id: martin
-who_we_are:
-  title: Who we are
-  image: images/hk19_organisers_crop.jpg
-  format: "540x360 q60 jpg"
 what_we_do:
   subtitle: Why work with us
   title: What we do
@@ -53,16 +49,16 @@ what_we_do:
 why_kosice:
   title: Why Kosice
   image: images/kosice.jpg
-  format: "540x360 q80 jpg"
+  format: "1080x720 q60 jpg"
 how_it_started:
   title: How it all started
   image: images/hk_with_swift.jpg
-  format: "540x360 q80 jpg"
+  format: "1080x720 q60 jpg"
 ---
 
 {{< section type="team" config="team1" / >}}
 
-{{< section type="basic" config="who_we_are" class="bg-light" >}}
+{{< section type="basic" class="bg-light" >}}
 ## Who we are
 
 We are a group of young and active Slovak students, highly passionate about inventing and exploring new ideas, innovating and improving current ones, and by doing this trying to better and enrich the world around us.
