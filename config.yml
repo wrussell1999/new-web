@@ -68,6 +68,7 @@ params:
     text: |
       We are friendly.<br>We also speak Slovak.
     location: 'Kosice, Slovakia'
+    location_link: https://goo.gl/maps/EZqNzAveuW5iPss86
   social:
     - icon: ti-facebook
       link: 'https://www.facebook.com/hackkosice/'

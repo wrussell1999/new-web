@@ -37,7 +37,7 @@
 					<h6><a href="tel:{{ . }}"> <i class="ti-mobile mr-3"></i>{{ . }}</a></h6>
 					{{- end -}}
 					{{- with .Site.Params.contact.email -}}
-					<h6><a href="mailto:{{ . }}"> <i class="ti-email mr-3"></i>{{ . }}</a></h6>
+					<h6><a href="mailto:{{ . }}" target="_blank"> <i class="ti-email mr-3"></i>{{ . }}</a></h6>
 					{{- end -}}
 					{{- with .Site.Params.contact.text -}}
 					<p>{{ . | markdownify }}</p>

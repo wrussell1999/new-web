@@ -11,17 +11,17 @@
         message.text(response);
         setTimeout(function () {
             message.fadeOut();
-        }, 2000);
+        }, 5000);
         form.find('input:not([type="submit"]), textarea').val('');
     }
 
     // fail function
     function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.fadeIn().removeClass('alert-success').addClass('alert-danger');
         message.text(data.responseText);
         setTimeout(function () {
             message.fadeOut();
-        }, 2000);
+        }, 5000);
     }
     
     form.submit(function (e) {
@@ -29,7 +29,7 @@
         form_data = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: form.attr('action'),
+            url: 'https://us-central1-hack-kosice-14834.cloudfunctions.net/sendMail',
             data: form_data
         })
         .done(done_func)
