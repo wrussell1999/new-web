@@ -8,7 +8,6 @@ menu:
     parent: hk20
     name: Hardware
 use_sections: true
-draft: true
 
 hardware:
   numbering: false
