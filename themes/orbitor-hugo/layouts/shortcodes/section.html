@@ -118,12 +118,14 @@
             <div class="col-lg-5">
                 <div class="cta-content bg-white p-5 rounded">
                     <h3 class="mb-4">{{ .title | markdownify }}</h3>
-                    <p class="mb-30">{{ .content | markdownify }}</p>
                     {{ if .button.enable }}
+                    <p class="mb-30">{{ .content | markdownify }}</p>
                     {{ with .button }}
                     <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }}<i
                             class="ti-angle-right ml-2"></i></a>
                     {{ end }}
+                    {{ else }}
+                    <p class="mb-0">{{ .content | markdownify }}</p>
                     {{ end }}
                 </div>
             </div>
@@ -162,7 +164,7 @@
         <div class="row">
             {{ range .counteritem }}
             <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="counter-item text-center mb-5 mb-lg-0">
+                <div class="counter-item text-center mb-4 mb-lg-0">
                     <h2 class="mb-0"><span class="counter-stat font-weight-bold">{{ .count }}</span>{{ with .unit }}
                         {{ . }}{{ end }}</h2>
                     <p>{{ .title | markdownify }}</p>
@@ -302,7 +304,7 @@
 <section class="section bg-light{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-5 mb-lg-0">
                 <div class="feature-list">
                     <h2 class="mb-4">{{ .title | markdownify }}</h2>
                     <div class="content">{{ $.Inner | markdownify }}</div>
@@ -344,7 +346,7 @@
         <div class="row">
             {{ range .teammember }}
             {{ with partial "person.html" (dict "person" . "ctx" $) }}
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team-block-col col-lg-3 col-md-6 col-sm-6">
                 <div class="team-block mb-5 mb-lg-0">
                     {{- partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) -}}
                     <h4 class="mt-3 mb-1">{{ .name }}
@@ -417,10 +419,10 @@
 {{ else if eq $type "services" }}
 {{ $services_img_format := "640x360 q60 jpg" }}
 {{ $numbering := or (not (isset . "numbering")) (.numbering) }}
-<section class="section service-2">
+<section class="section">
     <div class="container">
-        {{ if isset . "title" }}
-        <div class="row content-padding-bottom"><h2 class="text-md">{{ .title }}</h2></div>
+        {{ with .title }}
+        <h2 class="text-md mb-5">{{ . }}</h2>
         {{ end }}
         {{ $.Scratch.Set "counter" 0 }}
         {{ range $index, $element := .serviceitem }}
@@ -685,12 +687,8 @@
             <div class="col-lg-6">
                 <div class="feature-list">
                     <h2 class="mb-4">{{ .title | markdownify }}</h2>
-                    <div class="content"> 
-                        <ul>
-                            {{ range .content }}
-                            <li>{{ .listItem | markdownify }}</li>
-                            {{ end }}
-                        </ul>
+                    <div class="content">
+                        {{ .content | markdownify }}
                     </div>
                     {{ if .button.enable }}
                     {{ with .button }}

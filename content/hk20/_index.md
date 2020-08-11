@@ -12,29 +12,33 @@ layout: single
 onsite-online-hackathon:
   columns: 
     - title: 'On-site hackathon'
-      content:
-        - listItem: '150 on-site hackers ready to innovate'
-        - listItem: '10+ sponsors stands'
-        - listItem: 'Safety measures to maintain social distancing'
-        - listItem: 'Live workshops'
-        - listItem: 'Free food and tons of SWAG'
-        - listItem: 'Plenty of other games and activities'
+      content: |
+        - 150 on-site hackers ready to innovate
+        - 10+ sponsors stands
+        - Safety measures to maintain social distancing
+        - Live workshops
+        - Free food and tons of SWAG
+        - Plenty of other games and activities
       button: 
         enable: false
         label: Information for on-site hackers
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6 
     - title: 'Online hackathon'
-      content:
-        - listItem: '100 hackers fully connected online'
-        - listItem: 'Non-stop live stream of the whole event'
-        - listItem: 'Virtual sponsors stands'
-        - listItem: 'Even faster 1-on-1 mentor matching & networking online'
-        - listItem: 'Access to all workshops, challenges, and opportunities online'
-        - listItem: 'Engagement through bidirectional video streamed to the venue'
+      content: |
+        - 100 hackers fully connected online
+        - Non-stop live stream of the whole event
+        - Virtual sponsors stands
+        - Even faster 1-on-1 mentor matching & networking online
+        - Access to all workshops, challenges, and opportunities online
+        - Engagement through bidirectional video streamed to the venue
       button: 
         enable: false
         label: Information for online hackers
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
+homepage_cta:
+  title : "What is a hackathon?"
+  background: images/hk19_opening_crop.jpg
+  content : "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly!"
 ---
 {{< section >}}
 # On-site + Online = Hybrid hackathon
@@ -50,7 +54,9 @@ You'll find more information about this in our emails once you [apply](http://ap
 
 {{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}
 
-{{< section class="pt-0" >}}
+{{< section type="cta" config="homepage_cta" / >}}
+
+{{< section >}}
 ## FAQ
 
 <details class="bg-light">

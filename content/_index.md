@@ -17,7 +17,7 @@ homepage_banner:
     link: "https://apply.hackkosice.com/"
   button2:
     label: Read more
-    link: /opportunities/hk20
+    link: /hk20
     
 homepage_features:
   title : "More than a hackathon!"

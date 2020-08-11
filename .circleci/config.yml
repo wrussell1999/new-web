@@ -77,12 +77,26 @@ jobs:
             - .firebaserc
             - firestore.rules
             - firestore.indexes.json
+            - functions/
   deploy_firebase:
     docker:
       - image: circleci/node:lts
     steps:
       - attach_workspace:
           at: ~/project
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific package-lock.json
+            - npm-deps-v1-{{ checksum "functions/package-lock.json" }}
+            # Fallback cache to be used
+            - npm-deps-v1-
+      - run:
+          name: Install Dependencies
+          command: cd functions && npm install
+      - save_cache:
+          key: npm-deps-v1-{{ checksum "functions/package-lock.json" }}
+          paths:
+            - functions/node_modules
       - firebase-deploy/deploy:
           token: $FIREBASE_TOKEN
 workflows:
