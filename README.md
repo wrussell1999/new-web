@@ -1,5 +1,7 @@
 # new-web
 
+[![Hack Kosice](https://circleci.com/gh/hackkosice/new-web.svg?style=shield)](https://app.circleci.com/pipelines/github/hackkosice)
+
 New website for Hack Kosice using Hugo.
 
 ## Making changes
