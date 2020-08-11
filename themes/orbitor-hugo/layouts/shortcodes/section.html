@@ -118,12 +118,14 @@
             <div class="col-lg-5">
                 <div class="cta-content bg-white p-5 rounded">
                     <h3 class="mb-4">{{ .title | markdownify }}</h3>
-                    <p class="mb-30">{{ .content | markdownify }}</p>
                     {{ if .button.enable }}
+                    <p class="mb-30">{{ .content | markdownify }}</p>
                     {{ with .button }}
                     <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }}<i
                             class="ti-angle-right ml-2"></i></a>
                     {{ end }}
+                    {{ else }}
+                    <p class="mb-0">{{ .content | markdownify }}</p>
                     {{ end }}
                 </div>
             </div>
@@ -685,12 +687,8 @@
             <div class="col-lg-6">
                 <div class="feature-list">
                     <h2 class="mb-4">{{ .title | markdownify }}</h2>
-                    <div class="content"> 
-                        <ul>
-                            {{ range .content }}
-                            <li>{{ .listItem | markdownify }}</li>
-                            {{ end }}
-                        </ul>
+                    <div class="content">
+                        {{ .content | markdownify }}
                     </div>
                     {{ if .button.enable }}
                     {{ with .button }}
