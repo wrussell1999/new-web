@@ -5,8 +5,8 @@ bgImage: "images/bg/background.jpg"
 use_sections: true
 
 contact1:
-  subtitle : "Send a message"
-  title : "Contact Form"
+  subtitle: Ask us just about anything!
+  title: Contact Form
 ---
 
 {{< section type="contact" config="contact1" / >}}

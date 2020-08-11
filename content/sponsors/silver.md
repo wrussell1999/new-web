@@ -3,6 +3,8 @@ title: Silver Package
 date: 2020-07-15T13:53:13+00:00
 bgImage: "images/bg/background.jpg"
 description: "Silver Package"
+aliases:
+  - /silver/
 ---
 
 {{< include file="sponsors/onboard-desc.md" >}}
