@@ -15,10 +15,10 @@ We use two types: persistent cookies and session cookies. A persistent cookie he
 
 ## What do we use cookies for?
 
-Cookies help us store information about your browsing on your computer. Enables you to log in and stayed logged in. By using our website, you agree to the use of cookies and as set out in this policy.
+Cookies help us store information about your browsing on your computer. They enable you to log in and stay logged in. By using our website, you agree to the use of cookies and as set out in this policy.
 
 ## How can I control or delete cookies?
 
 Within your browser you can choose whether you wish to accept cookies or not. To find out more on how to manage and delete cookies, visit [aboutcookies.org](https://aboutcookies.org/). Please remember, if you do delete some or all your cookies, some features on our website, such as remembering your username, may not work and your experience on our website may be affected.
 
-More information about cookies: (allaboutcookies.org)[https://allaboutcookies.org/] and (cookiepedia.co.uk)[https://cookiepedia.co.uk/].
+More information about cookies: [allaboutcookies.org](https://allaboutcookies.org/) and [cookiepedia.co.uk](https://cookiepedia.co.uk/).

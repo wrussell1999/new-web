@@ -71,7 +71,7 @@ Hack Kosice has a long-term support from [Major League Hacking](https://mlh.io/)
 {{< /section >}}
 
 {{< section type="feature" config="what_we_do" >}}
-We bring the great international experience, that a hackathon is, closer to our home, Slovakia, and as a result, create something extraordinary.
+We bring the great experience of international hackathons closer to our home, Slovakia, and as a result, create something extraordinary.
 
 We believe that by opening our country to the world and promoting the international spirit of this event to Slovak students, we effectively enrich both sides and help create a friendly atmosphere stimulating development & innovation.
 
@@ -93,7 +93,7 @@ So, why *a hackathon* in *Kosice*?
 - We are students of mainly Computer Science, but also Engineering, Design, Business and Social Sciences.
 - We attended a few hackathons and were inspired by everyone's passion. Hackathons changed our lives and we want to continue with positively changing lives of others.
 - [MLH](https://mlh.io/) was a perfect way to bring something new, yet well-tested, popular in the western parts of the world, to Košice
-- Košice is our home city and Slovakia our motherland, and here was nothing like a good hackathon there
+- Košice is our home city and Slovakia is our motherland, and there weren't any great hackathons there
 
-Hence, [Hack Kosice](https://hackkosice.com) was born. **Welcome in the family!**
+Hence, [Hack Kosice](https://hackkosice.com) was born. **Welcome to the family!**
 {{< /section >}}

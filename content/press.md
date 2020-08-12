@@ -48,7 +48,7 @@ articles-list1:
         link: http://zajtrajsienoviny.sk/2019/03/prvy-studentsky-medzinarodny-hackathon-na-slovensku/
 
 
-services1:
+<!-- services1:
   numbering: false
   title: "Press kit and brand guidelines"
   serviceItem:
@@ -70,7 +70,7 @@ services1:
       content : "Get the most important and up-to-date information about Hack Kosice and our activities in one convenient download."
       button: 
         label: Download
-        link: https://google.com
+        link: https://google.com -->
 
 smallcta1:
   title : "Do you have any more questions? Feel free to contact us!"

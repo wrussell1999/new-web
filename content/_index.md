@@ -24,13 +24,13 @@ homepage_features:
   featureItem:
     - icon : "ti-light-bulb" # here we use themify icon pack : https://themify.me/themify-icons
       title : "Lectures in Schools"
-      content : "We teach tech-related topics in high-schools. Learn more."
+      content : "We teach tech-related topics in high-schools. [Learn more](/lectures)."
     - icon : "ti-panel" # here we use themify icon pack : https://themify.me/themify-icons
       title : "Local Events"
-      content : "We host seasonal MLH Localhost hackathons and workshops."
+      content : "We host seasonal MLH Localhost hackathons and workshops. [Read more](/opportunities)."
     - icon : "ti-headphone-alt" # here we use themify icon pack : https://themify.me/themify-icons
       title : "Podcast"
-      content : "Listen to the Hack Kosice podcast on Spotify. We discuss tech and interview motivating entrepreneurs."
+      content : "Listen to the Hack Kosice podcast [on Spotify](https://open.spotify.com/show/5OlocKsS6FFFW7KxKQeK52?si=IpwhjAE4S3uP7Z5K6llIPA). We discuss tech and interview motivating entrepreneurs."
 homepage_cta:
   title : "What is a hackathon?"
   background: images/bg/background2.png
