@@ -745,26 +745,23 @@
 {{- $cardlist_img_format := "640x360 q60 jpg" -}}
 <section class="section{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
-        {{ with .title }}
-            <h2 class="text-md mb-5">{{ . }}</h2>
-        {{ end }}
-        <div class="row">
+        {{ with .title }}<h2 class="text-md mb-5">{{ . }}</h2>{{ end }}
+        <div class="card-columns">
             {{ range .articles}}
-            <div class="col-md-4">
-                <div class="card shadow">
-                    {{ partial "fill-image.html" (dict "asset" .image "format" $cardlist_img_format "class" "card-img-top") }}
-                    <div class="card-body">
-                        <h6 class="card-subtitle mt-1 mb-3 text-muted font-weight-light">{{ .subtitle | markdownify }}</h6>
-                        <h5 class="card-title">
-                            {{ .title | markdownify }}
-                        </h5>
-                        {{ if .button.enable }}
-                        {{ with .button }}
-                        <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
-                        {{ end }}
-                        {{ end }}
-                    </div>
+            <div class="card shadow mb-4">
+                {{ partial "fill-image.html" (dict "asset" .image "format" $cardlist_img_format "class" "card-img-top") }}
+                <div class="card-body">
+                    <h6 class="card-subtitle mt-1 mb-3 text-muted font-weight-light">{{ .subtitle | markdownify }}</h6>
+                    <h5 class="card-title">{{ .title | markdownify }}</h5>
+                    {{ with .button }}
+                    <a href="{{ .link | absURL }}" class="btn btn-solid-border my-2">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    {{ end }}
                 </div>
+                {{ with .date }}
+                <div class="card-footer text-muted">
+                    <small class="text-black text-capitalize mr-3"><i class="ti-calendar mr-1"></i> {{ . | dateFormat "02 Jan 2006" }}</small>
+                </div>
+                {{ end }}
             </div>
             {{ end }}
         </div>

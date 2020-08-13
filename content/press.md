@@ -10,43 +10,42 @@ use_sections: true
 
 articles-list1:
   title: 'Stories about Hack Kosice in press'
-  articles: 
-    - title: 'Medzinárodný hackathon svetovej úrovne sa vracia do Košíc'
-      subtitle: 'StartitUp'
-      image : images/press/articles/startitup.jpg
-      button: 
-        enable: true
-        label: Read
-        link: https://www.startitup.sk/medzinarodny-hackathon-svetovej-urovne-sa-vracia-do-kosic/
-    - title: 'Na východ prichádza v histórii Slovenska prvý študentský hackathon najvyššej svetovej úrovne'
-      subtitle: 'PC Revue'
-      image : images/press/articles/pcrevue.jpg
-      button: 
-        enable: true
-        label: Read
-        link: https://www.pcrevue.sk/a/Na-vychod-prichadza-v-historii-Slovenska-prvy-studentsky-hackathon-najvyssej-svetovej-urovne
-    - title: '#NXT | Partia študentov zogranizovala v Košiciach prvý medzinárodný hackathon, tento rok chystajú jeho prvú hybridnú verziu v strednej Európe'
+  articles:
+    - date: 2020-08-11
+      title: '#NXT | Partia študentov zogranizovala v Košiciach prvý medzinárodný hackathon, tento rok chystajú jeho prvú hybridnú verziu v strednej Európe'
       subtitle: 'Fun rádio'
       image : images/press/articles/funradio.jpg
       button: 
-        enable: true
         label: Read
         link: https://www.funradio.sk/clanok/44256-nxt-partia-studentov-zogranizovala-v-kosiciach-prvy-medzinarodny-hackathon-tento-rok-chystaju-jeho-prvu-hybridnu-verziu-v-strednej-europe/
-    - title: 'Na východ prichádza v histórii Slovenska prvý študentský hackathon najvyššej svetovej úrovne'
+    - date: 2020-01-20T09:47:00+01:00
+      title: 'Medzinárodný hackathon svetovej úrovne sa vracia do Košíc'
+      subtitle: 'StartitUp'
+      image : images/press/articles/startitup.jpg
+      button: 
+        label: Read
+        link: https://www.startitup.sk/medzinarodny-hackathon-svetovej-urovne-sa-vracia-do-kosic/
+    - title: 'Prvý študentský medzinárodný hackathon na Slovensku'
+      subtitle: 'Zajtrajšie noviny'
+      date: 2019-03-12
+      image : images/press/articles/zajtrajsienoviny.jpg
+      button: 
+        label: Read
+        link: http://zajtrajsienoviny.sk/2019/03/prvy-studentsky-medzinarodny-hackathon-na-slovensku/
+    - date: 2019-01-14
+      title: 'Na východ prichádza v histórii Slovenska prvý študentský hackathon najvyššej svetovej úrovne'
+      subtitle: 'PC Revue'
+      image : images/press/articles/pcrevue.jpg
+      button: 
+        label: Read
+        link: https://www.pcrevue.sk/a/Na-vychod-prichadza-v-historii-Slovenska-prvy-studentsky-hackathon-najvyssej-svetovej-urovne
+    - date: 2019-01-14
+      title: 'Na východ prichádza v histórii Slovenska prvý študentský hackathon najvyššej svetovej úrovne'
       subtitle: 'IndexMag'
       image : images/press/articles/indexmag.png
       button: 
-        enable: true
         label: Read
         link: https://indexmag.sk/2019/01/14/na-vychod-prichadza-v-historii-slovenska-prvy-studentsky-hackathon-najvyssej-svetovej-urovne/
-    - title: 'Prvý študentský medzinárodný hackathon na Slovensku'
-      subtitle: 'Zajtrajšie noviny'
-      image : images/press/articles/zajtrajsienoviny.jpg
-      button: 
-        enable: true
-        label: Read
-        link: http://zajtrajsienoviny.sk/2019/03/prvy-studentsky-medzinarodny-hackathon-na-slovensku/
-
 
 <!-- services1:
   numbering: false
@@ -82,7 +81,7 @@ smallcta1:
 
 {{< section type="articles-list" config="articles-list1" />}}
 
-{{< section type="services" config="services1" />}}
+<!--{{< section type="services" config="services1" />}}-->
 
 {{< section type="smallcta" config="smallcta1" />}}
 
