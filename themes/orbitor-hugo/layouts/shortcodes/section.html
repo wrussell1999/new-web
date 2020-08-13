@@ -1,19 +1,19 @@
-{{ $config := dict "0" true }}
-{{ if reflect.IsMap $.Params }}
-{{ $config = $.Params }}
-{{ end }}
-{{ if (isset $config "config") }}
-{{ $config = merge (index $.Page.Params $.Params.config) $config }}
-{{ end }}
+{{- $config := dict "0" true -}}
+{{- if reflect.IsMap $.Params -}}
+{{- $config = $.Params -}}
+{{- end -}}
+{{- if (isset $config "config") -}}
+{{- $config = merge (index $.Page.Params $.Params.config) $config -}}
+{{- end -}}
 
-{{ $type := "basic" }}
-{{ if isset $config "type" }}
-{{ $type = $config.type }}
-{{ end }}
+{{- $type := "basic" -}}
+{{- if isset $config "type" -}}
+{{- $type = $config.type -}}
+{{- end -}}
 
-{{ with $config }}
+{{- with $config -}}
 
-{{ if eq $type "basic" }}
+{{- if eq $type "basic" -}}
 <section class="section{{ with .class }} {{ . }}{{ end }}" {{ with $.Get "style"}} style="{{ . | safeCSS }}" {{ end }}>
     <div class="container">
         <div class="row">
@@ -27,9 +27,9 @@
 </section>
 
 <!-- Slider -->
-{{ else if eq $type "banner" }}
-{{ $image := partial "get-image.html" .bgimage }}
-{{ $image = $image.Resize "1920x q80 jpg" }}
+{{- else if eq $type "banner" -}}
+{{- $image := partial "get-image.html" .bgimage -}}
+{{- $image = $image.Resize "1920x q80 jpg" -}}
 <section class="banner d-flex align-items-center"
     style="background-image: url('{{ $image.RelPermalink }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
     <div class="container">
@@ -55,7 +55,7 @@
 <!-- /Slider -->
 
 <!-- banner feature -->
-{{ else if eq $type "bannerFeature" }}
+{{- else if eq $type "bannerFeature" -}}
 <section class="section about" {{ with $.Get "style"}} style="{{ . | safeCSS }}" {{ end }}>
     <div class="container">
         <div class="row">
@@ -78,7 +78,7 @@
 <!-- /banner feature -->
 
 <!-- feature -->
-{{ else if eq $type "feature" }}
+{{- else if eq $type "feature" -}}
 <section class="section process">
     <div class="container">
         <div class="row align-items-center">
@@ -109,9 +109,9 @@
 <!-- /feature -->
 
 <!-- call to action -->
-{{ else if eq $type "cta" }}
-{{ $image := partial "get-image.html" .background }}
-{{ $image = $image.Resize "1920x q60 jpg" }}
+{{- else if eq $type "cta" -}}
+{{- $image := partial "get-image.html" .background -}}
+{{- $image = $image.Resize "1920x q60 jpg" -}}
 <section class="section cta" style="background: url('{{ $image.RelPermalink }}') no-repeat;">
     <div class="container">
         <div class="row">
@@ -135,7 +135,7 @@
 <!-- /call to action -->
 
 <!-- section portfolio -->
-{{ else if eq $type "project" }}
+{{- else if eq $type "project" -}}
 <section class="section portfolio pb-0">
     <div class="container">
         <div class="row">
@@ -158,7 +158,7 @@
 <!-- /section portfolio -->
 
 <!-- Counter -->
-{{ else if eq $type "counter" }}
+{{- else if eq $type "counter" -}}
 <section class="section counter">
     <div class="container">
         <div class="row">
@@ -177,7 +177,7 @@
 <!-- /Counter -->
 
 <!-- Clients Slider -->
-{{ else if eq $type "clients" }}
+{{- else if eq $type "clients" -}}
 <section class="section awards">
     <div class="container">
         <div class="row">
@@ -207,8 +207,8 @@
 <!-- /Clients Slider -->
 
 <!-- testimonial -->
-{{ else if eq $type "testimonial" }}
-{{ $testimonial_img_format := "70x70 q80 jpg" }}
+{{- else if eq $type "testimonial" -}}
+{{- $testimonial_img_format := "70x70 q80 jpg" -}}
 <section class="section testimonial">
     <div class="container">
         <div class="row">
@@ -244,7 +244,7 @@
 <!-- /testimonial -->
 
 <!-- bigcounter -->
-{{ else if eq $type "bigcounter" }}
+{{- else if eq $type "bigcounter" -}}
 <section class="section">
     <div class="container">
         <div class="row justify-content-center">
@@ -271,7 +271,7 @@
 <!-- /bigcounter -->
 
 <!-- promo video -->
-{{ else if eq $type "promovideo" }}
+{{- else if eq $type "promovideo" -}}
 <section class="video-block section bg-light">
     <div class="container">
         <div class="row align-items-center">
@@ -299,8 +299,8 @@
 <!-- /promo video -->
 
 <!-- sideimg -->
-{{ else if eq $type "sideimg" }}
-{{ $sideimg_default_format := "1080x720 q60 jpg"}}
+{{- else if eq $type "sideimg" -}}
+{{- $sideimg_default_format := "1080x720 q60 jpg" -}}
 <section class="section bg-light{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         <div class="row align-items-center">
@@ -308,11 +308,11 @@
                 <div class="feature-list">
                     <h2 class="mb-4">{{ .title | markdownify }}</h2>
                     <div class="content">{{ $.Inner | markdownify }}</div>
-                    {{ if .button.enable }}
-                    {{ with .button }}
+                    {{- if .button.enable -}}
+                    {{- with .button -}}
                     <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
-                    {{ end }}
-                    {{ end }}
+                    {{- end -}}
+                    {{- end -}}
                 </div>
             </div>
             <div class="col-lg-6 sideimg-img">
@@ -331,8 +331,8 @@
 <!-- /sideimg -->
 
 <!-- team -->
-{{ else if eq $type "team" }}
-{{ $teammember_img_format := "370x420 q80 jpg" }}
+{{- else if eq $type "team" -}}
+{{- $teammember_img_format := "370x420 q80 jpg" -}}
 <section class="section team">
     <div class="container">
         <div class="row justify-content-center">
@@ -375,7 +375,7 @@
 <!-- /team -->
 
 <!-- pricing -->
-{{ else if eq $type "pricing" }}
+{{- else if eq $type "pricing" -}}
 <section class="section pricing">
     <div class="container">
         <div class="row justify-content-center">
@@ -416,9 +416,9 @@
 <!-- /pricing -->
 
 <!-- services -->
-{{ else if eq $type "services" }}
-{{ $services_img_format := "640x360 q60 jpg" }}
-{{ $numbering := or (not (isset . "numbering")) (.numbering) }}
+{{- else if eq $type "services" -}}
+{{- $services_img_format := "640x360 q60 jpg" -}}
+{{- $numbering := or (not (isset . "numbering")) (.numbering) -}}
 <section class="section">
     <div class="container">
         {{ with .title }}
@@ -461,9 +461,9 @@
 <!-- /services -->
 
 <!-- fit-services -->
-{{ else if eq $type "fit-services" }}
-{{ $services_img_format := "640x360 q60 jpg" }}
-{{ $numbering := or (not (isset . "numbering")) (.numbering) }}
+{{- else if eq $type "fit-services" -}}
+{{- $services_img_format := "640x360 q60 jpg" -}}
+{{- $numbering := or (not (isset . "numbering")) (.numbering) -}}
 <section class="section">
     <div class="container">
         {{ with .title }}
@@ -506,8 +506,8 @@
 <!-- /fit-services -->
 
 <!-- case study -->
-{{ else if eq $type "casestudy" }}
-{{ $casestudy_img_format := "640x360 q60 jpg" }}
+{{- else if eq $type "casestudy" -}}
+{{- $casestudy_img_format := "640x360 q60 jpg" -}}
 <section class="section case-study">
     <div class="container">
         <div class="row justify-content-center">
@@ -568,7 +568,7 @@
 <!-- /case study -->
 
 <!-- solutions -->
-{{ else if eq $type "solutions" }}
+{{- else if eq $type "solutions" -}}
 <section class="section service">
     <div class="container">
         <div class="row">
@@ -594,7 +594,7 @@
 <!-- /solutions -->
 
 <!-- small cta -->
-{{ else if eq $type "smallcta" }}
+{{- else if eq $type "smallcta" -}}
 <section class="cta-2 bg-light">
     <div class="container">
         <div class="cta-block py-5">
@@ -617,7 +617,7 @@
 <!-- /small cta -->
 
 <!-- contact form -->
-{{ else if eq $type "contact" }}
+{{- else if eq $type "contact" -}}
 <section class="contact-form-wrap section">
     <div class="container">
         <div class="row">
@@ -685,7 +685,7 @@
 <!-- /contact form -->
 
 <!-- map -->
-{{ else if eq $type "map" }}
+{{- else if eq $type "map" -}}
 <section class="contact-form-wrap section">
     <div class="container">
         <div class="row">
@@ -702,7 +702,7 @@
 <!-- /map -->
 
 <!-- branch -->
-{{ else if eq $type "branch" }}
+{{- else if eq $type "branch" -}}
 <section class="contact-form-wrap section">
     <div class="container">
         <div class="row">
@@ -724,7 +724,7 @@
 <!-- /branch -->
 
 <!-- column list -->
-{{ else if eq $type "column-list" }}
+{{- else if eq $type "column-list" -}}
 <section class="section{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         <div class="row align-items-center">
@@ -749,8 +749,8 @@
 <!-- /column list -->
 
 <!-- column list -->
-{{ else if eq $type "articles-list" }}
-{{ $cardlist_img_format := "640x360 q60 jpg" }}
+{{- else if eq $type "articles-list" -}}
+{{- $cardlist_img_format := "640x360 q60 jpg" -}}
 <section class="section{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         {{ with .title }}
@@ -780,8 +780,8 @@
 </section>
 <!-- /column list -->
 
-{{ else }}
-{{ errorf "Unknown row type %s" $type }}
+{{- else -}}
+{{- errorf "Unknown row type %s" $type -}}
 
-{{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}
