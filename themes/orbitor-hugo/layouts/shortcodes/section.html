@@ -431,7 +431,7 @@
             <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
                 <div class="service-img mb-5 mb-lg-0">
                     {{ if isset . "link" }}
-                    <a href="{{ .link }}" target="_blank">{{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
+                    <a href="{{ .link }}">{{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
                     {{ else }}
                     {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
                     {{ end }}
@@ -444,13 +444,13 @@
                     {{ end }}
                     {{ partial "badges.html" $element }}
                     {{ if isset . "link" }}
-                    <a href="{{ .link }}" target="_blank"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
+                    <a href="{{ .link }}"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
                     {{ else }}
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
                     {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" target="_blank" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                 </div>
             </div>
@@ -476,7 +476,7 @@
             <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
                 <div class="service-img mb-5 mb-lg-0">
                     {{ if isset . "link" }}
-                    <a href="{{ .link }}" target="_blank">{{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
+                    <a href="{{ .link }}">{{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
                     {{ else }}
                     {{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}
                     {{ end }}
@@ -489,13 +489,13 @@
                     {{ end }}
                     {{ partial "badges.html" $element }}
                     {{ if isset . "link" }}
-                    <a href="{{ .link }}" target="_blank"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
+                    <a href="{{ .link }}"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
                     {{ else }}
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
                     {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" target="_blank" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                 </div>
             </div>
@@ -534,7 +534,7 @@
                         <h4 class="mb-3">{{ .title | markdownify }}</h4>
                         <p>{{ .content | markdownify }}</p>
                         {{ with .button }}
-                        <a href="{{ .link | absURL }}" target="_blank"  class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                        <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                         {{ end }}
                     </div>
                 </div>
@@ -550,7 +550,7 @@
                         <h4 class="mb-3">{{ .title | markdownify }}</h4>
                         <p>{{ .content | markdownify }}</p>
                         {{ with .button }}
-                        <a href="{{ .link | absURL }}" target="_blank"  class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                        <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                         {{ end }}
                     </div>
                 </div>
@@ -661,7 +661,7 @@
                                 <li><h5>Email Us</h5><a href="mailto:{{ . }}" target="_blank">{{ . }}</a></li>
                                 {{- end -}}
                                 {{- with $.Site.Params.contact.location -}}
-                                <li><h5>Location</h5><a href="{{ $.Site.Params.contact.location_link }}" target="_blank">{{ . }}</a></li>
+                                <li><h5>Location</h5><a href="{{ $.Site.Params.contact.location_link }}">{{ . }}</a></li>
                                 {{- end -}}
                                 {{- with $.Site.Params.contact.text -}}
                                 <li>{{ . | markdownify }}</li>
