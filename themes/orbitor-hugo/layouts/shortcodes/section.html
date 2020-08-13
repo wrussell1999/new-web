@@ -430,11 +430,7 @@
         <div class="row flex-lg-row content-padding-bottom">
             <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
                 <div class="service-img mb-5 mb-lg-0">
-                    {{ if isset . "link" }}
-                    <a href="{{ .link }}">{{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
-                    {{ else }}
                     {{ partial "fill-image.html" (dict "asset" .image "format" $services_img_format) }}
-                    {{ end }}
                 </div>
             </div>
             <div class="col-lg-6">
@@ -443,11 +439,7 @@
                     <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
                     {{ end }}
                     {{ partial "badges.html" $element }}
-                    {{ if isset . "link" }}
-                    <a href="{{ .link }}"><h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3></a>
-                    {{ else }}
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
-                    {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
                     {{ with .button }}
                     <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
