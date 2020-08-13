@@ -132,14 +132,25 @@
 // Awards
 
 .awards {
-	padding: 20px 0px;
+	padding: 0px;
+	.container {
+		//padding: 20px 0px;
+		padding-top: 1.5rem!important;
+		padding-bottom: 1.5rem!important;
+		border-top: 1px solid #dae0e5;
+	}
 }
 .award-img-block{
-	//height: 120px;
-	//border:1px solid #eee;
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	a {
+		padding: 0.75rem;
+		transition: box-shadow .2s;
+		&:hover {
+			box-shadow: 0px 0px 5px 2px #eee;
+		}
+	}
 }
 .award-img{
 	display: flex;

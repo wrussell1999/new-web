@@ -76,13 +76,9 @@ counter1:
 clients1:
   title : "Our Sponsors"
   content : "A hackathon can't happen without sponsors. Currently, these companies Sponsor us."
-  logos:
-    - logo : "sample/images/about/02.png"
-    - logo : "sample/images/about/03.png"
-    - logo : "sample/images/about/04.png"
-    - logo : "sample/images/about/05.png"
-    - logo : "sample/images/about/06.png"
-    - logo : "sample/images/about/07.png"
+  color: gainsboro
+  sponsors :
+    - id : upjs
 testimonial1:
   title : "What they say about us"
   content : "They are truely amazing in the industry ,molestiae expedita aspernatur officia, similique minima

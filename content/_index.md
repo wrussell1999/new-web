@@ -68,7 +68,7 @@ public_sponsors:
     - id : kosice
 
 platinum_sponsors:
-  title : "Platinum Sponsors"
+  title : "Platinum Sponsor"
   color: gainsboro
   sponsors :
     - id : vse
@@ -132,16 +132,23 @@ partners_sponsors:
 
 {{< section type="counter" config="homepage_numbers" / >}}
 
-{{< section type="basic" style="padding-bottom:0px;">}}
+{{< section type="basic" class="pb-4" >}}
 # Our Sponsors
 A hackathon can't happen without sponsors. Currently, these companies Sponsor us.
 {{< /section >}}
 
-{{< section type="clients" config="general_sponsors" / >}}
-{{< section type="clients" config="public_sponsors" / >}}
-{{< section type="clients" config="platinum_sponsors" / >}}
+{{< section type="clients" config="general_sponsors" bigger="true" / >}}
+
+{{< section type="clients" config="public_sponsors" bigger="true" / >}}
+
+{{< section type="clients" config="platinum_sponsors" bigger="true" / >}}
+
 {{< section type="clients" config="gold_sponsors" / >}}
+
 {{< section type="clients" config="silver_sponsors" / >}}
+
 {{< section type="clients" config="bronze_sponsors" / >}}
+
 {{< section type="clients" config="medial_sponsors" / >}}
+
 {{< section type="clients" config="partners_sponsors" / >}}
