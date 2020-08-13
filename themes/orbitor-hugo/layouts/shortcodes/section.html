@@ -740,14 +740,15 @@
 </section>
 <!-- /column list -->
 
-<!-- column list -->
+<!-- articles list -->
 {{- else if eq $type "articles-list" -}}
 {{- $cardlist_img_format := "640x360 q60 jpg" -}}
-<section class="section{{ with .class }} {{ . }}{{ end }}">
+<section class="section articles-list{{ with .class }} {{ . }}{{ end }}">
     <div class="container">
         {{ with .title }}<h2 class="text-md mb-5">{{ . }}</h2>{{ end }}
-        <div class="card-columns">
+        <div class="row">
             {{ range .articles}}
+            <div class="col-md-4">
             <div class="card shadow mb-4">
                 {{ partial "fill-image.html" (dict "asset" .image "format" $cardlist_img_format "class" "card-img-top") }}
                 <div class="card-body">
@@ -763,11 +764,12 @@
                 </div>
                 {{ end }}
             </div>
+            </div>
             {{ end }}
         </div>
     </div>
 </section>
-<!-- /column list -->
+<!-- /articles list -->
 
 {{- else -}}
 {{- errorf "Unknown row type %s" $type -}}
