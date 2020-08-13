@@ -100,7 +100,7 @@ bronze_sponsors:
     - id : matsuko
 
 medial_sponsors:
-  title : "Medial Partners"
+  title : "Media Partners"
   color: black
   sponsors :
     - id : fontech
