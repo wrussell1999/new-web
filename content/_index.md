@@ -89,7 +89,6 @@ silver_sponsors:
   sponsors :
     - id : software_ag
     - id : global_logic
-    - id : storyous
     - id : thermo_fisher
 
 bronze_sponsors:
