@@ -206,6 +206,38 @@
 </section>
 <!-- /Clients Slider -->
 
+<!-- clients_twocolumns -->
+{{- else if eq $type "clients_twocolumns" -}}
+<section class="section awards{{ with .class }} {{ . }}{{ end }}">
+    <div class="container">
+        <div class="row">
+            {{ range .sections }}
+            <div class="col-12 col-lg-6">
+                <div class="why-content">
+                    <h2 class="mb-4"{{ with .color }} style="color: {{ . }};"{{ end }}>{{ .title | markdownify }}</h2>
+                </div>
+                {{ with .content }}<p class="mb-5">{{ . | markdownify }}</p>{{ end }}
+                <div class="row">
+                    {{ $bigger := .bigger }}
+                    {{ range .sponsors }}
+                    {{ with partial "sponsor.html" (dict "sponsor" . "ctx" $) }}
+                    <div class="{{ if $bigger }}col-lg-6 col-md-4 col-6{{ else }}col-lg-4 col-md-3 col-4{{ end }}">
+                        <div class="award-img-block">
+                            <a href="{{ .url }}" class="award-img">
+                                {{ partial "fit-image.html" (dict "asset" .logo "format" "240x240 png" "alt" .name) }}
+                            </a>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!-- /clients_twocolumns -->
+
 <!-- testimonial -->
 {{- else if eq $type "testimonial" -}}
 {{- $testimonial_img_format := "70x70 q80 jpg" -}}

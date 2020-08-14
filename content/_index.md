@@ -79,17 +79,17 @@ gold_sponsors:
     - id: visma
     - id: siemens
 silver_sponsors:
-  title: "Silver Sponsors"
-  color: silver
-  sponsors:
-    - id: thermo_fisher
-silver_online_sponsors:
-  title: "Silver Sponsors of the Online part"
-  color: silver
-  sponsors:
-    - id: telekom
-    - id: software_ag
-    - id: global_logic
+  sections:
+    - title: "Silver Sponsor"
+      color: silver
+      sponsors:
+        - id: thermo_fisher
+    - title: "Online Silver Sponsors"
+      color: silver
+      sponsors:
+        - id: telekom
+        - id: software_ag
+        - id: global_logic
 bronze_sponsors:
   title: "Bronze Sponsors"
   color: orange
@@ -139,9 +139,7 @@ A hackathon can't happen without sponsors. Currently, these companies Sponsor us
 
 {{< section type="clients" config="gold_sponsors" / >}}
 
-{{< section type="clients" config="silver_sponsors" / >}}
-
-{{< section type="clients" config="silver_online_sponsors" / >}}
+{{< section type="clients_twocolumns" config="silver_sponsors" / >}}
 
 {{< section type="clients" config="bronze_sponsors" / >}}
 
