@@ -55,16 +55,18 @@ homepage_numbers:
       unit: ""
 
 general_sponsors:
-  title: "General Partner"
-  color: black
-  sponsors:
-    - id: upjs
-public_sponsors:
-  title: "Public Partners"
-  color: black
-  sponsors:
-    - id: vucke
-    - id: kosice
+  sections:
+    - title: "General Partner"
+      color: black
+      bigger: true
+      sponsors:
+        - id: upjs
+    - title: "Public Partners"
+      color: black
+      bigger: true
+      sponsors:
+        - id: vucke
+        - id: kosice
 platinum_sponsors:
   title: "Platinum Sponsor"
   color: gainsboro
@@ -131,9 +133,7 @@ partners_sponsors:
 A hackathon can't happen without sponsors. Currently, these companies Sponsor us.
 {{< /section >}}
 
-{{< section type="clients" config="general_sponsors" bigger="true" / >}}
-
-{{< section type="clients" config="public_sponsors" bigger="true" / >}}
+{{< section type="clients_twocolumns" config="general_sponsors" / >}}
 
 {{< section type="clients" config="platinum_sponsors" bigger="true" / >}}
 
