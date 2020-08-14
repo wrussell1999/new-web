@@ -35,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-12 col-xl-8">
-                <div class="block">
+                <div class="block content">
                     <span class="text-uppercase text-sm letter-spacing">{{ .subtitle | markdownify }}</span>
                     <h1 class="mb-3 mt-3">{{ .title | markdownify }}</h1>
                     <div class="mb-2">{{ .content | markdownify }}</div>
@@ -351,7 +351,7 @@
                     {{- partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) -}}
                     <h4 class="mt-3 mb-1">{{ .name }}
                         {{- with .social -}}
-                        <ul class="list-inline team-socials ml-2">
+                        <ul class="list-inline team-socials mx-1">
                             {{- range . -}}
                             <li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
                             {{- end -}}

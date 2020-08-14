@@ -115,7 +115,7 @@ input[type="tel"] {
 .btn-solid-border {
   border: 2px solid $primary-color;
   background: transparent;
-  color: $black;
+  color: $violet;
 
   &:hover {
     border: 2px solid $primary-color;
@@ -127,7 +127,7 @@ input[type="tel"] {
 
 .btn-transparent {
   background: transparent;
-  color: $black;
+  color: $violet;
   border-color: $base-color;
 
   &:hover {
@@ -139,7 +139,7 @@ input[type="tel"] {
 .btn-white {
   background: $light;
   border-color: $light;
-  color: $black;
+  color: $violet;
 
   &:hover {
     background: $primary-color;
@@ -154,7 +154,7 @@ input[type="tel"] {
 
   &:hover {
     background: $light;
-    color: $black;
+    color: $violet;
   }
 }
 
@@ -194,7 +194,7 @@ input[type="tel"] {
 }
 
 .bg-dark {
-  background: $black;
+  background: $violet;
 }
 
 
@@ -289,18 +289,18 @@ input[type="tel"] {
 
 /* Links */
 a {
-  color: $black;
+  color: $violet;
   text-decoration: none;
-}
+  position: relative;
 
-a:focus,
-a:hover {
-  color: $primary-color;
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
+  &:focus,
+  &:hover {
+    color: $violet;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 
@@ -357,6 +357,13 @@ a:focus {
 .content {
   * {
     margin-bottom: 20px;
+  }
+
+  a:not(.btn) {
+    color: $primary-color;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   h1,

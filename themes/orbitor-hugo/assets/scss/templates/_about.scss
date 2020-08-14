@@ -64,8 +64,6 @@
 .feature-list{
 	ul li {
 		margin-bottom: 15px;
-		color: $black;
-
 		i{
 			color: $primary-color;
 		}
@@ -116,7 +114,7 @@
 	}
 }
 
-.content img, .sideimg-img img {
+.content img, .sideimg-img img, .case-img img {
 	box-shadow: 0 0px 15px 0 rgba(0,0,0,0.15);
 	border-radius: 5px;
 }

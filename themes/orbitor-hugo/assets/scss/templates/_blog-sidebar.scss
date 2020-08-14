@@ -30,7 +30,7 @@
       li {
         margin-bottom: 10px;
         a {
-          color: $black;
+          color: $violet;
           @include transition (all, 0.3s, ease);
           &:hover {
             color:$primary-color;

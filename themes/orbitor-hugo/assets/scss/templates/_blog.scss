@@ -72,26 +72,15 @@
 	}
 }
 
-
-
-
 .quote {
 	font-size: 22px;
-	color: $black;
+	color: $violet;
 	padding: 40px;
 	font-style: italic;
 	background: #f5f6ff;
 	border-left: 5px solid $primary-color;
 	margin: 25px 0px;
 }
-
-
-
-
-
-
-
-
 
 // Comment Form
 .comment-form {
@@ -106,8 +95,6 @@
 		height: auto;
 	}
 }
-
-
 
 @include mobile {
 	.blog-thumb {

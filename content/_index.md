@@ -11,7 +11,7 @@ homepage_banner:
   content: |
     Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food.
     
-    Hack Kosice 2020 will take place on **September 5th - 6th**, as Hybrid hackathon both **online** and **on-site** in **[Kunsthalle, Kosice](https://goo.gl/maps/RE8BfkWreX1Jpnes5)**.
+    Hack Kosice 2020 will take place on **September 5th - 6th**, as Hybrid hackathon both **online** and **on-site** in [Kunsthalle, Kosice](https://goo.gl/maps/RE8BfkWreX1Jpnes5).
   button:
     label: Apply
     link: "https://apply.hackkosice.com/"
