@@ -90,13 +90,10 @@ menu:
     - name: Activities
       identifier: opportunities
       weight: 50
-  footer1:
-    - name: About
-      URL: about
-      weight: 1
-    - name: Contact
-      URL: contact
-      weight: 5
+  #footer1:
+    #- name: Page
+    #  URL: page
+    #  weight: 1
   footer2:
     - name: MLH Code of Conduct
       URL: https://static.mlh.io/docs/mlh-code-of-conduct.pdf

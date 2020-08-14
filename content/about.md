@@ -4,8 +4,9 @@ date: 2020-07-30T21:50:45+00:00
 description: Get to know the team behind Hack Kosice.
 menu:
   main:
-    name: About Us
     weight: 60
+  footer1:
+    weight: 10
 use_sections: true
 
 team1:

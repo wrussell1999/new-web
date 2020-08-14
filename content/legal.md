@@ -3,7 +3,7 @@ title: Legal
 menu:
   footer1:
     name: Legal
-    weight: 30
+    weight: 40
 draft: true
 ---
 

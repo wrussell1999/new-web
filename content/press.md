@@ -6,6 +6,8 @@ menu:
   main:
     name: Press
     weight: 60
+  footer1:
+    weight: 30
 use_sections: true
 
 articles-list1:
