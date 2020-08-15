@@ -63,7 +63,7 @@ jobs:
     steps:
       - checkout
       - hugo/hugo-build:
-          extra-flags: -F --baseURL="<< parameters.baseurl >>"
+          extra-flags: --baseURL="<< parameters.baseurl >>"
       - when:
           condition: << parameters.html-proofer >>
           steps:
@@ -103,7 +103,7 @@ workflows:
   main:
     jobs:
       - build_firebase:
-          baseurl: 'https://fire.hackkosice.com/'
+          baseurl: 'https://hackkosice.com/'
           filters:
             branches:
               only: << pipeline.parameters.deploy-branch >>
