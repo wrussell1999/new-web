@@ -4,7 +4,7 @@
 	// Open links pointing outside this domain in a new tab
 	//let baseDomainRegex = /([-\w]+\.(?:[-\w]+\.xn--[-\w]+|[-\w]{3,}|[-\w]+\.[-\w]{2})$)|(^localhost$)|(^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$)/i
 	$(document.links).filter(function() {
-		return this.hostname !== window.location.hostname;
+		return (this.hostname !== window.location.hostname) && (this.target === "");
 	}).attr('target', '_blank');
 
 	// Preloader js    
