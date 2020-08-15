@@ -21,12 +21,6 @@
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-  
-  {{ "<!-- Lazy Script -->" | safeHTML }}
-  {{ $script := resources.Get "js/lazy.js"}}
-  <script src="{{ $script.RelPermalink }}"></script>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKZ4SZVXK3"></script>
   <script>
