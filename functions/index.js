@@ -16,12 +16,12 @@ exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     const email = req.body.email;
     const subject = req.body.subject;
-    const message = `${req.body.message}\n\n--\nThis e-mail was sent from a contact form on Hack Kosice (https://hackkosice.com)`;
+    const message = `${req.body.message}\n\n--\nThis e-mail was sent by ${email} via a contact form on Hack Kosice (https://hackkosice.com)`;
     console.log('Received a message from %s, with subject %s, saying: %s', email, subject, message);
     const msg = {
       from: 'Hack Kosice <contact@hackkosice.com>',
       to: 'Hack Kosice <contact@hackkosice.com>',
-      reply_to: email,
+      replyTo: email,
       subject: subject,
       text: message,
     }
