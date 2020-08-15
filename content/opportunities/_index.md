@@ -1,6 +1,7 @@
 ---
 title: Events
-date: 2020-07-06T11:46:13+00:00
+date: 2020-08-15T11:46:13+00:00
+description: Hack Kosice is building a growing community of like-minded people passionate about technology. Here is the list of events Hack Kosice organised for the hackers.
 bgImage: "images/bg/background.jpg"
 menu:
   main:

@@ -1,7 +1,7 @@
 ---
 title: Prednášky
-date: 2020-07-06T11:46:13+00:00
-description: "This is meta description"
+date: 2020-08-15T11:46:13+00:00
+description: V snahe pomôcť zvýšiť záujem o informačné technológie medzi mladými ľuďmi, ako aj zlepšiť kvalitu neformálneho vzdelávania na školách, sme sa rozhodli spustiť náš pilotný projekt odborných prednášok.
 bgImage: "images/bg/background.jpg"
 menu:
   main:

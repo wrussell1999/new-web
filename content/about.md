@@ -1,7 +1,7 @@
 ---
 title: About Us
 date: 2020-07-30T21:50:45+00:00
-description: Get to know the team behind Hack Kosice.
+description: Get to know the team behind Hack Kosice. These are the people who stand behind organising Hack Kosice and dreamers who want to help others grow.
 menu:
   main:
     weight: 60

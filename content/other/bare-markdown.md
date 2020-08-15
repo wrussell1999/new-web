@@ -1,6 +1,6 @@
 ---
 title: Bare markdown
-description: "This is meta description"
+description: This will be shown in google search and other places as a description.
 menu:
   main:
     parent: other

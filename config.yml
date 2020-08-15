@@ -39,6 +39,8 @@ params:
   logoAlt: images/logo.svg
   home: Home
   description: 250 Hackers. 24 Hours. 1 Spirit.
+  images:
+    - images/bg/background.jpg
   author: Hack Kosice
   cookie: true
   expireDay: 2

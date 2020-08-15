@@ -44,7 +44,7 @@ Each page has a block delimited by `---`, containing information such as the pag
 ---
 title: Page example
 date: 2020-07-06T11:46:13+00:00
-description: "This is meta description"
+description: This will be shown in google search and other places as a description.
 bgImage: "images/bg/background.jpg"
 menu: main
 ---
