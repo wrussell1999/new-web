@@ -2,8 +2,8 @@
 {{ with site.GetPage "/404" }}
 
 {{ $image := partial "get-image.html" .Params.bgimage }}
-{{ if gt $image.Width 1920 }}{{ $image = $image.Resize "1920x" }}{{ end }}
 {{ $image = $image.Filter (images.Gamma 3) (images.Brightness -47) }}
+{{ $image = $image.Resize "1920x q75" }}
 
 <section class="page-title title-404 bg-cover" style="background-image: url('{{ $image.RelPermalink }}');">
     <div class="container">
