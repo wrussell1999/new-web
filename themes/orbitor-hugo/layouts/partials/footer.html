@@ -105,3 +105,13 @@
 <script>
 	var indexURL = {{ "index.json" | relURL }}
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalitycsID }}"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', '{{ .Site.Params.googleAnalitycsID }}');
+</script>

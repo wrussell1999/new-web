@@ -12,21 +12,21 @@
 		$('.preloader').fadeOut(100);
 	});
 
-	$('.video-play').modalVideo();
+	//$('.video-play').modalVideo();
 
-	$('.portfolio-single-slider').slick({
+	/*$('.portfolio-single-slider').slick({
 		infinite: true,
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 2000
-	});
+	});*/
 
-	$('.clients-logo').slick({
+	/*$('.clients-logo').slick({
 		infinite: true,
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 2000
-	});
+	});*/
 
 	$('.testimonial-wrap').slick({
 		slidesToShow: 4,
@@ -110,21 +110,19 @@
 		]
 	});
 
-	$('.portfolio-gallery').each(function () {
+	/*$('.portfolio-gallery').each(function () {
 		$(this).find('.popup-gallery').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true
 			}
 		});
-	});
+	});*/
 
 	// Counter
 	$('.counter-stat').counterUp({
 		delay: 10,
 		time: 1000
 	});
-
-	
 
 })(jQuery);

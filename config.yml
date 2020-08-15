@@ -16,24 +16,24 @@ params:
     css:
       - URL: plugins/bootstrap/css/bootstrap.min.css
       - URL: plugins/themify/css/themify-icons.css
-      - URL: plugins/magnific-popup/dist/magnific-popup.css
-      - URL: plugins/modal-video/modal-video.css
-      - URL: plugins/animate-css/animate.css
+      #- URL: plugins/magnific-popup/dist/magnific-popup.css
+      #- URL: plugins/modal-video/modal-video.css
+      #- URL: plugins/animate-css/animate.css
       - URL: plugins/slick-carousel/slick/slick.css
       - URL: plugins/slick-carousel/slick/slick-theme.css
     js:
       - URL: plugins/jQuery/jquery.min.js
-      - URL: plugins/bootstrap/js/popper.js
+      #- URL: plugins/bootstrap/js/popper.js
       - URL: plugins/bootstrap/js/bootstrap.min.js
-      - URL: plugins/magnific-popup/dist/jquery.magnific-popup.min.js
+      #- URL: plugins/magnific-popup/dist/jquery.magnific-popup.min.js
       - URL: plugins/slick-carousel/slick/slick.min.js
       - URL: plugins/counterup/jquery.waypoints.min.js
       - URL: plugins/counterup/jquery.counterup.min.js
-      - URL: plugins/modal-video/modal-video.js
-      - URL: plugins/search/fuse.min.js
-      - URL: plugins/search/mark.js
-      - URL: plugins/search/search.js
-      - URL: plugins/google-map/map.js
+      #- URL: plugins/modal-video/modal-video.js
+      #- URL: plugins/search/fuse.min.js
+      #- URL: plugins/search/mark.js
+      #- URL: plugins/search/search.js
+      #- URL: plugins/google-map/map.js
       - URL: plugins/js-cookie/js.cookie.min.js
   logo: images/logo.svg
   logoAlt: images/logo.svg
