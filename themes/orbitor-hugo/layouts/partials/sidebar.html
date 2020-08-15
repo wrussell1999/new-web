@@ -11,10 +11,10 @@
     <h5>Latest Posts</h5>
     {{ range first 3 ( where .Site.Pages "Type" "post" )}}
     <div class="media py-3">
-      <a href="{{ .Permalink }}"><img class="mr-3" src="{{ .Params.Image | absURL }}"></a>
+      <a href="{{ .RelPermalink }}"><img class="mr-3" src="{{ .Params.Image | relURL }}"></a>
       <div class="media-body">
         <span class="text-sm text-muted">{{ .PublishDate.Format "02 Jan, 2006" }}</span>
-        <h6 class="my-2"><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
+        <h6 class="my-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h6>
       </div>
     </div>
     {{ end }}

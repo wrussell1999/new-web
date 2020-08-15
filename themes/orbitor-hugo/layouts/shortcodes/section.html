@@ -40,11 +40,11 @@
                     <h1 class="mb-3 mt-3">{{ .title | markdownify }}</h1>
                     <div class="mb-2">{{ .content | markdownify }}</div>
                     {{- with .button -}}
-                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4 mr-4">{{ .label }} <i
+                    <a href="{{ .link | relURL }}" class="btn btn-main mt-4 mr-4">{{ .label }} <i
                             class="ti-angle-right ml-2"></i></a>
                     {{- end -}}
                     {{- with .button2 -}}
-                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-4">{{ .label }} <i
+                    <a href="{{ .link | relURL }}" class="btn btn-solid-border mt-4">{{ .label }} <i
                             class="ti-angle-right ml-2"></i></a>
                     {{- end -}}
                 </div>
@@ -121,7 +121,7 @@
                     {{ if .button.enable }}
                     <p class="mb-30">{{ .content | markdownify }}</p>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main">{{ .label }}<i
+                    <a href="{{ .link | relURL }}" class="btn btn-main">{{ .label }}<i
                             class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                     {{ else }}
@@ -313,7 +313,7 @@
                     <div class="content">{{ $.Inner | markdownify }}</div>
                     {{ if .button.enable }}
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i
+                    <a href="{{ .link | relURL }}" class="btn btn-main mt-4">{{ .label }}<i
                             class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                     {{ end }}
@@ -321,7 +321,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="video-img">
-                    <img src="{{ .videothumb | absURL }}" alt="" class="img-fluid">
+                    <img src="{{ .videothumb | relURL }}" alt="" class="img-fluid">
                     <a data-video-id="{{ .videoid }}" class="video-play"><i class="ti-control-play"></i></a>
                 </div>
             </div>
@@ -342,7 +342,7 @@
                     <div class="content">{{ $.Inner | markdownify }}</div>
                     {{- if .button.enable -}}
                     {{- with .button -}}
-                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | relURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
                     {{- end -}}
                     {{- end -}}
                 </div>
@@ -352,7 +352,7 @@
                 {{- $sideimg_default_format = . -}}
                 {{- end -}}
                 {{ if isset . "link" }}
-                <a href="{{ .link | absURL }}">{{ partial "fill-image.html" (dict "asset" .image "format" $sideimg_default_format) }}</a>
+                <a href="{{ .link | relURL }}">{{ partial "fill-image.html" (dict "asset" .image "format" $sideimg_default_format) }}</a>
                 {{ else }}
                 {{ partial "fill-image.html" (dict "asset" .image "format" $sideimg_default_format) }}
                 {{ end }}
@@ -474,7 +474,7 @@
                     <h3 class="text-md mb-4 mt-2">{{ .title | markdownify }}</h3>
                     <div class="content">{{ .content | markdownify }}</div>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | relURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                 </div>
             </div>
@@ -519,7 +519,7 @@
                     {{ end }}
                     <div class="content">{{ .content | markdownify }}</div>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | relURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                 </div>
             </div>
@@ -558,7 +558,7 @@
                         <h4 class="mb-3">{{ .title | markdownify }}</h4>
                         <p>{{ .content | markdownify }}</p>
                         {{ with .button }}
-                        <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                        <a href="{{ .link | relURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                         {{ end }}
                     </div>
                 </div>
@@ -574,7 +574,7 @@
                         <h4 class="mb-3">{{ .title | markdownify }}</h4>
                         <p>{{ .content | markdownify }}</p>
                         {{ with .button }}
-                        <a href="{{ .link | absURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
+                        <a href="{{ .link | relURL }}" class="btn btn-solid-border mt-2">{{ .label }} <i class="ti-angle-right ml-2"></i></a>
                         {{ end }}
                     </div>
                 </div>
@@ -630,7 +630,7 @@
                 {{ if .button.enable }}
                 <div class="col-lg-4">
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main btn-round-full float-lg-right">{{ .label }}</a>
+                    <a href="{{ .link | relURL }}" class="btn btn-main btn-round-full float-lg-right">{{ .label }}</a>
                     {{ end }}
                 </div>
                 {{ end }}
@@ -717,7 +717,7 @@
                 <div class="google-map mt-90 mb-5">
                     <div id="map" data-latitude="{{ with $.Site.Params.mapLatitude }} {{ . }} {{ end }}"
                         data-longitude="{{ with $.Site.Params.mapLongitude }} {{ . }} {{ end }}"
-                        data-marker="{{ with $.Site.Params.mapMarker }} {{ . | absURL }} {{ end }}"></div>
+                        data-marker="{{ with $.Site.Params.mapMarker }} {{ . | relURL }} {{ end }}"></div>
                 </div>
             </div>
         </div>
@@ -764,7 +764,7 @@
                     </div>
                     {{ if .button.enable }}
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | relURL }}" class="btn btn-main mt-4">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                     {{ end }}
                 </div>
@@ -782,7 +782,7 @@
     <div class="container">
         {{ with .title }}<h2 class="text-md mb-5">{{ . }}</h2>{{ end }}
         <div class="row">
-            {{ range .articles}}
+            {{ range .articles }}
             <div class="col-md-4">
             <div class="card shadow mb-4">
                 {{ partial "fill-image.html" (dict "asset" .image "format" $cardlist_img_format "class" "card-img-top") }}
@@ -790,7 +790,7 @@
                     <h6 class="card-subtitle mt-1 mb-3 text-muted font-weight-light">{{ .subtitle | markdownify }}</h6>
                     <h5 class="card-title">{{ .title | markdownify }}</h5>
                     {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="btn btn-solid-border my-2">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
+                    <a href="{{ .link | relURL }}" class="btn btn-solid-border my-2">{{ .label }}<i class="ti-angle-right ml-2"></i></a>
                     {{ end }}
                 </div>
                 {{ with .date }}
