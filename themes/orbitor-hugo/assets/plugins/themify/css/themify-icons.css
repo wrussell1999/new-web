@@ -1,11 +1,12 @@
+/*noinspection CssUnknownTarget*/
 @font-face {
 	font-family: 'themify';
 	font-display: swap;
-	src:url('../fonts/themify.eot');
-	src:url('../fonts/themify.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/themify.woff') format('woff'),
-		url('../fonts/themify.ttf') format('truetype'),
-		url('../fonts/themify.svg') format('svg');
+	src:url('/fonts/themify.eot');
+	src:url('/fonts/themify.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/themify.woff') format('woff'),
+		url('/fonts/themify.ttf') format('truetype'),
+		url('/fonts/themify.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
