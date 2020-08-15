@@ -39,7 +39,7 @@
         ]
       },
       {
-        "source": "!(plugins)/**/*.@(js|css)",
+        "source": "!(plugins)?(/**)/*.@(js|css)",
         "headers": [
           {
             "key": "Cache-Control",
