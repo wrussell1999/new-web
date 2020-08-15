@@ -48,7 +48,7 @@ homepage_numbers:
       count: "15"
       unit: ""
     - title: "Countries"
-      count: "39"
+      count: "45"
       unit: ""
     - title: "Students"
       count: "1350"
