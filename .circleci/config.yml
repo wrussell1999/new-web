@@ -56,6 +56,7 @@ jobs:
       - image: klakegg/hugo:0.74.3-ext-nodejs
     environment:
       TZ: "Europe/Bratislava"
+      NODE_ENV: "development"
     steps:
       - checkout
       - restore_cache:
