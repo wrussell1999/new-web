@@ -382,7 +382,7 @@
         <div class="row">
             {{ range .teammember }}
             {{ with partial "person.html" (dict "person" . "ctx" $) }}
-            <div class="team-block-col col-lg-3 col-md-6 col-sm-6">
+            <div class="team-block-col col-lg-3 col-6">
                 <div class="team-block mb-5 mb-lg-0">
                     {{- partial "fill-image.html" (dict "asset" .image "format" $teammember_img_format "alt" .name) -}}
                     <h4 class="mt-3 mb-1">{{ .name }}
