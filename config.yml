@@ -20,7 +20,9 @@ params:
       #- URL: plugins/modal-video/modal-video.css
       #- URL: plugins/animate-css/animate.css
       - URL: plugins/slick-carousel/slick/slick.css
+        defer: true
       - URL: plugins/slick-carousel/slick/slick-theme.css
+        defer: true
     js:
       - URL: plugins/jQuery/jquery.min.js
       #- URL: plugins/bootstrap/js/popper.js

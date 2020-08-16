@@ -14,15 +14,23 @@
 
   {{ "<!-- CSS plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  {{ with resources.Get .URL | toCSS | postCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
-  {{ end }}
+  {{- $style := resources.Get .URL | toCSS | postCSS | minify | fingerprint -}}
+  {{- if .defer -}}
+  <link rel="preload" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"></noscript>
+  {{- else -}}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{- end -}}
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ with resources.Get "scss/style.scss" | toCSS | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" media="screen">
   {{ end }}
+
+  {{ "<!-- Preload fonts -->" | safeHTML }}
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,700|Montserrat:900,700" as="style" type="text/css" crossorigin>
+  <link rel="preload" href="/fonts/themify.woff" as="font" type="font/woff">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
