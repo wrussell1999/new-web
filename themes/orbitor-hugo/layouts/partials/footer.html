@@ -113,6 +113,19 @@
 	var indexURL = {{ "index.json" | relURL }}
 </script>
 
+<!-- deferred loading of images (not lazy) -->
+<script>
+    function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i = 0; i < imgDefer.length; i++) {
+            if (imgDefer[i].getAttribute('data-src')) {
+                imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+            }
+        }
+    }
+    window.onload = init;
+</script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalitycsID }}"></script>
 <script>

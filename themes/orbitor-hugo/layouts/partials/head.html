@@ -33,4 +33,7 @@
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
+
+  <!-- using class="jsonly" has the opposite effect as <noscript> -->
+  <noscript><style>.jsonly { display: none }</style></noscript>
 </head>
