@@ -32,6 +32,7 @@
 {{- else if eq $type "banner" -}}
 {{- $image := partial "get-image.html" .bgimage -}}
 {{- $image = $image.Resize "1920x q80 jpg" -}}
+<link rel="preload" as="image" href="{{ $image.RelPermalink }}" />
 <section class="banner d-flex align-items-center"
     style="background-image: url('{{ $image.RelPermalink }}');{{ with $.Get "style" }} {{ . | safeCSS }}{{ end }}">
     <div class="container">
@@ -114,6 +115,7 @@
 {{- else if eq $type "cta" -}}
 {{- $image := partial "get-image.html" .background -}}
 {{- $image = $image.Resize "1920x q60 jpg" -}}
+<link rel="preload" as="image" href="{{ $image.RelPermalink }}" />
 <section class="section cta" style="background: url('{{ $image.RelPermalink }}') no-repeat;">
     <div class="container">
         <div class="row">
