@@ -706,6 +706,9 @@
         </div>
     </div>
 </section>
+{{ with resources.Get "js/contact.js" | minify | fingerprint }}
+<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+{{ end }}
 <!-- /contact form -->
 
 <!-- map -->

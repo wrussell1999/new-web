@@ -81,11 +81,6 @@
 <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
 {{ end }}
 
-{{ "<!-- contact -->" | safeHTML }}
-{{ with resources.Get "js/contact.js" | minify | fingerprint }}
-<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
-{{ end }}
-
 <!-- cookie -->
 {{ if .Site.Params.cookie }}
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
