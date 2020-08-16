@@ -3,9 +3,6 @@ orbs:
   hugo: circleci/hugo@0.5.2
   firebase-deploy: azdevs/firebase-deploy@1.0.0
 parameters:
-  hugo-version:
-    type: string
-    default: '0.73'
   deploy-branch:
     type: string
     default: 'master'
@@ -13,7 +10,7 @@ jobs:
   build:
     executor:
       name: hugo/cibuilds
-      tag: << pipeline.parameters.hugo-version >>
+      tag: '0.73'
     parameters:
       html-proofer:
         default: true
@@ -47,7 +44,7 @@ jobs:
               rm -r public
               hugo --baseURL="<< parameters.baseurl >>" -DF
               cp -r public/* ../public_html'
-  build_firebase:
+  deploy_firebase:
     parameters:
       baseurl:
         type: string
@@ -55,9 +52,8 @@ jobs:
         default: false
         description: Whether or not to test the outputted HTML with HTML Proofer.
         type: boolean
-    executor:
-      name: hugo/cibuilds
-      tag: << pipeline.parameters.hugo-version >>
+    docker:
+      - image: klakegg/hugo:0.74.3-ext-nodejs
     environment:
       TZ: "Europe/Bratislava"
     steps:
@@ -65,16 +61,17 @@ jobs:
       - restore_cache:
           keys:
             # Find a cache corresponding to this specific package-lock.json
-            - npm-deps-v1-{{ checksum "package-lock.json" }}
+            - npm-deps-v1-{{ checksum "package-lock.json" }}-{{ checksum "functions/package-lock.json" }}
             # Fallback cache to be used
             - npm-deps-v1-
       - run:
           name: Install Dependencies
           command: npm install
       - save_cache:
-          key: npm-deps-v1-{{ checksum "package-lock.json" }}
+          key: npm-deps-v1-{{ checksum "package-lock.json" }}-{{ checksum "functions/package-lock.json" }}
           paths:
             - node_modules
+            - functions/node_modules
       - hugo/hugo-build:
           extra-flags: --baseURL="<< parameters.baseurl >>"
       - when:
@@ -82,47 +79,13 @@ jobs:
           steps:
             - hugo/html-proofer:
                 path: ./public
-      - persist_to_workspace:
-          root: .
-          paths:
-            - public
-            - firebase.json
-            - .firebaserc
-            - firestore.rules
-            - firestore.indexes.json
-            - functions/
-  deploy_firebase:
-    docker:
-      - image: circleci/node:lts
-    steps:
-      - attach_workspace:
-          at: ~/project
-      - restore_cache:
-          keys:
-            # Find a cache corresponding to this specific package-lock.json
-            - npm-functions-deps-v1-{{ checksum "functions/package-lock.json" }}
-            # Fallback cache to be used
-            - npm-functions-deps-v1-
-      - run:
-          name: Install Dependencies
-          command: cd functions && npm install
-      - save_cache:
-          key: npm-functions-deps-v1-{{ checksum "functions/package-lock.json" }}
-          paths:
-            - functions/node_modules
       - firebase-deploy/deploy:
           token: $FIREBASE_TOKEN
 workflows:
   main:
     jobs:
-      - build_firebase:
+      - deploy_firebase:
           baseurl: 'https://hackkosice.com/'
           filters:
             branches:
               only: << pipeline.parameters.deploy-branch >>
-      - deploy_firebase:
-          filters:
-            branches:
-              only: << pipeline.parameters.deploy-branch >>
-          requires:
-            - build_firebase
