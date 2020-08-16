@@ -70,15 +70,17 @@
 <!--<script src="{{ .Site.Params.gmapAPI | relURL }}"></script>-->
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
+{{ $scripts := slice }}
 {{ range .Site.Params.plugins.js }}
-{{ with resources.Get .URL | fingerprint }}
-<script type="text/javascript" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+{{ $scripts = $scripts | append (resources.Get .URL) }}
 {{ end }}
+{{ with $scripts | resources.Concat "js/bundle.js" | minify | fingerprint }}
+<script type="text/javascript" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
 {{ end }}
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ with resources.Get "js/script.js" | minify | fingerprint }}
-<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+<script type="text/javascript" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
 {{ end }}
 
 <!-- cookie -->
