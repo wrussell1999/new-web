@@ -45,7 +45,7 @@ params:
     - images/bg/background.jpg
   author: Hack Kosice
   cookie: true
-  expireDay: 2
+  expireDay: 14
   gmapAPI: >-
     https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places
   mapLatitude: '51.5223477'
