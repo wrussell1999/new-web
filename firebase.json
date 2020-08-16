@@ -30,20 +30,11 @@
         ]
       },
       {
-        "source": "plugins/**/*.@(js|css|woff|woff2)",
+        "source": "**/*.@(js|css|woff|woff2)",
         "headers": [
           {
             "key": "Cache-Control",
             "value": "public, max-age=31536000"
-          }
-        ]
-      },
-      {
-        "source": "!(plugins)?(/**)/*.@(js|css)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=2678400"
           }
         ]
       }

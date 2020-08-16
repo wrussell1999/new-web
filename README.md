@@ -137,3 +137,6 @@ If you want the same part/section/text to be included in multiple pages:
     ```markdown
     {{< include file="sample/included-file.md" >}}
     ```
+## Development advice
+
+- When adding script/style/font files, put it in the `assets` folder and use at least [Hugo's fingerprint](https://gohugo.io/hugo-pipes/fingerprint/) functionality to include the file's hash in its file name. This is important because **Firebase is set up to allow caching of all script/style/font files for up to 1 year**, therefore including a file without its fingerprint in the file name will result in the file almost never being updated on the client side.
