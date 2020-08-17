@@ -1,0 +1,30 @@
+{
+  "short_name": "Hack Kosice",
+  "name": "Hack Kosice",
+  "description": "Come and build your wildest ideas in 24 hours, surrounded with great designers, entrepreneurs, ideators and free food.",
+  "icons": [
+    {
+      "src": "/images/logo_square_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/logo_square_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#5e2137",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#5e2137",
+  "shortcuts": [
+    {
+      "name": "Hack Kosice 2020",
+      "short_name": "Hack Kosice 2020",
+      "description": "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people.",
+      "url": "/hk20/"
+    }
+  ]
+}
