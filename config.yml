@@ -55,6 +55,7 @@ params:
   copyright: '&copy; Copyright Hack Kosice 2020'
   preloader:
     enable: true
+  theme_color: '#5e2137'
   navBtn:
     enable: true
     label: Contact
