@@ -105,13 +105,20 @@
 </script>
 {{ end }}
 
-<!-- search index -->
 <script>
+	// search index
 	var indexURL = {{ "index.json" | relURL }}
-</script>
 
-<!-- deferred loading of images (not lazy) -->
-<script>
+	{{ with resources.Get "sw.js" | minify | fingerprint -}}
+	// register service worker
+	$(function(){
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register({{ .RelPermalink }});
+		};
+	})
+	{{ end -}}
+
+	// deferred loading of images (not lazy)
     function init() {
         var imgDefer = document.getElementsByTagName('img');
         for (var i = 0; i < imgDefer.length; i++) {
