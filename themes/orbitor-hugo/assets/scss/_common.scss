@@ -344,16 +344,6 @@ a {
   }
 }
 
-
-@include mobile {
-
-  h2,
-  .h2 {
-    font-size: 1.3rem;
-    line-height: 36px;
-  }
-}
-
 .content {
   * {
     margin-bottom: 20px;
