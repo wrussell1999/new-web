@@ -4,6 +4,7 @@ description: "The Hack Kosice organising team has opted for changing the way in 
 menu:
   main:
     parent: hk20
+    name: Going online
     weight: 16
 draft: true
 ---
