@@ -32,7 +32,7 @@ Below are some items we expect from you within one week of us sending the contra
 We want to start working with you on these things as soon as we sign the contract with you:
 
 1.  Clarify the name and description of your Hack Game
-2.  Decide on the number of mentors and recruiters you send, give us their names, contact information, area of expertise (if mentor) and through this form: https://goo.gl/GifMBN
+2.  Decide on the number of mentors and recruiters would be available online,, give us their names, contact information, area of expertise (if mentor) and through this form: https://goo.gl/GifMBN
 3.  Let us know about any other requirements you have 🙂
 </details>
 
