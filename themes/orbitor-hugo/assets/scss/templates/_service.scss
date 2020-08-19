@@ -1,13 +1,13 @@
 .service-item-list{
-	padding: 15px 30px;
-	background:$light;
+	padding: 20px 25px;
+	background: $light;
 	box-shadow: 0 0 15px rgba(0,0,0,.1);
 	border-radius: 5px;
 	margin: 0 0 20px;
+	min-height: (30px+2*20px);
 
 	i{
 		font-size: 30px;
-		line-height: 1.1;
 		margin-right: 20px;
 		float: left;
 		color: $primary-color;
@@ -16,10 +16,7 @@
 		padding-left: 50px;
 		line-height: 1.6;
 		margin-bottom: 0px;
-		color: $violet;
 	}
-
-	
 }
 
 .mb-50{
