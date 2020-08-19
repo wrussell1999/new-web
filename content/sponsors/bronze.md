@@ -7,6 +7,7 @@ aliases:
   - /bronze/
 ---
 
+
 {{< include file="sponsors/onboard-bronze.md" >}}
 
 <details class="bg-color-bronze">
