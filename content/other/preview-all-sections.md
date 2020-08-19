@@ -284,7 +284,6 @@ smallcta1:
   subtitle : "For Every type business"
   title : "Entrust your project to our best team of professionals"
   button:
-    enable : true
     label : "Contact Us"
     link : "contact"
 contact1:
@@ -331,7 +330,6 @@ column-list1:
         - Item 1
         - Item 2
       button: 
-        enable: true
         label: See on Google Maps
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6 
     - title: 'Venue: Kasárne Kulturpark'
@@ -339,7 +337,6 @@ column-list1:
         - Item 1
         - Item 2
       button: 
-        enable: true
         label: See on Google Maps
         link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
 ---

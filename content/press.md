@@ -112,7 +112,6 @@ articles-list1:
 smallcta1:
   title : "Do you have any more questions? Feel free to contact us!"
   button:
-    enable : true
     label : "Contact Us"
     link : "contact"
 ---
