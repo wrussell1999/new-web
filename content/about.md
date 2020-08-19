@@ -96,5 +96,5 @@ So, why *a hackathon* in *Kosice*?
 - [MLH](https://mlh.io/) was a perfect way to bring something new, yet well-tested, popular in the western parts of the world, to Košice
 - Košice is our home city and Slovakia is our motherland, and there weren't any great hackathons there
 
-Hence, [Hack Kosice](https://hackkosice.com) was born. **Welcome to the family!**
+Hence, [Hack Kosice]({{< static "/" >}}) was born. **Welcome to the family!**
 {{< /section >}}

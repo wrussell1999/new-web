@@ -634,7 +634,7 @@
                 </div>
                 {{ with .button }}
                 <div class="col-lg-4">
-                    <a href="{{ .link | relURL }}" class="btn btn-main btn-round-full float-lg-right">{{ .label }}</a>
+                    <a href="{{ if hasPrefix .link `mailto:` }}{{ .link }}{{ else }}{{ .link | relURL }}{{ end }}" class="btn btn-main btn-round-full float-lg-right">{{ .label }}</a>
                 </div>
                 {{ end }}
             </div>

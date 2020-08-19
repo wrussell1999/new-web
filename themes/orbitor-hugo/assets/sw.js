@@ -1,5 +1,5 @@
 var cacheName = 'hackkosice-v1';
-var contentToCache = ["/"];
+var contentToCache = ["{{ `/` | relURL }}"];
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open(cacheName).then((cache) => {
