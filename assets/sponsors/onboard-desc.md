@@ -35,20 +35,16 @@ We want to start working with you on these things as soon as we sign the contrac
 2.  Clarify the name and description of your workshop (gold and platinum)
 3.  Prepare to demonstrate the content of your workshop (5-10 min) – either send us a presentation or materials you wish to use (gold and platinum)
 4.  Clarify the name and description of your Hack Game (silver)
-5.  Send us the list of API/Hardware you intend to bring
-6.  Send us the list of branded items you are planning to bring and prepare the materials
-7.  Send us the PDF or PowerPoint slides of your stage presentation (gold and platinum)
-8.  Send us the prizes that you are planning to give if you decided to own a challenge and present the criteria of judging (gold and platinum)
-9.  Send us your stand plan, demonstrate your special activity and decide when you want to build the stand (can come a day before hackathon and leave a day after)
-10.  Decide on the number of mentors and recruiters you send, give us their names, contact information, area of expertise (if mentor) and dietary requirements through this form: https://goo.gl/GifMBN
-11.  Let us know about any other requirements you have 🙂
+5.  Send us the PDF or PowerPoint slides of your stage presentation (gold and platinum)
+6.  Send us the prizes that you are planning to give if you decided to own a challenge and present the criteria of judging (gold and platinum)
+7.  Decide on the number of mentors and recruiters you send, give us their names, contact information, area of expertise (if mentor) and through this form: https://goo.gl/GifMBN
+8.  Let us know about any other requirements you have 🙂
 </details>
 
 <details open>
-<summary><strong>Action list 3 - until 21.8.2020</strong></summary>
+<summary><strong>Action list 3 - until 28.8.2020</strong></summary>
 <p></p>
 
-1.  Send us branded items
-2.  Send us prizes (or bring it to HK20 – let us know if you will do so)
-3.  Send us API codes/Hardware/Coupons (or bring it to HK20 – let us know if you will do so)
+1.  By this time, you should have created your swapcard account together with virtual stand and informed all mentors and recruiters on how to use swapcard
+
 </details>
