@@ -8,7 +8,9 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   <meta name="theme-color" content="{{ .Site.Params.theme_color }}" />
-  <link rel="manifest" href="/manifest.webmanifest">
+  {{ with resources.Get `manifest.webmanifest` | resources.ExecuteAsTemplate `manifest.webmanifest` $ -}}
+  <link rel="manifest" href="{{ .RelPermalink }}">
+  {{- end }}
   {{ hugo.Generator }}
 
   {{ template "_internal/opengraph.html" . }}
@@ -16,7 +18,7 @@
 
   {{ "<!-- CSS plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  {{- $style := resources.Get .URL | toCSS | postCSS | minify | fingerprint -}}
+  {{- $style := resources.Get .URL | resources.ExecuteAsTemplate .URL $ | toCSS | postCSS | minify | fingerprint -}}
   {{- if .defer -}}
   <link rel="preload" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"></noscript>
@@ -31,10 +33,10 @@
   {{ end }}
 
   {{ "<!-- Preload fonts -->" | safeHTML }}
-  <link rel="preload" href="/fonts/themify.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="{{ `fonts/themify.woff` | relURL }}" as="font" type="font/woff" crossorigin>
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
 
   <!-- using class="jsonly" has the opposite effect as <noscript> -->
   <noscript><style>.jsonly { display: none }</style></noscript>

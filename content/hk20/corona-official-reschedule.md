@@ -37,4 +37,4 @@ Project lead | Hack Kosice
 
 ---
 
-*You can download the statement as PDF [here](/files/Hack-Kosice-Official-statement-regarding-Coronavirus.pdf).*
+*You can download the statement as PDF [here]({{< static `files/Hack-Kosice-Official-statement-regarding-Coronavirus.pdf` >}}).*
