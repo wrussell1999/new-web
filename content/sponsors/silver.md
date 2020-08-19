@@ -7,7 +7,7 @@ aliases:
   - /silver/
 ---
 
-{{< include file="sponsors/onboard-silver.md" >}}
+{{< include file="sponsors/onboard-desc.md" >}}
 
 <details class="bg-color-silver">
 <summary>SILVER</summary>
