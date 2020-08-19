@@ -1,6 +1,6 @@
 ## Logo on the website and banner
 
-Your company’s logo will be displayed on our website before, during and some time after the hackathon. Your logo will also be shown during the online livestream. Your company may also be presented in other selected promotional materials (videos, leaflets, etc.)
+Your company’s logo will be displayed on our website before, during and some time after the hackathon. Your logo will also be shown during the online livestream. Your company may also be presented in other selected promotional materials (videos, online banners, etc.)
 
 ## CVs of participants
 
