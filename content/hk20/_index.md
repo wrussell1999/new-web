@@ -141,9 +141,9 @@ faq:
 {{< section >}}
 # Online + Hubs
 
-Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, we unfortunately had to cancel our amazing venue Kunsthalle, Kosice — so **do not travel** to the venue in Kosice (updated as of 20 August).
+Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
 
-However, to keep the hype you are expecting, you can **participate from a Hub!**
+However, to not loose the hype and social contact, you can choose to **participate from a hub!**
 {{< /section >}}
 
 {{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}

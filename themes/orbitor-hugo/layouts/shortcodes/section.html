@@ -41,7 +41,7 @@
                 <div class="block content">
                     <span class="text-uppercase text-sm letter-spacing">{{ .subtitle | markdownify }}</span>
                     <h1 class="mb-3 mt-3">{{ .title | markdownify }}</h1>
-                    <div class="mb-2">{{ .content | markdownify }}</div>
+                    <div class="mb-2">{{ $.Inner | markdownify }}</div>
                     {{- with .button -}}
                     <a href="{{ .link | relURL }}" class="btn btn-main mt-4 mr-4">{{ .label }} <i
                             class="ti-angle-right ml-2"></i></a>
