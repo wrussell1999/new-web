@@ -12,7 +12,10 @@ module.exports = {
                 './themes/orbitor-hugo/assets/**/*.js',
                 './themes/orbitor-hugo/static/**/*.js',
             ],
-            whitelist: ['pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'ul', 'li', 'blockquote']
+            whitelist: [
+                'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'ul', 'li', 'blockquote',
+                "badge", "badge-primary", "badge-secondary", "badge-success", "badge-danger", "badge-warning", "badge-info", "badge-light", "badge-dark",
+            ]
         }),
         require('autoprefixer'),
         require('postcss-csso')
