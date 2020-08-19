@@ -12,34 +12,54 @@ layout: single
 
 onsite-online-hackathon:
   columns: 
-    - title: 'On-site hackathon'
+    - title: Online
       content: |
-        - 150 on-site hackers ready to innovate
-        - 10+ sponsors stands
-        - Safety measures to maintain social distancing
-        - Live workshops
-        - Free food and tons of SWAG
-        - Plenty of other games and activities
+        - You can participate from the comfort of your home
+        - Watch (and participate in!) the live stream
+        - 1-on-1 networking with others
+        - Just register on our online platform
       button: 
-        enable: false
-        label: Information for on-site hackers
-        link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6 
-    - title: 'Online hackathon'
+        label: Online platform
+        link: "#online-platform"
+    - title: Join a Hub
       content: |
-        - 100 hackers fully connected online
-        - Non-stop live stream of the whole event
-        - Virtual sponsors stands
-        - Even faster 1-on-1 mentor matching & networking online
-        - Access to all workshops, challenges, and opportunities online
-        - Engagement through bidirectional video streamed to the venue
+        - Create a hub **anywhere** in the world — a nearby cafe, co-working space, your home garden...
+        - Other hackers can join you hacking
+        - We might be able to ship you **free swag** and provide **pizza vouchers**!
       button: 
-        enable: false
-        label: Information for online hackers
-        link: https://goo.gl/maps/N3JmEi6PoeKtYPgM6
+        label: Find a hub
+        link: "#hubs"
 homepage_cta:
-  title : "What is a hackathon?"
+  title: "What is a hackathon?"
   background: images/hk19_opening_crop.jpg
-  content : "A hackathon is a focused 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly!"
+  content: A hackathon is a creative and social 24-hour event where students come together in small teams to share ideas and build something new and exciting, alongside a whole bunch of like-minded people. You learn immensely with the help of mentors, interact with companies and have fun! Hackathons are very beginner friendly and open to students passionate about innovations, technology, engineering, entrepreneurship, design, or more!
+online_platform:
+  title: Online platform
+  content: |
+    To maximise your experience, you will have access to an **online platform** connecting all hackers, sponsors, mentors, speakers and organisers. You'll get your invitation as well as more information about this by email once you [apply and get accepted](http://apply.hackkosice.com/dashboard) to Hack Kosice 2020.
+  button: 
+    label: Go to Swapcard
+    link: https://app.swapcard.com/event/hack-kosice-2020-1/
+  serviceItem:
+    - title: AI Networking and personalised in-app experience
+      icon: ti-layout-grid2
+    - title: Personalised schedule and in-app experience
+      icon: ti-user
+    - title: Live stream of the whole event
+      icon: ti-video-camera
+    - title: Group Chats and Q&As for live sesions
+      icon: ti-comments
+    - title: "[Download the app](https://www.swapcard.com/app/swapcard/) and don't miss a thing"
+      icon: ti-mobile
+hubs:
+  columns:
+    - title: Find a hub
+      content: |
+        <iframe src="https://www.google.com/maps/d/embed?mid=19I9Qzw-4R5L7ao-qffeOVVHlEe7dBO4h&hl=en" style="width: 100%; height: 500px;" frameborder="0"></iframe>
+    - title: Register your hub
+      content: |
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdarpogHulsbRKkItuoRnmQ3U9Qj_ZoXSg0Qi7FAiggWNwuxQ/viewform?embedded=true" frameborder="0" style="width: 100%; height: 500px;">Loading…</iframe>
+        <!-- <div class="typeform-widget" data-url="https://form.typeform.com/to/FXUvOabU" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 550px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></div> -->
 faq:
   title: FAQ
   columns:
@@ -51,7 +71,6 @@ faq:
         - A weekend of innovation and fun with **250 smartest peers**
         - Interaction with top tech companies in the region
         - Workshops and talks by experienced professionals (more info on that later)
-        - Free food, drinks & swag
         - Prizes
         
         If you wish to take another role (e.g. sponsor, mentor, speaker), please [contact us](/contact)!
@@ -62,8 +81,6 @@ faq:
         <summary>How much does it cost?</summary>
         
         Nothing. Attending Hack Kosice is 100% free, and we’d like to thank our awesome sponsors who make it possible!
-        
-        In addition to that, you will enjoy a lot of free food and swag during the event.
         
         </details>
         
@@ -79,27 +96,9 @@ faq:
         <details class="bg-light">
         <summary>Do you provide travel reimbursements?</summary>
         
-        Yes! We provide travel reimbursements if you are coming from abroad. Up to 20€ if you are coming from Czechia/Poland/Hungary/Austria/Ukraine and up to 50€ otherwise (excluding Slovakia).
+        Due to Covid-19 we decided to cancel our amazing venue Kunsthalle in Kosice. For this reason we will not provide any form of reimbursement.
         
-        To get reimbursed, you need to submit travel receipts, attend the hackathon and demo a project.
-        
-        </details>
-        
-        <details class="bg-light">
-        <summary>Do you issue visa invitation letters?</summary>
-        
-        Yes! If you need an Invitation letter for your visa application, please indicate so in [your application](https://apply.hackkosice.com/dashboard).
-        
-        </details>
-        
-        <details class="bg-light">
-        <summary>Can I come to the hackathon on-site?</summary>
-        
-        Hack Kosice 2020 will be a hybrid hackathon, combining both on-site and online participants. In general, you can come to the hackathon if you are currently resident in one of these countries: **Austria, Belgium, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, Germany, Greece, Hungary, Iceland, Ireland, Latvia, Lichtenstein, Lithuania, Malta, Monaco, Netherlands, Norway, Poland, Slovenia, Switzerland**. 
-        
-        You can also come from these countries if you additionally provide a proof of being tested negative for COVID-19: **France, Italy, Spain**.
-        
-        However, your allowed type of attendance is determined by our individual invitation email once you are accepted. *Note: these lists may change according to circumstances and [recommendations of the Ministry of Foreign and European Affairs of the Slovak Republic](https://www.mzv.sk/web/en/covid-19).*
+        However, feel free to participate from a nearby Hub!
         
         </details>
 
@@ -128,7 +127,7 @@ faq:
         <details class="bg-light">
         <summary>Is there a Code of Conduct?</summary>
         
-        Yes, there is. We enforce these rules very strongly. You can find it [here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        Yes, there is. We enforce these rules strongly. You can find it [here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
         
         </details>
         
@@ -138,28 +137,27 @@ faq:
         [Major League Hacking (MLH)](https://mlh.io/) is the official student hackathon league. Each year, they power over [200 weekend-long invention competitions](http://mlh.io/events) that inspire innovation, cultivate communities and teach computer science skills to more than **65,000 students** around the world. MLH is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs.
         
         </details>
-        
-        <details class="bg-light">
-        <summary>What is a hackathon?</summary>
-        
-        A creative and social event where students come together, share ideas and build cool software & hardware hacks during 24 hours. You learn immensely, interact with startups & companies and get to meet like-minded people from around the world. Don’t worry, it’s very beginner friendly, and open to students passionate about innovations, technology, engineering, entrepreneurship, design, or more!
-        
-        </details>
 ---
 {{< section >}}
-# On-site + Online = Hybrid hackathon
+# Online + Hubs
 
-After having to postpone our event in March due to the global pandemic, the Hack Kosice team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all our on-site and online participants.
+Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, we unfortunately had to cancel our amazing venue Kunsthalle, Kosice — so **do not travel** to the venue in Kosice (updated as of 20 August).
 
-To blend the On-site and Online parts of Hack Kosice 2020 as much as possible and maximise your experience, we decided to provide:
-- **[Swapcard](https://www.swapcard.com/)** platform for hybrid events,
-- **video stream** of the whole event
-
-You'll find more information about this in our emails once you [apply](http://apply.hackkosice.com/) and get invited to Hack Kosice 2020. Or don't hesitate to [contact us](mailto:contact@hackkosice.com) anytime.
+However, to keep the hype you are expecting, you can **participate from a Hub!**
 {{< /section >}}
 
 {{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}
 
 {{< section type="cta" config="homepage_cta" / >}}
 
-{{< section type="column-list" config="faq" / >}}
+{{< section type="solutions" config="online_platform" id="online-platform" class="bg-light" / >}}
+
+{{< section type="column-list" config="hubs" id="hubs" / >}}
+
+{{< section type="column-list" config="faq" class="pt-0" / >}}
+
+{{< section class="pt-0" >}}
+## Schedule
+
+<iframe src="https://app.swapcard.com/widget/event/hack-kosice-2020-1/plannings/RXZlbnRWaWV3XzQ4NzU5?showActions=true" style="border: none; margin: 0px; width: 100%; display: block; height: 60vh;"></iframe>
+{{< /section >}}
