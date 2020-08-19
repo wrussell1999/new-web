@@ -7,7 +7,7 @@ aliases:
   - /platinum/
 ---
 
-{{< include file="sponsors/onboard-desc.md" >}}
+{{< include file="sponsors/onboard-platinum.md" >}}
 
 <details class="bg-color-platinum">
 <summary>PLATINUM</summary>
