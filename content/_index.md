@@ -6,7 +6,8 @@ use_sections: true
 
 homepage_banner:
   bgImage: images/bg/background-triangle.png
-  subtitle: "250 Hackers. 24 Hours. 1 Spirit."
+  subtitle: |
+    250 Hackers. 24 Hours. <span class="d-block d-sm-inline" style="margin-bottom: 0;"></span>1 Spirit.
   title: "Hack Kosice 2020"
   content: |
     Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food.
