@@ -31,14 +31,8 @@ Below are some items we expect from you within one week of us sending the contra
 
 We want to start working with you on these things as soon as we sign the contract with you:
 
-1.  Clarify the name and description of your challenge, or decide not to have your own challenge and prize (gold and platinum)
-2.  Clarify the name and description of your workshop (gold and platinum)
-3.  Prepare to demonstrate the content of your workshop (5-10 min) – either send us a presentation or materials you wish to use (gold and platinum)
-4.  Clarify the name and description of your Hack Game (silver)
-5.  Send us the PDF or PowerPoint slides of your stage presentation (gold and platinum)
-6.  Send us the prizes that you are planning to give if you decided to own a challenge and present the criteria of judging (gold and platinum)
-7.  Decide on the number of mentors and recruiters you send, give us their names, contact information, area of expertise (if mentor) and through this form: https://goo.gl/GifMBN
-8.  Let us know about any other requirements you have 🙂
+1.  Decide on the number of mentors and recruiters would be available online,, give us their names, contact information, area of expertise (if mentor) and through this form: https://goo.gl/GifMBN
+2.  Let us know about any other requirements you have 🙂
 </details>
 
 <details open>

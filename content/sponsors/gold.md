@@ -7,7 +7,7 @@ aliases:
   - /gold/
 ---
 
-{{< include file="sponsors/onboard-desc.md" >}}
+{{< include file="sponsors/onboard-gold.md" >}}
 
 <details class="bg-color-gold">
 <summary>GOLD</summary>
