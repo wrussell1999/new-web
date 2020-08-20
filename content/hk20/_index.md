@@ -153,7 +153,7 @@ However, to not loose the hype and social contact, you can choose to **participa
 
 <span class="badge bg-wine-berry text-white text-sm mb-1">Hack Kosice 2019</span>&nbsp;<span class="badge bg-flamingo text-white text-sm mb-1">New at Hack Kosice 2020</span>
 
-<img src="{{< static `images/hk20/map-01.svg` >}}" class="img-fluid no-shadow" alt="Countries where hackers come from" style="margin-top: -5%;">
+<img src="{{< static `images/hk20/map-01.svg` >}}" class="img-fluid no-shadow" alt="Countries where hackers come from" style="margin-top: -5%; margin-bottom: -5%;">
 {{< /section >}}
 
 {{< section type="column-list" config="faq" id="faq" class="pb-0" / >}}
