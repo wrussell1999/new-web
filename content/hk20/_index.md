@@ -152,9 +152,21 @@ However, to not loose the hype and social contact, you can choose to **participa
 
 {{< section type="solutions" config="online_platform" id="online-platform" class="bg-light" / >}}
 
-{{< section type="column-list" config="hubs" id="hubs" / >}}
+{{< section type="column-list" config="hubs" id="hubs" class="pb-0" / >}}
 
-{{< section type="column-list" config="faq" class="pt-0" / >}}
+{{< section class="pb-0" >}}
+## Where do hackers come from?
+
+<span class="badge bg-wine-berry text-white text-sm mb-1">Hack Kosice 2019</span>&nbsp;<span class="badge bg-flamingo text-white text-sm mb-1">New at Hack Kosice 2020</span>
+
+<img src="{{< static `images/hk20/map-01.svg` >}}" class="img-fluid no-shadow" alt="Countries where hackers come from" style="margin-top: -5%;">
+{{< /section >}}
+
+{{< section type="column-list" config="faq" id="faq" class="pb-0" / >}}
+
+{{< section class="pt-0" >}}
+If you can't find an answer, please [let us know]({{< ref `contact` >}}) — it might help others, too.
+{{< /section >}}
 
 {{< section class="pt-0" >}}
 ## Schedule
