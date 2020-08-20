@@ -85,7 +85,7 @@ faq:
         </details>
         
         <details class="bg-light">
-        <summary>Do I need to be a student?</summary>
+        <summary>Who is eligible?</summary>
         
         Only students who are currently enrolled at a high school, college, university or graduated in past 12 months are eligible to attend.
         
@@ -94,22 +94,16 @@ faq:
         </details>
         
         <details class="bg-light">
-        <summary>Do you provide travel reimbursements?</summary>
+        <summary>How do I participate?</summary>
         
-        Due to Covid-19 we decided to cancel our amazing venue Kunsthalle in Kosice. For this reason we will not provide any form of reimbursement.
+        1.  You need to [apply first](https://apply.hackkosice.com/). Applications will be considered on an individual basis (or within your team if you register as a team).
+        2.  If you are invited, we will let you know by email
+        3.  Participate online from your home or [join a hub](#hubs)
         
-        However, feel free to participate from a nearby Hub!
+        *Due to Covid-19 we canceled our amazing venue. For this reason we will not provide any form of travel reimbursement, but hope to see you in-person next year!*
         
         </details>
-
     - content: |
-        <details class="bg-light">
-        <summary>Do I need to apply first?</summary>
-        
-        Yes. Applications will be considered on an individual basis (or within your team if you register as a team). You can apply [here](https://apply.hackkosice.com/).
-        
-        </details>
-        
         <details class="bg-light">
         <summary>Why am I asked to provide my CV?</summary>
         
@@ -134,7 +128,7 @@ faq:
         <details class="bg-light">
         <summary>What is Major League Hacking?</summary>
         
-        [Major League Hacking (MLH)](https://mlh.io/) is the official student hackathon league. Each year, they power over [200 weekend-long invention competitions](http://mlh.io/events) that inspire innovation, cultivate communities and teach computer science skills to more than **65,000 students** around the world. MLH is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs.
+        [Major League Hacking (MLH)](https://mlh.io/), our partner, is the official student hackathon league. Each year, they power over [200 weekend-long invention competitions](http://mlh.io/events) that inspire innovation, cultivate communities and teach computer science skills to more than **65,000 students** around the world. MLH is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs.
         
         </details>
 ---
@@ -143,7 +137,7 @@ faq:
 
 Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
 
-However, to not loose the hype and social contact, you can choose to **participate from a hub!**
+However, to not loose the hype and social contact, you can choose to **participate from a hub!** For questions, scroll to the [FAQ]({{< ref `#faq` >}}).
 {{< /section >}}
 
 {{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}
