@@ -136,8 +136,6 @@ A hackathon can't happen without sponsors. Currently, these companies Sponsor us
 
 {{< section type="clients_twocolumns" config="general_sponsors" / >}}
 
-{{< section type="clients" config="platinum_sponsors" bigger="true" / >}}
-
 {{< section type="clients" config="gold_sponsors" / >}}
 
 {{< section type="clients_twocolumns" config="silver_sponsors" / >}}
