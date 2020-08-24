@@ -11,9 +11,8 @@ draft: true
 
 banner1:
   bgImage: images/bg/background-triangle.png
-  subtitle : "250 Hackers. 24 Hours. 1 Spirit."
-  title : "Hack Kosice 2020"
-  content : "Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food."
+  subtitle: "250 Hackers. 24 Hours. 1 Spirit."
+  title: "Hack Kosice 2020"
   button:
     label: Apply
     link: "https://apply.hackkosice.com/"
@@ -365,7 +364,9 @@ hello from a basic section with custom `class` and `style` attributes! (note tha
 And *I can* use **markdown**!
 {{< /section >}}
 
-{{< section type="banner" config="banner1" / >}}
+{{< section type="banner" config="banner1" >}}
+Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food.
+{{< /section >}}
 
 {{< section type="bannerFeature" config="bannerFeature1" / >}}
 

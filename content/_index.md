@@ -1,7 +1,7 @@
 ---
 title: Hack Kosice
 date: 2020-08-15T11:46:13+00:00
-description: Come and build your wildest ideas in 24 hours, surrounded with great designers, entrepreneurs, ideators and free food. Hack Kosice 2020 will take place on 5—6 September as a Hybrid hackathon, both online and on-site in Kunsthalle, Kosice.
+description: Come and build your wildest ideas in 24 hours, surrounded with great designers, entrepreneurs, ideators and hyped atmosphere. Hack Kosice 2020 will take place on 5—6 September, online and in hubs worldwide.
 use_sections: true
 
 homepage_banner:
@@ -9,10 +9,6 @@ homepage_banner:
   subtitle: |
     250 Hackers. 24 Hours. <span class="d-block d-sm-inline" style="margin-bottom: 0;"></span>1 Spirit.
   title: "Hack Kosice 2020"
-  content: |
-    Come and build your wildest ideas in 24 hours, surrounded with great designers, <br/>entrepreneurs, ideators and free food.
-    
-    Hack Kosice 2020 will take place on **5—6 September** as a Hybrid hackathon, both **online** and **on-site** in [Kunsthalle, Kosice](https://goo.gl/maps/RE8BfkWreX1Jpnes5).
   button:
     label: Apply
     link: "https://apply.hackkosice.com/"
@@ -121,7 +117,11 @@ partners_sponsors:
     - id: challengerocket
 ---
 
-{{< section type="banner" config="homepage_banner" / >}}
+{{< section type="banner" config="homepage_banner" >}}
+Come and build your wildest ideas in 24 hours, surrounded with great designers, entrepreneurs, ideators and hyped atmosphere.
+    
+Hack Kosice 2020 will take place on **5—6 September**, **online** and in **hubs** worldwide.
+{{< /section >}}
 
 {{< section type="bannerFeature" config="homepage_features" / >}}
 
