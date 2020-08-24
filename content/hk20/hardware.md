@@ -4,6 +4,7 @@ date: 2020-08-15T11:46:13+00:00
 description: Our friends from Major League Hacking will bring amazing state-of-the-art hardware that you can borrow in case you are participating on-site, to make your vision come true!
 aliases:
   - /hardware/
+draft: true
 menu:
   main:
     weight: 60
