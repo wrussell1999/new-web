@@ -16,7 +16,7 @@ In  light of the worsening conditions connected to the global pandemic, and in o
 This decision is a natural outcome of long discussions within the team, but also with relevant health authorities such as:  
 
 - local medical care centres and other health professionals
-- ÚVZSR and RÚVZKE (local and national health bodies)
+- [ÚVZSR](http://www.uvzsr.sk/en/) and [RÚVZKE](https://www.ruvzke.sk/) (local and national health bodies)
 - members of the Crisis Management Team of Ministry of Interior Affairs
 
 It is in our best interest to **ensure the safety of every participant** and to enable them a full experience of HK20. Hence, the Hack Kosice team is currently developing a plan which would enable each and every hacker to have an extraordinary experience.
