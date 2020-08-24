@@ -6,7 +6,6 @@ menu:
     parent: hk20
     name: Going online
     weight: 16
-draft: true
 ---
 # Hack Kosice: Official statement regarding the organisation of HK20
 
