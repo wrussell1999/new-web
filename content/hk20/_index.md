@@ -1,7 +1,7 @@
 ---
 title: Hack Kosice 2020
-date: 2020-08-15T11:46:13+00:00
-description: Hack Kosice 2020 will take place on 5—6 September as a Hybrid hackathon, both online and on-site in Kunsthalle, Kosice.
+date: 2020-08-25
+description: Hack Kosice 2020 will take place on 5—6 September, online and in hubs worldwide.
 menu:
   main:
     weight: 10
