@@ -103,6 +103,13 @@ faq:
         *Due to Covid-19 we canceled our amazing venue. For this reason we will not provide any form of travel reimbursement, but hope to see you in-person next year!*
         
         </details>
+        
+        <details class="bg-light">
+        <summary>Do you provide travel reimbursements?</summary>
+        
+        **Due to Covid-19 we canceled all on-site participation** in our amazing venue, and we can't officially support our hackers traveling for the hackathon, therefore we can't provide any reimbursement. However, if you will be in Košice anyway, or you travel at your own risk, you can join the Kosice hub at your own responsibility. We hope to see you in-person next year!
+        
+        </details>
     - content: |
         <details class="bg-light">
         <summary>Why am I asked to provide my CV?</summary>
