@@ -1,6 +1,6 @@
 ---
 # This file is not supposed to be viewed, just defines the menu entry
-##menu:
+menu:
   main:
     identifier: other
     name: '[Templates]'
