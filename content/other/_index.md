@@ -5,5 +5,5 @@ menu:
     identifier: other
     name: '[Templates]'
     weight: 100
-draft: true
+draft: false
 ---
