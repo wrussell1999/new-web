@@ -64,11 +64,6 @@ sponsors:
     name: Storyous
     url: https://storyous.com/
     logo: images/sponsors/storyous.png
-  - id: thermo_fisher
-    tier: silver
-    name: ThermoFisher Scientific
-    url: https://thermofisher.jobs.cz/
-    logo: images/sponsors/thermo_fisher.png
   - id: 46elks
     tier: bronze
     name: 46elks
