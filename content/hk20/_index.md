@@ -11,7 +11,7 @@ use_sections: true
 layout: single
 
 onsite-online-hackathon:
-  columns: 
+  columns:
     - title: Online
       content: |
         - You can participate from the comfort of your home
@@ -25,7 +25,7 @@ onsite-online-hackathon:
       content: |
         - Create a hub **anywhere** in the world — a nearby cafe, co-working space, your home garden...
         - Other hackers can join you hacking
-        - We might be able to ship you **free swag** and provide **pizza vouchers**!
+        - We might be able to ship you **free swag** and provide other benefits!
       button: 
         label: Find a hub
         link: "#hubs"
@@ -55,7 +55,9 @@ hubs:
   columns:
     - title: Find a hub
       content: |
-        <iframe src="https://www.google.com/maps/d/embed?mid=19I9Qzw-4R5L7ao-qffeOVVHlEe7dBO4h&hl=en" style="width: 100%; height: 500px;" frameborder="0"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=19I9Qzw-4R5L7ao-qffeOVVHlEe7dBO4h&hl=en" style="width: 100%; height: 500px; margin-bottom: 0px;" frameborder="0"></iframe>
+        
+        *Register to a hub after opening the associated Swapcard link.*
     - title: Register your hub
       content: |
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdarpogHulsbRKkItuoRnmQ3U9Qj_ZoXSg0Qi7FAiggWNwuxQ/viewform?embedded=true" frameborder="0" style="width: 100%; height: 500px;">Loading…</iframe>
