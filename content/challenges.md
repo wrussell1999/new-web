@@ -25,7 +25,8 @@ hardware:
       image: images/sponsors/siemens_transparent.png
 
     - title: Visma Assistant by Visma
-      content: |**Idea:** 
+      content: |
+        **Idea:** 
         
         Help our newcomers and colleagues to reach out to the information they need quicker and flexible via AI Voice Assistant. As a newcomer it's difficult to handle all information from the very beginning, so to keep on track you need a smart assistant to help you out. And because we're Google positive, we'd be happy if you'll use Google as a preferred platform. Other preferred integrations are Google Calendar, Slack, etc. 
         **What we would like to see as the end result:** 
