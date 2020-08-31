@@ -13,25 +13,22 @@ hardware:
   serviceItem:
     - title: Regular Investing for Gen-Z by Tatra Banka
       content: |
-        Voice-controlled smart speaker with Alexa. Part of the Echo line of cylindrical voice-controlled computing devices that connect to the Alexa Voice Service for providing responses to questions, playing music, reporting on weather, news or sports scores and more.
+        Create easy and intuitive feature that helps with investing to funds using regular contribution, which can be changed by the user. Create onboarding, motivation to invest and well-arranged info about the status of user's portfolio
+      
+      image: images/sponsors/tatra_banka.png
 
-        Included:
-        - Brick Charger
-      image: images/sponsors/tatra_banka.png format="22x267 q60 png"
-
-    - title: Arduino 101 (5x)
+    - title: Digitalization in Healthcare by Siemens Healthineers
       content: |
-        An open-source physical computing platform based on a simple microcontroller board, and a development environment for writing software for the board.
+        Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. 
 
-        Included:
-        - USB 2.0 Cable
-      image: images/hardware/arduino.png
 
-    - title: Base Shield (5x)
+      image: images/sponsors/siemens.png
+
+    - title: Visma Assistant by Visma
       content: |
-        Grove module connector.
+        Idea: Help our newcomers and colleagues to reach out to the information they need quicker and flexible via AI Voice Assistant. As a newcomer it's difficult to handle all information from the very beginning, so to keep on track you need a smart assistant to help you out. And because we're Google positive, we'd be happy if you'll use Google as a preferred platform. Other preferred integrations are Google Calendar, Slack, etc. What we would like to see as the end result: We need an administrative dashboard where the girls from back-office can add common questions and answers to them, they should be able to set events which you want to attend. We would like to have the ability to talk to the Visma Assistant via Google Assistant and also we would like to use it inside our Slack.
 
-      image: images/hardware/base-shield.png
+      image: images/sponsors/visma.png
 
     - title: Raspberry Pi 4 B Kit (4x)
       content: |
