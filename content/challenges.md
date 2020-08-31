@@ -42,76 +42,19 @@ hardware:
 
       image: images/sponsors/visma.png
 
-    - title: Raspberry Pi 4 B Kit (4x)
+    - title: Machine Learning in healthcare by VSL
       content: |
-        Small single board computers with 1 GB of RAM, gigabit ethernet, micro HDMI ports, and a quad core processor. It does everything a desktop computer can do, and is a developer staple.
+        add later, add later , add later, add later, add later, add later, add later, add later, add later, add later
 
-        Included:
-          - Grove Base HAT for RPi
-          - USB-C Power Supply
-          - 1 Ft Ethernet Cable
-          - 1 Ethernet Adapter
+      image: images/sponsors/vsl.png
 
-      image: images/hardware/rpi.png
-
-    - title: Amazon Echo Show (1x)
+    - title: Assets challenge by UPJŠ
       content: |
-        Smart speaker with Alexa. Similar to other products in the Echo line, but additionally features a touchscreen display that can display visual information to accompany responses, as well as to conduct video calls.
+        Cybersecurity plays an important role in companies. In order for companies to have an overview of cyber threats and attacks targeting their computer network, it is necessary to effectively evaluate the obtained data. Feel free to use this one-week dataset from real computer networks in the Czech Republic containing over 500 million security alerts. Help us build a solution to protect companies against cyber threats via their visualization, forecasting or profiling or other methods.
 
-        Included:
-          - Brick Charger
+      image: images/sponsors/upjs.png
 
-      image: images/hardware/echo-show.png
 
-    - title: Google Home Mini (4x)
-      content: |
-        Voice-controlled, hands-free speaker. Google Home Mini is Google Assistant anywhere you want it. Ask it questions. Tell it to do things. It’s your own Google, always ready to help.
-
-        Included:
-          - Power Cable
-
-      image: images/hardware/home-mini.png
-
-    - title: Leap Motion (2x)
-      content: |
-        The Leap Motion Controller senses your hands and fingers and follows their every gesture. Has a C++, Unity, Objective C (IOS), Java, Python and Javascript SDK.
-
-        Included:
-          - Leap Motion Cable
-
-      image: images/hardware/leap-motion.png
-
-    - title: DigiKey Component Kit (1x)
-      content: |
-        Case containing tools necessary for hardware hacks, as well as additional gadgets and accessories
-
-        Included:
-          - Soldering Equipment
-          - Tools
-          - Cameras
-          - Sensors
-          - Wires
-
-      image: images/hardware/component-kit.png
-
-    - title: Dell XPS (2x)
-      content: |
-        Laptop runs either Windows 10 or Ubuntu.
-
-        Included:
-          - Laptop charger
-
-      image: images/hardware/dell-xps.png
-
-    - title: FitBit (2x)
-      content: |
-        A smart watch fitness tracker that uses a 3-axis accelerometer
-
-        Included:
-          - Charger
-          - Additional Straps
-
-      image: images/hardware/fit-bit.png
 ---
 
 {{< section class="pb-0" >}}
