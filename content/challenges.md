@@ -5,7 +5,7 @@ description: Challenges for HK 2020!
 draft: true
 menu:
   main:
-    weight: 100
+    weight: 60
 use_sections: true
 
 hardware:
