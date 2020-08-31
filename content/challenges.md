@@ -22,7 +22,7 @@ hardware:
         Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. 
 
 
-      image: images/sponsors/siemens.png
+      image: images/sponsors/siemens_transparent.png
 
     - title: Visma Assistant by Visma
       content: |
