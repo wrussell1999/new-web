@@ -96,11 +96,12 @@ faq:
         </details>
         
         <details class="bg-light">
-        <summary>How do I participate?</summary>
+        <summary>How do I participate?<span class="badge badge-warning text-white text-sm ml-2">Updated</span></summary>
         
-        1.  You need to [apply first](https://apply.hackkosice.com/). Applications will be considered on an individual basis (or within your team if you register as a team).
-        2.  If you are invited, we will let you know by email
-        3.  Participate online from your home or [join a hub](#hubs)
+        1.  You need to [apply today](https://apply.hackkosice.com/). Applications will be considered on an individual basis (or within your team if you register as a team)
+        2.  We will let you know by email if you are accepted. You to confirm your attendance as soon as possible.
+        3.  We'll invite you to [Swapcard](https://app.swapcard.com/event/hack-kosice-2020-1/) where the hackathon is hosted
+        4.  Participate online from your home or [join a hub](#hubs)
         
         *Due to Covid-19 we canceled our amazing venue. For this reason we will not provide any form of travel reimbursement, but hope to see you in-person next year!*
         
@@ -124,6 +125,16 @@ faq:
         <summary>Will we work in teams?</summary>
         
         Yes, you can find a **team of up to 4 people**. However, if you come alone, you can participate in our team formation event at the beginning of the hackathon, where you can meet others with similar interests and complementary skillsets.
+        
+        </details>
+        
+        <details class="bg-light">
+        <summary>How do I submit my project?<span class="badge badge-warning text-white text-sm ml-2">New</span></summary>
+        
+        Register and submit your project to [Devpost](https://hackkosice-2020.devpost.com/).
+        - You need to submit a **2-minute video** demoing your project along with the description and other information
+        - The **first submission** deadline is at **22.00 CEST** on **Saturday**, 5 September, but you can continue working on your project afterwards
+        - During judging (1-3pm CEST on Sunday, 6 September) **your team needs to be available on a video call** to answer questions from any judges (call link provided later), otherwise your team might be disqualified
         
         </details>
         
