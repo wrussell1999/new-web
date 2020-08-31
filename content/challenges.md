@@ -58,9 +58,9 @@ hardware:
 ---
 
 {{< section class="pb-0" >}}
-# MLH Hardware Components
+# Challenges for Hack Kosice 2020
 
-Our friends from [Major League Hacking](https://mlh.io/) will bring amazing state-of-the-art hardware that you can borrow in case you are participating on-site, to make your vision come true!
+Hey hackers! The following challenges are available for this year:
 {{< /section >}}
 
 {{< section type="fit-services" config="hardware" / >}}
