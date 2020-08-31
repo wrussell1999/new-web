@@ -60,7 +60,7 @@ hardware:
 {{< section class="pb-0" >}}
 # Challenges for Hack Kosice 2020
 
-Hey hackers! The following challenges are available for this year:
+**Hey hackers! The following challenges are available for this year:**
 {{< /section >}}
 
 {{< section type="fit-services" config="hardware" / >}}
