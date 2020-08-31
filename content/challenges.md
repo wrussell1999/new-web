@@ -8,7 +8,7 @@ menu:
     weight: 60
 use_sections: true
 
-challenges:
+hardware:
   numbering: false
   serviceItem:
     - title: Regular Investing for Gen-Z by Tatra Banka
