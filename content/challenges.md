@@ -26,7 +26,7 @@ hardware:
 
     - title: Visma Assistant by Visma
       content: |
-        Idea: Help our newcomers and colleagues to reach out to the information they need quicker and flexible via AI Voice Assistant. As a newcomer it's difficult to handle all information from the very beginning, so to keep on track you need a smart assistant to help you out. And because we're Google positive, we'd be happy if you'll use Google as a preferred platform. Other preferred integrations are Google Calendar, Slack, etc. What we would like to see as the end result: We need an administrative dashboard where the girls from back-office can add common questions and answers to them, they should be able to set events which you want to attend. We would like to have the ability to talk to the Visma Assistant via Google Assistant and also we would like to use it inside our Slack.
+        **Idea:** Help our newcomers and colleagues to reach out to the information they need quicker and flexible via AI Voice Assistant. As a newcomer it's difficult to handle all information from the very beginning, so to keep on track you need a smart assistant to help you out. And because we're Google positive, we'd be happy if you'll use Google as a preferred platform. Other preferred integrations are Google Calendar, Slack, etc. **What we would like to see as the end result:** We need an administrative dashboard where the girls from back-office can add common questions and answers to them, they should be able to set events which you want to attend. We would like to have the ability to talk to the Visma Assistant via Google Assistant and also we would like to use it inside our Slack.
 
       image: images/sponsors/visma.png
 
