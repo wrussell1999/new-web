@@ -17,7 +17,7 @@ hardware:
 
         Included:
         - Brick Charger
-      image: images/sponsors/tatra_banka.png
+      {{< image asset="images/sponsors/tatra_banka.png" format="400x267 q80 png" alt="Tatra Banka" >}}
 
     - title: Arduino 101 (5x)
       content: |
