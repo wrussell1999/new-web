@@ -37,6 +37,8 @@ online_platform:
   title: Online platform
   content: |
     To maximise your experience, you will have access to an **online platform** connecting all hackers, sponsors, mentors, speakers and organisers. You'll get your invitation as well as more information about this by email once you [apply and get accepted](http://apply.hackkosice.com/dashboard) to Hack Kosice 2020.
+    
+    *Update 1 September: Apologise to all who accidentally received an invitation to our out-of-date Slack workspace, it will not be used and this is now fixed.*
   button: 
     label: Go to Swapcard
     link: https://app.swapcard.com/event/hack-kosice-2020-1/
