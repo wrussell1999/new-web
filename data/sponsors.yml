@@ -79,6 +79,11 @@ sponsors:
     name: Matsuko
     url: http://matsuko.com/
     logo: images/sponsors/matsuko.png
+  - id: trama
+    tier: bronze
+    name: Trama
+    url: http://tramatm.com/
+    logo: images/sponsors/trama.svg
   - id: fontech
     tier: medial
     name: Fontech
