@@ -1,0 +1,11 @@
+{{/*
+    use the template as follows:
+    {{ partial "button.html" (dict "link" ""http://..." "label" "Read more" "style" "btn-main") }}
+    ("style" parameter is optional:)
+    {{ partial "button.html" (dict "link" ""http://..." "label" "Read more") }}
+
+    example styles:
+      - btn-main
+      - btn-solid-border
+*/}}
+<a href="{{ .link | relURL }}" class="btn {{ if .style }}{{ .style }}{{ else }}btn-main{{ end }}">{{ .label }}<i class="ti-angle-right ml-2"></i></a>

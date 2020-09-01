@@ -147,6 +147,12 @@ faq:
 Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
 
 However, to not loose the hype and social contact, you can choose to **participate from a hub!** For questions, scroll to the [FAQ]({{< ref `#faq` >}}).
+
+### Challenges
+
+Our sponsors prepared amazing challenges for you to tackle and win prizes.
+
+{{< button link="hk20/challenges" label="See the challenges" style="btn-solid-border" >}}
 {{< /section >}}
 
 {{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}
