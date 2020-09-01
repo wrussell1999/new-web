@@ -13,7 +13,9 @@ hardware:
   serviceItem:
     - title: Regular Investing for Gen-Z by Tatra Banka
       content: |
-        Create easy and intuitive feature that helps with investing to funds using regular contribution, which can be changed by the user. Create onboarding, motivation to invest and well-arranged info about the status of user's portfolio
+        Create easy and intuitive feature that helps with investing to funds using regular deposits, which can be changed by the user. Create onboarding, motivation to invest and well-arranged infographics about the status of user's portfolio.
+        
+        Our current solution is more used by experienced investors and older generation, whilst new start-ups especially target Generation Z.
       
       image: images/sponsors/tatra_banka.png
 
