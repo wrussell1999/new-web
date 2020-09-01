@@ -23,7 +23,7 @@ hardware:
 
     - title: Digitalization in Healthcare by Siemens Healthineers
       content: |
-        Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. 
+        Create a product that can revolutionize digitalization in healthcare.
 
 
       image: images/sponsors/siemens_transparent.png
@@ -53,7 +53,7 @@ hardware:
 
     - title: Machine Learning in healthcare by VSL
       content: |
-        add later, add later , add later, add later, add later, add later, add later, add later, add later, add later
+        To be added...
 
       image: images/sponsors/vsl.png
 
