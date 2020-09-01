@@ -2,7 +2,6 @@
 title: Challenges
 date: 2020-08-15T11:46:13+00:00
 description: Challenges for HK 2020!
-draft: true
 menu:
   main:
     name: Challenges
