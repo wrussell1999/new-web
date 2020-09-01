@@ -490,7 +490,7 @@
 
 <!-- fit-services -->
 {{- else if eq $type "fit-services" -}}
-{{- $services_img_format := "640x360 q60 jpg" -}}
+{{- $fit_services_default_format := "280x280 q95 jpg" -}}
 {{- $numbering := or (not (isset . "numbering")) (.numbering) -}}
 <section class="section">
     <div class="container">
@@ -501,16 +501,16 @@
         {{ range $index, $element := .serviceitem }}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         <div class="row flex-lg-row content-padding-bottom">
-            <div class="col-lg-6{{ if not (modBool $index 2) }} order-lg-last{{ end }}">
-                <div class="service-img mb-5 mb-lg-0">
+            <div class="col-lg-4{{ if not (modBool $index 2) }} order-lg-last{{ end }} text-center">
+                <div class="fit-service-img mb-5 mb-lg-0">
                     {{ if isset . "link" }}
-                    <a href="{{ .link }}">{{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}</a>
+                    <a href="{{ .link }}">{{ partial "fit-image.html" (dict "asset" .image "format" $fit_services_default_format) }}</a>
                     {{ else }}
-                    {{ partial "fit-image.html" (dict "asset" .image "format" $services_img_format) }}
+                    {{ partial "fit-image.html" (dict "asset" .image "format" $fit_services_default_format) }}
                     {{ end }}
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="service-info">
                     {{ if $numbering }}
                     <span class="text-color font-weight-bold">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}</span>&nbsp;
