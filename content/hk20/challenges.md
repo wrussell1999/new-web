@@ -5,7 +5,9 @@ description: Challenges for HK 2020!
 draft: true
 menu:
   main:
-    weight: 60
+    name: Challenges
+    parent: hk20
+    weight: 19
 use_sections: true
 
 hardware:
