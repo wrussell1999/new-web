@@ -28,14 +28,14 @@ hardware:
 
     - title: Visma Assistant by Visma
       content: |
+        
         **Idea:** 
-        
         Help our newcomers and colleagues to reach out to the information they need quicker and flexible via AI Voice Assistant. As a newcomer it's difficult to handle all information from the very beginning, so to keep on track you need a smart assistant to help you out. And because we're Google positive, we'd be happy if you'll use Google as a preferred platform. Other preferred integrations are Google Calendar, Slack, etc. 
+        
         **What we would like to see as the end result:** 
-        
         We need an administrative dashboard where the girls from back-office can add common questions and answers to them, they should be able to set events which you want to attend. We would like to have the ability to talk to the Visma Assistant via Google Assistant and also we would like to use it inside our Slack.       
-        **Sample:**
         
+        **Sample:**
         My first days in the company. It is difficult for me to know which events I need to attend, when I need to fill my working hours form and so on. But lucky me, in the company we have a Virtual Assistant to help with these everyday tasks.  I heard from a colleague that we have traditional breakfasts each month, but I have  no event in my calendar. I also heard from a colleague that our Virtual Assistant knows everything about these types of events, and can invite me to them. So I am going to ask it about the event:
           
         
