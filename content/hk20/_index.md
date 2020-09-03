@@ -10,6 +10,16 @@ menu:
 use_sections: true
 layout: single
 
+event_live:
+  columns:
+    - title: HK20 is live!
+      content: |
+        abc
+      button:
+        label: Go to the event platform
+        link: https://app.swapcard.com/event/hack-kosice-2020-1
+    - content: |
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BIuhS1qvHjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 onsite-online-hackathon:
   columns:
     - title: Online
@@ -18,7 +28,7 @@ onsite-online-hackathon:
         - Watch (and participate in!) the live stream
         - 1-on-1 networking with others
         - Just register on our online platform
-      button: 
+      button:
         label: Online platform
         link: "#online-platform"
     - title: Join a Hub
@@ -155,6 +165,18 @@ faq:
         </details>
 ---
 {{< section >}}
+# HK20 is live!
+
+There is a 32-hour non-stop stream with every minute packed with awesome content!<br/>[Join us on Swapcard](https://app.swapcard.com/event/hack-kosice-2020-1) if you are attending.
+
+<div class="col-lg-6 d-inline-block text-center">
+  <div class="aspect-16-9">
+    <iframe src="https://www.youtube.com/embed/BIuhS1qvHjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="aspect-box"></iframe>
+  </div>
+</div>
+{{< /section >}}
+
+{{< section class="pt-0" >}}
 # Online + Hubs
 
 Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
