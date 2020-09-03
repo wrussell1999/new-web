@@ -22,7 +22,7 @@ hardware:
 
     - title: Digitalization in Healthcare by Siemens Healthineers
       content: |
-        Create a product that can revolutionize digitalization in healthcare.
+        The challenge is to create application that helps directly patients and doctors or healthcare providers like insurance companies etc.  Examples of the application could be AI based decision system to predict Covid-19 new cases, detection of cancers on CT/Xray images. Application might improve flow of payments for healthcare reimbursements. You are free to choose the area where you would like to improve the Digitalization in Healthcare.
 
 
       image: images/sponsors/siemens_transparent.png
