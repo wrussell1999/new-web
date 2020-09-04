@@ -164,7 +164,7 @@ There is a 32-hour non-stop stream with every minute packed with awesome content
 </div>
 {{< /section >}}
 
-{{< section >}}
+{{< section class="pt-0" >}}
 # Going Online
 
 Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
