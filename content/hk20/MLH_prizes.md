@@ -73,7 +73,7 @@ hardware:
 check your pre-event email for an exact list of specific prizes we’re bringing.**
 {{< /section >}}
 
-{{< section type="fit-services" config="hardware" / >}}
+{{< section type="fit" config="hardware" / >}}
 
 
 
