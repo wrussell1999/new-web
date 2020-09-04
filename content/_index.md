@@ -90,6 +90,8 @@ bronze_sponsors:
   sponsors:
     - id: 46elks
     - id: matsuko
+    - id: trama
+    - id: sparring
 medial_sponsors:
   title: "Media Partners"
   color: black

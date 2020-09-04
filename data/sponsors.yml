@@ -79,6 +79,16 @@ sponsors:
     name: Matsuko
     url: http://matsuko.com/
     logo: images/sponsors/matsuko.png
+  - id: trama
+    tier: bronze
+    name: Trama
+    url: http://tramatm.com/
+    logo: images/sponsors/trama.png
+  - id: sparring
+    tier: bronze
+    name: Sparring
+    url: https://sparring.io/
+    logo: images/sponsors/sparring.png
   - id: fontech
     tier: medial
     name: Fontech

@@ -2,7 +2,6 @@
 title: Challenges
 date: 2020-08-15T11:46:13+00:00
 description: Challenges for HK 2020!
-draft: true
 menu:
   main:
     name: Challenges
@@ -23,7 +22,7 @@ hardware:
 
     - title: Digitalization in Healthcare by Siemens Healthineers
       content: |
-        Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. Pridat text. 
+        The challenge is to create application that helps directly patients and doctors or healthcare providers like insurance companies etc.  Examples of the application could be AI based decision system to predict Covid-19 new cases, detection of cancers on CT/Xray images. Application might improve flow of payments for healthcare reimbursements. You are free to choose the area where you would like to improve the Digitalization in Healthcare.
 
 
       image: images/sponsors/siemens_transparent.png
@@ -53,7 +52,7 @@ hardware:
 
     - title: Machine Learning in healthcare by VSL
       content: |
-        add later, add later , add later, add later, add later, add later, add later, add later, add later, add later
+        To be added...
 
       image: images/sponsors/vsl.png
 
