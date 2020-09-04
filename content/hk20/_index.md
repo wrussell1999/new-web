@@ -102,6 +102,16 @@ faq:
         **Due to Covid-19 we canceled all on-site participation** in our amazing venue, and we can't officially support our hackers traveling for the hackathon, therefore we can't provide any reimbursement. We hope to see you in-person next year!
         
         </details>
+        <details class="bg-light">
+        <summary>Update on hubs<span class="badge badge-warning text-white text-sm ml-2">New</span></summary>
+        
+        Due to worsening health situation, we have decided to cancel our support of hubs. The health and safety of our hackers is our biggest priority.
+        
+        As individuals you can make your own decisions on if you feel it safe to meet with friends.
+        
+        Stay strong, stay healthy, stay HK :)
+        
+        </details>
     - content: |
         <details class="bg-light">
         <summary>Why am I asked to provide my CV?</summary>
