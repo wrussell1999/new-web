@@ -151,6 +151,19 @@ faq:
         
         </details>
 ---
+
+{{< section >}}
+# HK20 is live!
+
+There is a 32-hour non-stop stream with every minute packed with awesome content!<br/>[Join us on Swapcard](https://app.swapcard.com/event/hack-kosice-2020-1) if you are attending.
+
+<div class="col-lg-6 d-inline-block text-center">
+  <div class="aspect-16-9">
+    <iframe src="https://www.youtube.com/embed/BIuhS1qvHjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="aspect-box"></iframe>
+  </div>
+</div>
+{{< /section >}}
+
 {{< section >}}
 # Going Online
 
