@@ -84,6 +84,7 @@ silver_sponsors:
     - id: telekom
     - id: software_ag
     - id: global_logic
+    - id: vacuum
 bronze_sponsors:
   title: "Bronze Sponsors"
   color: orange
