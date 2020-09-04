@@ -10,25 +10,14 @@ menu:
 use_sections: true
 layout: single
 
-onsite-online-hackathon:
-  columns:
-    - title: Online
-      content: |
-        - You can participate from the comfort of your home
-        - Watch (and participate in!) the live stream
-        - 1-on-1 networking with others
-        - Just register on our online platform
-      button: 
-        label: Online platform
-        link: "#online-platform"
-    - title: Join a Hub
-      content: |
-        - Create a hub **anywhere** in the world — a nearby cafe, co-working space, your home garden...
-        - Other hackers can join you hacking
-        - We might be able to ship you **free swag** and provide other benefits!
-      button: 
-        label: Find a hub
-        link: "#hubs"
+online-hackathon:
+  title: 'Online Hackathon'
+  image: images/Online_Hackathon.png
+  format: "3696x2448 q60 jpg"
+  button:
+    enable: true
+    label: Online platform
+    link: "https://www.swapcard.com/"
 homepage_cta:
   title: "What is a hackathon?"
   background: images/hk19_opening_crop.jpg
@@ -55,12 +44,11 @@ online_platform:
       icon: ti-mobile
 hubs:
   columns:
-    - title: Find a hub
+    - title: Around the world
       content: |
         <iframe src="https://www.google.com/maps/d/embed?mid=19I9Qzw-4R5L7ao-qffeOVVHlEe7dBO4h&hl=en" style="width: 100%; height: 500px; margin-bottom: 0px;" frameborder="0"></iframe>
         
-        *Register to a hub after opening the associated Swapcard link.*
-    - title: Register your hub
+    - title: Where are you hacking from?
       content: |
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdarpogHulsbRKkItuoRnmQ3U9Qj_ZoXSg0Qi7FAiggWNwuxQ/viewform?embedded=true" frameborder="0" style="width: 100%; height: 500px;">Loading…</iframe>
         <!-- <div class="typeform-widget" data-url="https://form.typeform.com/to/FXUvOabU" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 550px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></div> -->
@@ -103,7 +91,6 @@ faq:
         1.  You need to [apply today](https://apply.hackkosice.com/). Applications will be considered on an individual basis (or within your team if you register as a team)
         2.  We will let you know by email if you are accepted. You to confirm your attendance as soon as possible.
         3.  We'll invite you to [Swapcard](https://app.swapcard.com/event/hack-kosice-2020-1/) where the hackathon is hosted
-        4.  Participate online from your home or [join a hub](#hubs)
         
         *Due to Covid-19 we canceled our amazing venue. For this reason we will not provide any form of travel reimbursement, but hope to see you in-person next year!*
         
@@ -112,7 +99,7 @@ faq:
         <details class="bg-light">
         <summary>Do you provide travel reimbursements?</summary>
         
-        **Due to Covid-19 we canceled all on-site participation** in our amazing venue, and we can't officially support our hackers traveling for the hackathon, therefore we can't provide any reimbursement. However, if you will be in Košice anyway, or you travel at your own risk, you can join the Kosice hub at your own responsibility. We hope to see you in-person next year!
+        **Due to Covid-19 we canceled all on-site participation** in our amazing venue, and we can't officially support our hackers traveling for the hackathon, therefore we can't provide any reimbursement. We hope to see you in-person next year!
         
         </details>
     - content: |
@@ -155,11 +142,9 @@ faq:
         </details>
 ---
 {{< section >}}
-# Online + Hubs
+# Going Online
 
 Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
-
-However, to not loose the hype and social contact, you can choose to **participate from a hub!** For questions, scroll to the [FAQ]({{< ref `#faq` >}}).
 
 ### Challenges
 
@@ -168,13 +153,18 @@ Our sponsors prepared amazing challenges for you to tackle and win prizes.
 {{< button link="hk20/challenges" label="See the challenges" style="btn-solid-border" >}}
 {{< /section >}}
 
-{{< section type="column-list" config="onsite-online-hackathon" class="pt-0" / >}}
+{{< section type="sideimg" config="online-hackathon" >}}
+* You can participate from the comfort of your home
+* Watch (and participate in!) the live stream
+* 1-on-1 networking with others
+* Just register on our online platform
+{{< /section >}}
 
 {{< section type="cta" config="homepage_cta" / >}}
 
 {{< section type="solutions" config="online_platform" id="online-platform" class="bg-light" / >}}
 
-{{< section type="column-list" config="hubs" id="hubs" class="pb-0" / >}}
+<!-- {{< section type="column-list" config="hubs" id="hubs" class="pb-0" / >}} -->
 
 {{< section class="pb-0" >}}
 ## Where do hackers come from?
