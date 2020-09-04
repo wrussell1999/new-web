@@ -62,13 +62,6 @@ hardware:
         **Prize:**
         Arduino Starter Kits        
 
-    - title: Most Creative Radar Hack
-      content: |
-      Build the most creative hack using Radar's SDKs and APIs for geofencing, location search, and geocoding. Some ideas for location-aware projects include: a delivery
-      
-      **Prize:**
-      Tile Sticker Smart Tracker & a chance be featured by Radar 
-
 
 ---
 
