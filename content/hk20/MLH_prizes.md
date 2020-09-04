@@ -24,45 +24,50 @@ hardware:
     - title: Best UiPath Automation Hack
       content: |
         Build an automation hack using UiPath! Each winning team member will receive a UiPath Branded Backpack.
+        
         **Prize:**
         UiPath/MLH Branded Backpack
 
 
-    - title: Visma Assistant by Visma
+    - title: Best use of Google Cloud
       content: |
         
-        **Idea:** 
-        Help our newcomers and colleagues to reach out to the information they need quicker and flexible via AI Voice Assistant. As a newcomer it's difficult to handle all information from the very beginning, so to keep on track you need a smart assistant to help you out. And because we're Google positive, we'd be happy if you'll use Google as a preferred platform. Other preferred integrations are Google Calendar, Slack, etc. 
+        Build your hackathon project with a suite of secure storage, powerful compute, and integrated data analytics products provided by Google Cloud. See full list of products here: g.co/cloud. Each winning team member will receive a Google Home Mini.
         
-        **What we would like to see as the end result:** 
-        We need an administrative dashboard where the girls from back-office can add common questions and answers to them, they should be able to set events which you want to attend. We would like to have the ability to talk to the Visma Assistant via Google Assistant and also we would like to use it inside our Slack.       
+        **Prize:** 
+        Google Home Mini
         
-        **Sample:**
-        My first days in the company. It is difficult for me to know which events I need to attend, when I need to fill my working hours form and so on. But lucky me, in the company we have a Virtual Assistant to help with these everyday tasks.  I heard from a colleague that we have traditional breakfasts each month, but I have  no event in my calendar. I also heard from a colleague that our Virtual Assistant knows everything about these types of events, and can invite me to them. So I am going to ask it about the event:
-          
-        
-          - Hello Visma Assistant.
-          - Hello Peter. Welcome to Visma. How can I help you?
-          - I would like to attend Visma traditional breakfast.
-          - Visma traditional breakfast is every month on 2nd Tuesday from 7:30 to 8:30. Do you want me to add it to your calendar?
-          - Yes please.
-          - Okay, Visma traditional breakfast event added to your calendar.
-          - Thank you.
+ 
 
-      image: images/sponsors/visma.png
-
-    - title: Machine Learning in healthcare by VSL
+    - title: Best use of Microsoft Azure
       content: |
-        To be added...
+        Leverage all of the amazing services available on Microsoft Azure in your hack this weekend to win security keys for you and your team.
+        
+        **Prize:**
+        YubiKey 5 Security Keys
 
-      image: images/sponsors/vsl.png
 
-    - title: Assets challenge by UPJŠ
+    - title: Best Beginner Hackers
       content: |
-        Cybersecurity plays an important role in companies. In order for companies to have an overview of cyber threats and attacks targeting their computer network, it is necessary to effectively evaluate the obtained data. Feel free to use this one-week dataset from real computer networks in the Czech Republic containing over 500 million security alerts. Help us build a solution to protect companies against cyber threats via their visualization, forecasting or profiling or other methods.
+        Our best team of beginners will take home arduino starter kits to continue hacking on at future events. Teams must be at least 50% first time hackers to be eligible.
+        
+        **Prize:**
+        Arduino Starter Kits
+        
+        
+    - title: Best Jugaad (or Most Awesomely Useless Hack)
+      content: |
+        The most useless, silly, and creative hack will take home arduino starter kits too!
+        
+        **Prize:**
+        Arduino Starter Kits        
 
-      image: images/sponsors/upjs.png
-
+    - title: Most Creative Radar Hack
+      content: |
+      Build the most creative hack using Radar's SDKs and APIs for geofencing, location search, and geocoding. Some ideas for location-aware projects include: a delivery  tracker, campus building locator, and a Find my Friends clone. Winning team members will be eligible to win a Tile Sticker Smart Tracker and a chance to be featured by Radar.
+        
+        **Prize:**
+        Tile Sticker Smart Tracker & a chance be featured by Radar 
 
 ---
 
@@ -73,7 +78,7 @@ hardware:
 check your pre-event email for an exact list of specific prizes we’re bringing.**
 {{< /section >}}
 
-{{< section type="fit" config="hardware" / >}}
+{{< section type="fit-services" config="hardware" / >}}
 
 
 
