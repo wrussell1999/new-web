@@ -52,7 +52,17 @@ hardware:
 
     - title: Machine Learning in healthcare by VSL
       content: |
-        To be added...
+        We decided to organize a challenge connected to healthcare and machine learning. Our concept is to let you develop your own ideas in your own way. You can choose a topic from healthcare, the choice is yours (e.g. ECG classification, CT image recognition, recommender system for therapy, prediction of health problems, COVID-19, etc.). We expect an interesting solution from the machine learning view. Projects finished with graphical UI will be appreciated, too.
+        We expect:
+        
+          - processing and analysis of data
+          - getting key information from data
+          - use of machine learning algorithms in apps
+          - unique ideas in coding
+          
+          Good luck!
+
+
 
       image: images/sponsors/vsl.png
 
