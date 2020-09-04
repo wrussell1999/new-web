@@ -33,9 +33,10 @@ onsite-online-hackathon:
         link: "#online-platform"
     - title: Join a Hub
       content: |
-        - Create a hub **anywhere** in the world — a nearby cafe, co-working space, your home garden...
-        - Other hackers can join you hacking
+        - Create a hub **anywhere** in the world — a nearby cafe, co-working space, your home garden... other hackers can join you hacking
         - We might be able to ship you **free swag** and provide other benefits!
+        
+        Only join a hub if you can keep you and others safe!
       button: 
         label: Find a hub
         link: "#hubs"
@@ -177,7 +178,7 @@ There is a 32-hour non-stop stream with every minute packed with awesome content
 {{< /section >}}
 
 {{< section class="pt-0" >}}
-# Online + Hubs
+# Online hackathon
 
 Our team has worked tirelessly to come up with ways to provide a safe hacking environment, while maintaining high levels of engagement for all. Due to Covid-19, unfortunately, we had to **cancel all on-site participation** in our amazing venue, so **do not travel** to the venue in Kosice (updated as of 20 August). [Read the official statement.]({{< ref `hk20/going-online` >}})
 
