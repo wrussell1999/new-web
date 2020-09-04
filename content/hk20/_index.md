@@ -12,7 +12,7 @@ layout: single
 
 onlineHackathon:
   title: 'Online Hackathon'
-  image: images/online_hackathon.png
+  image: images/online-hackathon.png
   format: "3696x2448 q60 jpg"
   button:
     enable: true
