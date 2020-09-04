@@ -10,7 +10,7 @@ menu:
 use_sections: true
 layout: single
 
-online-hackathon:
+onlineHackathon:
   title: 'Online Hackathon'
   image: images/Online_Hackathon.png
   format: "3696x2448 q60 jpg"
@@ -153,7 +153,7 @@ Our sponsors prepared amazing challenges for you to tackle and win prizes.
 {{< button link="hk20/challenges" label="See the challenges" style="btn-solid-border" >}}
 {{< /section >}}
 
-{{< section type="sideimg" config="online-hackathon" >}}
+{{< section type="sideimg" config="onlineHackathon" >}}
 * You can participate from the comfort of your home
 * Watch (and participate in!) the live stream
 * 1-on-1 networking with others
