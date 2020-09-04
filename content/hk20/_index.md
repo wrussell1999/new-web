@@ -109,7 +109,7 @@ faq:
         
         As individuals you can make your own decisions on if you feel it safe to meet with friends.
         
-        Stay strong, stay healthy, stay HK :)
+        Stay strong, stay healthy, stay HK 🙂
         
         </details>
     - content: |
@@ -133,6 +133,7 @@ faq:
         Register and submit your project to [Devpost](https://hackkosice-2020.devpost.com/).
         - You need to submit a **2-minute video** demoing your project along with the description and other information
         - The **first submission** deadline is at **22.00 CEST** on **Saturday**, 5 September, but you can continue working on your project afterwards
+        - The **final submission** deadline is at **12.00 CEST** on Sunday, 6 September.
         - During judging (1-3pm CEST on Sunday, 6 September) **your team needs to be available on a video call** to answer questions from any judges (call link provided later), otherwise your team might be disqualified
         
         </details>
